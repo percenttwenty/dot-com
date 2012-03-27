@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<title>WGBH American Experience</title>
+	<link rel="stylesheet" href="css/reset.css" type="text/css" />
+	<link rel="stylesheet" href="css/old_hickory.css" type="text/css" />
+	
+	<!--[if lt IE 8]>
+		<link rel="stylesheet" href="css/ie7.css" type="text/css" />
+	<![endif]-->
+	
+	<script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+	<script type="text/javascript" src="js/swfobject.js"></script>
+	<script type="text/javascript" src="js/init.js"></script>
+	
+
+</head>
+<body class="home">
+<div id="bg_container">
+	<div id="inner_container">
+		<div id="header_bar">
+			<div id="head_nav">
+				<h1>American Experience: TV's most-watched history series.</h1>
+				<ul>
+					<li id="nav_01"><a href="schedule/">Broadcast Schedule</a></li>
+					<li id="nav_02"><a href="films/">All Films</a></li>
+					<li id="nav_03"><a href="features/">Special Features</a></li>
+					<li id="nav_04"><a href="blog/">Inside American Experience</a></li>
+					<li id="nav_05"><a href="#">Shop American Experience</a></li>
+					<li id="head_search">
+						<form action="#">
+							<label for="q">Search American Experience</label>
+							<input type="text" name="q" id="q" />
+							<input type="image" name="q_submit" id="main_search_submit" src="images/search_submit.png" alt="Submit" />
+						</form>
+					</li>
+				</ul>
+			</div>
+			<ul id="head_sponsor_bar">
+				<li id="sponsor_sloan"><a href="#">Major funding by: Alfred P. Sloan Foundation</a></li>
+				<li id="sponsor_liberty"><a href="#">Exclusive corporate funding provided by: Liberty Mutual</a></li>
+			</ul>
+		</div>
+		<div id="main">
+			<div id="content_column">
+				<div id="feature_section">					
+					<div id="flash_rotator"></div>
+					<div id="flashdata">vid|minik.flv|minik.jpg|http://www.google.com|Minik: The Lost Eskimo|This is optional sub text. You have xx characters to put here.|Custom Button|http://www.yahoo.com|10.29.10;img|image.jpg||http://www.google.com|Static Image Content|Optional sub title.|View Details|http://www.yahoo.com|10.29.10;vid|whitman.flv|waltwhitman.jpg|http://www.google.com|Walt Whitman|This is optional sub text.|Watch Online|http://www.yahoo.com|10.29.08;vid|grand_central.flv|grandcentral.jpg|http://www.google.com|Grand Central|This is optional sub text.|Watch Online|http://www.yahoo.com|10.29.08;img|image2.jpg||http://www.google.com|Static Image Content|Optional sub title.|View Details|http://www.yahoo.com|10.29.10</div>
+					<script type="text/javascript">
+						// <![CDATA[
+
+						function getElement(query) {
+							return $(query).text();
+						}
+						var so = new SWFObject("swf/homepage_rotator.swf", "homepage_rotator", "527", "422", "9", "#282727");
+						so.addParam("allowScriptAccess", "sameDomain");
+
+						so.addVariable("videoPath", "_homepage_rotator/trailers/");
+						so.addVariable("imagePath", "_homepage_rotator/images/");
+						so.addVariable("posterframePath", "_homepage_rotator/posterframes/");
+						so.write("flash_rotator");
+
+						// ]]>
+					</script>
+					
+					<div id="special_features">
+						<h1 id="special_features_header" class="tr"><a href="features/">Special Features</a></h1>
+						<ul>
+							<li>
+								<a href="#"><img src="images/fpo_feature_thumb.jpg" alt="The Hoover Dam" width="60" height="57" /></a>
+								<div class="feature">
+									<h2>Photo Gallery:</h2>
+									<h3><a href="#">The Hoover Dam</a></h3>
+								</div>
+							</li>
+							<li>
+								<a href="#"><img src="images/fpo_feature_thumb.jpg" alt="The Hoover Dam" width="60" height="57" /></a>
+								<div class="feature">
+									<h2>Quiz:</h2>
+									<h3><a href="#">A Class Apart</a></h3>
+								</div>
+							</li>
+							<li>
+								<a href="#"><img src="images/fpo_feature_thumb.jpg" alt="The Hoover Dam" width="60" height="57" /></a>
+								<div class="feature">
+									<h2>Then &amp; Now:</h2>
+									<h3><a href="#">The Assassination of Abraham Lincoln</a></h3>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="lower_content">
+					<div id="featured_left">
+						<div id="featured_films">
+							<h1 id="featured_films_header" class="tr"><a href="#">Featured Films</a></h1>
+							<a href="#" class="blue_arrow">All Films</a>
+							<br class="clr" />
+							<div class="film_canister">
+								<div class="film_foto">
+									<a href="#"><img src="images/lincolns_thumbnail.jpg" height="81" width="139" alt="The Lincolns" /></a>
+								</div>
+								<div class="film_content">
+									<h2><a href="#">Dolley Madison</a></h2>
+									<p>America's first First Lady defined the role of the President's wife and in the process changed the face of the American presidency.</p>
+								</div>
+							</div>
+							<div class="film_canister">
+								<div class="film_foto">
+									<a href="#"><img src="images/lincolns_thumbnail.jpg" height="81" width="139" alt="The Lincolns" /></a>
+								</div>
+								<div class="film_content">
+									<h2><a href="#">Buffalo Bill The Person Not The Football Team</a></h2>
+									<p>A gripping tale of medical intervention gone awry, and one of the most barbaric mistakes of modern medicine.</p>
+								</div>
+							</div>
+							<div class="film_canister">
+								<div class="film_foto">
+									<a href="#"><img src="images/lincolns_thumbnail.jpg" height="81" width="139" alt="The Lincolns" /></a>
+								</div>
+								<div class="film_content">
+									<h2><a href="#">Buffalo Bill</a></h2>
+									<p>The decisions made by leaders and the escalation of bloodletting that finally ended World War II.</p>
+								</div>
+							</div>
+						</div>
+						<br class="clr" />
+						<div id="then_and_now">
+							<img src="images/fpo_then_and_now_feature.png" alt="Then &amp; Now" width="225" height="182" />
+							<h1 id="then_and_now_header" class="tr"><a href="#">Then &amp; Now</a></h1>
+							<h2><a href="#">Then &amp; Now Article Title Lorem Ipsum Lorem Lorem Then &amp; Now Article Title</a></h2>
+							<p>Lorem ipsum dolor sitels amet lorem ipsum dolor sit amet lorem ipsum dolo lorem ipsum dolor sit els amet lorem ipsum dolor sit amet lorem ipsum sit amet lorem ipsum dolo lorem ipsum dolor sit Lorem ipsum dolor sitels...</p>
+							<br class="clr" />
+						</div>
+					</div>
+					<div id="featured_right">
+						<div id="my_amex">
+							<h1 id="my_amex_header" class="tr">My American Experience</h1>
+							<h2><a href="#">Story Title Lorem Ipsum Dolor asdflkj SDFLKJDsdf SDFkljsdf kjdf sd flkj</a></h2>
+							<p>Lorem ipsum dolor sitels amet lorem ipsum dolor sit amet lorem ipsum do...</p>
+							<div class="dotted_link">
+								<img src="images/my_amex_link_photos.png" alt="My American Experience photos" width="80" height="57" />
+								<a href="#">Share Your Story</a>
+							</div>
+							<br class="clr" />
+						</div>
+						<div id="series_blog">
+							<h1 id="series_blog_header" class="tr"><a href="../blog/">Inside American Experience</a></h1>
+							<h2><a href="#">Wikileaks Video Brings Back Echoes of My Lai Wikileaks Video Brings Back Echoes of My Lai </a></h2>
+							<div class="date">December 12, 2009</div>
+							<p>Lorem ipsum dolor sitels amet lorem ipsum dolor sit amet lorem ipsum dolo Lorem ipsum dolor sitels amet lorem ipsum dolor sit amet lorem ipsum...</p>
+							<div class="dotted_link">
+								<a href="#">Recent Blog Posts</a>
+							</div>
+						</div>
+					</div>
+					<br class="clr" />
+				</div>
+			</div>
+			<div id="banner_column">
+				<h1 id="button_teachers_resources" class="tr"><a href="#">Teachers' Resources</a></h1>
+				<img src="images/banner_header.png" alt="Exclusive corporate funding provided by" width="162" height="8" id="banner_header" />
+				<div id="banner">
+					<a href="#"><img src="images/fpo_banner.jpg" alt="banner banner banner" /></a>
+				</div>
+				<div id="sns_callouts">
+					<h1 id="follow_us_on_header" class="tr">Follow us on:</h1>
+					<ul class="list_of_icons">
+						<li><a href="#" class="icon i_facebook">Facebook</a></li>
+						<li><a href="#" class="icon i_flickr">Flickr</a></li>
+						<li><a href="#" class="icon i_twitter">Twitter</a></li>
+						<li><a href="#" class="icon i_youtube">YouTube</a></li>
+					</ul>
+				</div>
+			</div><br class="clr" />
+		</div>
+	</div>
+</div>
+<br class="clr" />
+<div id="footer">
+	<div id="util_nav">
+		<div class="footer_container">
+			<ul>
+				<li class="first"><a href="#">About the Series</a></li>
+				<li><a href="#">Podcasts</a></li>
+				<li><a href="#">Contact Us</a></li>
+				<li><a href="#">Sign up for our Newsletter</a></li>
+				<li><a href="#">Shop PBS</a></li>
+				<li class="last"><a href="#">For Teachers</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="footer_bottom">
+		<div class="footer_container">
+			<div id="footer_bottom_left">
+				<a href="#"><img src="images/wgbh_logo.gif" alt="Produced by WGBH" width="52" height="28" /></a>
+				<ul>
+					<li><a href="#">Terms of Use</a></li>
+					<li class="last"><a href="#">Privacy Policy</a></li>
+				</ul>
+				<br />
+				<div class="footer_text">Website &copy;1996-2010 WGBH Educational Foundation. This site is produced for PBS by WGBH</div>
+			</div>
+			<div id="footer_bottom_right">
+				<ul>
+					<li class="footer_text">Additional Funding Provided By:</li>
+					<li id="cpb"><a href="#"><img src="images/footer_cpb.gif" alt="Corporation for Public Broadcasting" width="111" height="24" /></a></li>
+					<li><a href="#"><img src="images/footer_vly.gif" alt="Viewers Like You!" width="56" height="24" /></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

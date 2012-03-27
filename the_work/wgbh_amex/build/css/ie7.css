@@ -1,0 +1,120 @@
+img { -ms-interpolation-mode: bicubic; }
+
+.home #lower_content {
+	padding-top: 120px;
+}
+#footer_bottom_left .footer_text {
+	padding-top: 5px;
+}
+.film_list_wide .films_top {
+	padding-bottom: 13px;
+}
+.film_list_wide .films_top h1 {
+	margin-bottom: 12px;
+	padding-bottom: 6px;
+}
+
+.home #my_amex .dotted_link {
+	position: relative;
+}
+.home #my_amex .dotted_link img {
+	position: absolute;
+	left: -6px;
+	top: 2px;
+}
+.home #series_blog .dotted_link a { 
+	padding-left: 0;
+}
+
+/*fixes home page width*/
+#main #content_column #lower_content #featured_films {
+	margin-left: 0px;
+	width: 540px;
+}
+#main #content_column #lower_content #featured_films .film_canister {
+	margin: 8px 0 0 6px;
+}
+
+
+
+#subnav #sidebar_timeline ul li {
+	padding-left: 10px;
+}
+
+#content_column h1.icon {
+	color: #55514C;
+}
+
+.film_listing_half {
+	height: 95px;
+}
+.film_listing_half .film_desc {
+	width: 150px;
+	margin-top: 4px;
+}
+.paginator ul {
+	width: 340px;
+}
+
+.blog_post .blog_post_header h2 {
+	margin-bottom: 12px;
+}
+
+/*broadcast schedule*/
+#step_one form ul li .channel_info div {
+	font-style: normal;
+}
+
+#step_three ul li {
+	margin-left: 0;
+	display: block;
+}
+#step_three ul li .film_title {
+	margin-top: 18px;
+	width: 506px;
+	display: block;
+	float: left;
+}
+#step_three ul li .link_callout {
+	float: right;
+	display: block;
+	margin-top: 18px;	
+}
+
+/*fix consistent column height problem*/
+.three_col #row #subnav, .three_col #row #content_column {
+	float: left;
+	display: block;
+}
+#main #banner_column, .three_col #row #banner_column {
+	float: left;
+	display: block;
+}
+.three_col {
+	display: block;
+}
+.three_col #row {
+	display: block;
+}
+
+.films #feature_section #special_features {
+
+}
+.films #main #feature_section {
+	height: 320px;
+}
+.films #featured_right #my_amex {
+	margin-top: 70px;
+}
+.films #featured_right #my_amex #my_amex_photos {
+	top: -30px;
+}
+.films #feature_section #special_features ul  {
+}
+
+
+
+
+#footer .footer_container {
+	width: 980px;
+}

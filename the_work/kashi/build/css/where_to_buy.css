@@ -1,0 +1,57 @@
+/* WHERE TO BUY STYLES */
+/* I'm not too sure why I decided to seperate these out, but it's late and I'm sick of looking at that bloated stylesheet */
+/* feel free to move these over if you can find a spot */
+
+#main #where_to_buy_top{
+	background:url(../images/where_to_buy_spoon.jpg) 423px 1px no-repeat;
+	min-height:256px;
+	border-bottom: 1px dotted #ACACAC;
+	padding-right:338px;
+	margin-bottom:40px;
+}
+#main #where_to_buy_bottom{
+	background:url(../images/where_to_buy_food.jpg) 0 100% no-repeat;
+	padding-bottom:256px;
+
+}
+#main #where_to_buy_bottom h2,
+#main #where_to_buy_bottom p,
+#main #where_to_buy_top h1,
+#main #where_to_buy_top p{
+	padding-left:7px;
+	margin-bottom:10px;
+	
+}
+#main #where_to_buy_top h1{
+	color:#ED6C22;
+}
+#main #where_to_buy_bottom p,
+#main #where_to_buy_top p{
+	font-weight:bold;
+	font-size:12px;
+	line-height:16px;
+}
+#main #where_to_buy_top table th,
+#main #where_to_buy_bottom table th{
+	width:91px;
+}
+
+
+#main #where_to_buy_bottom #left_section{
+	float:left;
+	width:335px;
+	margin-right:20px;
+}
+#main #where_to_buy_bottom #right_section{
+	width:332px;
+	float:left;
+}
+#main #where_to_buy_bottom h2{
+	color:#613C0B;
+}
+#main #where_to_buy_bottom p{
+	font-weight:normal;
+}
+#main #where_to_buy_bottom p a{
+	color:#BECA67;
+}

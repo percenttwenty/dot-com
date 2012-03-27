@@ -1,0 +1,51 @@
+body { font-size: 70%; }
+
+#doc3 .pbs_sb_rss_button { display: none; }
+
+#pbs_engage_commentsengine_posted_message { font-family:"Lucida Garde","Lucida Sans",Arial,Trebuchet,sans-serif; background: #AFDADB; width: 70%; }
+
+
+/* comments */
+
+#pbs_sb_story_list, pbs_engage_commentsengine_commentslist tr { font-size: 1.1em; }
+.pbs_sb_expand_control a { color: #52989A; }
+.pbs_sb_expand_control h3 { padding-bottom: 0; }
+.pbs_sb_replyto_control a { color: #52989A; }
+.pbs_sb_author a { color: #52989A; }
+.pbs_sb_story_abstract, .pbs_sb_story { font-size: 1.1em; }
+
+td .pbs_engage_commentsengine_author_meta { font-size: 1.1em; }
+td .pbs_engage_commentsengine_replyto_author { font-size: 1.1em; }
+td .pbs_engage_commentsengine_comment { font-size: 1.1em; }
+.pbs_engage_commentsengine_comment,
+.pbs_engage_commentsengine_odd,
+.pbs_engage_commentsengine_even { background: none; } 
+td .pbs_engage_commentsengine_comment_controls a { color: #52989A; }
+
+.pbs_engage_commentsengine_response { font-family:"Lucida Garde","Lucida Sans",Arial,Trebuchet,sans-serif; font-size: .9em; }
+.pbs_engage_commentsengine_replyto_form {  }
+.pbs_engage_commentsengine_formtable { margin-left: 0; }
+.pbs_engage_commentsengine_response input { border: 1px solid gray; }
+.pbs_engage_commentsengine_response input#pbs_engage_commentsengine_submit_c { border: none; }
+.pbs_engage_commentsengine_response .pbs_engage_commentsengine_instructions { color: gray; }
+
+
+/* inside the form */
+.pbs_sb_storyform { font-family:"Lucida Garde","Lucida Sans",Arial,Trebuchet,sans-serif; border: none; border-top: 4px double #9E968D; }
+h2.pbs_sb_form_header { font-family: Georgia, serif; font-style: italic; font-weight: normal; font-size: 1.45em; line-height: 1.4em; color: #790102; background: none; }
+div.pbs_sb_instructions { display: none; background: none; padding: 0 1em 0 10px; }
+.pbs_sb_storyform label { width: 7em; }
+h3.pbs_sb_storyform_upload_header { margin-bottom: 0; }
+
+
+.pbs_sb_storyform_field_image { background: none; }
+.pbs_sb_storyform_field_image input { margin: 0; padding-right: 5px; }
+
+.pbs_engage_commentsengine_error { padding-top: 1em; }
+
+.pbs_sb_storyform_field_video { background: none; }
+
+.pbs_sb_storyform_submit { background-color: #790102; }
+.pbs_sb_storyform_reset { background-color: #9E968D; }
+
+#pbs_engage_commentsengine_engage_logo { display: none; }

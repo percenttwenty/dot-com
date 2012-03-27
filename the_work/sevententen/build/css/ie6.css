@@ -1,0 +1,11 @@
+#nav {
+	margin: 90px 0 0 0px;
+}
+#rsvp .messagesection textarea, #rsvp .ribboninput {
+/*	background-image: none;	
+	border: 1px solid #000;
+	color: #000;*/
+}
+#rsvp .messagesection textarea {
+	background-image: none;
+}

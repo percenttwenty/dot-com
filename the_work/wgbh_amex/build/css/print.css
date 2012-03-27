@@ -1,0 +1,34 @@
+body, #bg_container, #main, #head_nav {
+	background-image: none;
+	background-color: #fff;
+}
+#main {
+	border: 0;
+}
+#inner_container {
+	width: 6in;
+}
+#head_nav ul, #subnav, #banner_column, #footer, #content_callouts, #head_sponsor_bar,
+.content_head .blue_arrow, .pdf_callout, #content_filters, .paginator, #double_callout
+{
+	display: none !important;
+}
+#head_nav h1 {
+	width: 100%;
+	height: auto;
+	line-height: 1.4em;
+}
+#head_nav h1 a {
+	background-image: none;
+	text-indent: 0;
+	width: 100%;
+	font-size: 18px;
+	height: auto;
+}
+#head_nav {
+	height: auto !important;
+}
+
+.film_listing_wide .film_desc {
+	width: auto;
+}

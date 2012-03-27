@@ -1,0 +1,289 @@
+/*---------------------------------------------------
+    LESS Elements 0.6
+  ---------------------------------------------------
+    A set of useful LESS mixins by Dmitry Fadeyev
+    Special thanks for mixin suggestions to:
+      Kris Van Herzeele,
+      Benoit Adam,
+      Portenart Emile-Victor,
+      Ryan Faerman
+
+    More info at: http://lesselements.com
+-----------------------------------------------------*/
+body {
+  background: #eeeeee;
+  background: #eeeeee;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #8c8c8c), color-stop(1, #c8c8c8));
+  background: -ms-linear-gradient(bottom, #8c8c8c 0%, #8c8c8c 100%);
+  background: -moz-linear-gradient(center bottom, #8c8c8c 0%, #c8c8c8 100%);
+  border-top: 30px solid #a2a2a2;
+  border-bottom: 30px solid #6f6f6f;
+}
+a {
+  color: #000;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+em {
+  font-style: italic;
+}
+strong {
+  font-weight: bold;
+}
+#wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+.clr {
+  clear: both;
+}
+header {
+  width: 100%;
+  margin: 25px auto 20px auto;
+  overflow: auto;
+  padding-bottom: 5px;
+}
+header hgroup {
+  width: 460px;
+  /*		float: left;*/
+
+  margin: 0 auto;
+  text-align: center;
+}
+header h1, header h2 {
+  font-size: 50px;
+  font-family: 'Fredericka the Great', Helvetica, Arial, sans-serif;
+}
+header h1 a, header h2 a {
+  text-decoration: none;
+}
+header h1 {
+  margin-bottom: 5px;
+}
+header h2 {
+  font-size: 25px;
+  margin-bottom: 18px;
+}
+header #contact {
+  font-family: 'Buenard', "Times New Roman", Times, serif;
+  /*		text-align: right;*/
+
+  /*		float: right;*/
+
+  font-size: 18px;
+  line-height: 1.3em;
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+#links {
+  padding-top: 15px;
+  border-top: 2px solid #888888;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #888888;
+  font-family: 'Buenard', "Times New Roman", Times, serif;
+}
+#links section {
+  width: 320px;
+  float: left;
+  text-align: center;
+}
+#links section h2 {
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+#links section li {
+  line-height: 1.4em;
+}
+section.chunk {
+  position: relative;
+  padding-top: 25px;
+}
+section.chunk h1 {
+  text-align: right;
+}
+section.chunk h1#portfolio_title {
+  text-align: center;
+  font-family: 'Buenard', "Times New Roman", Times, serif;
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+section.chunk .project {
+  width: 468px;
+  height: 300px;
+  display: block;
+  float: left;
+  padding-left: 8px;
+  background-image: url(../images/banner_edge_l.png), url(../images/banner_edge_r.png);
+  background-position: 0 250px, 464px 250px;
+  background-repeat: no-repeat;
+  margin: 0 2px 30px 2px;
+  /*		.border-radius(3px, 3px, 3px, 3px);*/
+
+  /*		.rotation(0deg);*/
+
+  -moz-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+section.chunk .project a {
+  font-family: Helvetica, Arial, sans-serif;
+  border: 3px solid #fff;
+  display: block;
+  width: 450px;
+  height: 300px;
+  background-position: top left;
+  background-repeat: no-repeat;
+  position: relative;
+  text-decoration: none;
+}
+section.chunk .project a .info {
+  background: #fff;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  width: 100%;
+  text-align: right;
+  height: 36px;
+}
+section.chunk .project a .info .project_title {
+  font-size: 20px;
+}
+section.chunk .project a .info .project_date {
+  font-size: 16px;
+}
+section.chunk .project a:hover {
+  /*				background: transparent url(../images/mask.png) 0 0 no-repeat;*/
+
+}
+section.chunk .project:hover {
+  /*			.rotation(1deg);*/
+
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  transform: scale(1.02);
+  -moz-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+#greatest_photo {
+  float: right;
+  margin: 4px 0 0 10px;
+  border: 2px solid #fff;
+}
+/* homepage thumbnails */
+#nasdaq a {
+  background-image: url(../the_work/nasdaq/01.jpg);
+}
+#ge_show a {
+  background-image: url(../the_work/ge_show/01.jpg);
+}
+#rockhall a {
+  background-image: url(../the_work/rockhall/01.jpg);
+}
+#wgbh a {
+  background-image: url(../the_work/wgbh_amex/01.jpg);
+}
+#sevententen a {
+  background-image: url(../the_work/sevententen/01.jpg);
+}
+#kashi a {
+  background-image: url(../the_work/kashi/01.jpg);
+}
+#tbg a {
+  background-image: url(../the_work/tbg/01.jpg);
+}
+#pbat a {
+  background-image: url(../the_work/pbat/01.jpg);
+}
+#gametap a {
+  background-image: url(../the_work/gametap/01.jpg);
+}
+#helping_hands a {
+  background-image: url(../the_work/helping_hands/01.jpg);
+}
+#chicken a {
+  background-image: url(../the_work/chicken/01.jpg);
+}
+/*		detail page			*/
+.detail .chunk .images {
+  width: 500px;
+  float: left;
+  margin-bottom: 30px;
+}
+.detail .chunk .images ul li {
+  margin-bottom: 20px;
+}
+.detail .chunk .images img {
+  border: 3px solid #fff;
+}
+.detail .chunk .project_details {
+  font-family: 'Buenard', serif;
+  float: right;
+  width: 425px;
+  text-align: right;
+}
+.detail .chunk .project_details h1 {
+  font-size: 30px;
+}
+.detail .chunk .project_details h2 {
+  font-size: 25px;
+}
+.detail .chunk .project_details dl {
+  margin-top: 15px;
+  width: 100%;
+  float: right;
+  line-height: 1.2em;
+}
+.detail .chunk .project_details dl dt {
+  float: left;
+  color: #888888;
+  /*				text-transform: uppercase;*/
+
+  font-variant: small-caps;
+  font-size: 13px;
+  clear: both;
+  color: #000;
+}
+.detail .chunk .project_details dl dd {
+  float: right;
+}
+.detail .chunk .project_details .commentary {
+  text-align: left;
+  margin: 25px 0 40px 0;
+  font-family: 'Buenard', "Times New Roman", Times, serif;
+  line-height: 1.2em;
+}
+.detail .chunk .project_details .commentary p {
+  margin-bottom: 15px;
+}
+.detail .chunk .project_details .commentary ul li {
+  margin: 0 0 3px 0;
+  list-style-type: disc;
+}
+footer {
+  margin: 20px 0 20px 0;
+  padding-top: 15px;
+  border-top: 2px solid #888888;
+  padding-bottom: 15px;
+  font-family: 'Buenard', "Times New Roman", Times, serif;
+  /*	border-bottom: 2px solid darken(@basecolor, 40%);*/
+
+}
+footer h1 {
+  text-align: center;
+  font-family: 'Buenard', "Times New Roman", Times, serif;
+  font-size: 25px;
+  margin-bottom: 7px;
+}
+footer p {
+  width: 70%;
+  margin: 0 auto 15px auto;
+  line-height: 1.2em;
+}
+footer li {
+  padding: 10px 9px 14px 9px;
+  float: left;
+}

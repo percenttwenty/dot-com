@@ -1,0 +1,30 @@
+h1#logo {
+	margin-top: 60px;
+}
+
+#channels_circles ul#channels_nav {
+	padding-top: 50px;
+}
+#channels_circles ul#channels_nav li {
+	list-style-type: none;
+	margin-left: 400px;
+	margin-bottom: 39px;
+	font-weight: bold;
+}
+#case_study_map_filters {
+	height: 200px;
+}
+#case_study_map_filters .filter_col {
+/* 	margin: 15px 0 0 2%; */
+	line-height: 12px;
+}
+
+.resource_landing_section ul {
+	padding-top: 15px;
+}
+#content ul li, #content ol li {
+	list-style-position: outside;
+}
+body #main.home_landing {
+	margin-bottom: 0px;
+}

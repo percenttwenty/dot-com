@@ -1,0 +1,60 @@
+body {
+	width: 550px;
+}
+
+#fancy_bg {
+	background-image: none;
+}
+
+div.header {
+	width: 550px;
+	background: transparent;
+	margin: 0 0 20px 0;
+	padding: 0 0 0 0 !important;
+}
+#lace {
+	display: none;
+}
+
+#image_holder {
+	float: none;
+	background: transparent url(../images/bg_iphone.jpg) 0 0 no-repeat;
+	width: 550px;
+	height: 425px;
+	position: relative;
+	margin: 0;
+}
+#image_holder img {
+	position: absolute;
+	left: 90px;
+	top: 15px;
+}
+
+
+#nav {
+	margin: 20px 0 0 10px;
+	width: 540px;
+	height: 271px;
+	float: none;
+	position: relative;
+
+}
+.hotel img {
+	margin: 0 auto;
+	text-align: center;
+}
+.hotel div {
+	width: 90%;
+	margin: 0 auto;
+}
+.hotel div p {
+	font-size: 16px;
+}
+.content {
+	width: 500px;
+	margin: 0 auto 100px auto;
+	background: #fff;
+	padding: 25px 10px;
+	line-height: 1.3em;
+	
+}

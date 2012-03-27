@@ -1,0 +1,357 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<title>Collection Template Page - WGBH American Experience</title>
+	<link rel="stylesheet" href="../css/reset.css" type="text/css" />
+	<link rel="stylesheet" href="../css/old_hickory.css" type="text/css" />
+	
+	<!--[if lt IE 8]>
+		<link rel="stylesheet" href="../css/ie7.css" type="text/css" />
+	<![endif]-->
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="../js/swfobject.js"></script>
+	
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//clear search box when you click on it
+			$("#q").click(function() {
+				$(this).val("");
+			});
+			
+			//open target="_blank" links in new windows
+		    $("a.new_window").click(function(){
+		        window.open(this.href);
+		        return false;
+		    });
+		
+		});
+	</script>
+</head>
+<body class="films">
+<div id="bg_container">
+	<div id="inner_container">
+		<div id="header_bar">
+			<div id="head_nav">
+				<h1><a href="../">American Experience: TV's most-watched history series.</a></h1>
+				<ul>
+					<li id="nav_01"><a href="../schedule/">Broadcast Schedule</a></li>
+					<li id="nav_02" class="selected"><a href="../films/">All Films</a></li>
+					<li id="nav_03"><a href="../features/">Special Features</a></li>
+					<li id="nav_04"><a href="../blog/">Inside American Experience</a></li>
+					<li id="nav_05"><a href="#">Shop American Experience</a></li>
+					<li id="head_search">
+						<form action="#">
+							<label for="q">Search American Experience</label>
+							<input type="text" name="q" id="q" />
+							<input type="image" name="q_submit" id="main_search_submit" src="../images/search_submit.png" alt="Submit" />
+						</form>
+					</li>
+				</ul>
+			</div>
+			<ul id="head_sponsor_bar">
+				<li id="sponsor_sloan"><a href="#">Major funding by: Alfred P. Sloan Foundation</a></li>
+				<li id="sponsor_liberty"><a href="#">Exclusive corporate funding provided by: Liberty Mutual</a></li>
+			</ul>
+		</div>
+		<div id="main">
+			<div id="content_column">
+				<div id="feature_section">
+					<div id="feature_hero">
+						<div id="feature_hero_bg"><a href="#"><img src="../images/fpo_hero_1930s.jpg" alt="The 1930s" width="478" height="287" /></a></div>
+					</div>
+					<div id="special_features">
+						<div id="special_features_head">
+							<h1 id="special_features_header_solo" class="tr">Special Features</h1>
+							<!-- <a href="#" class="blue_arrow right">See All</a> -->
+							<br class="clr" />
+						</div>
+						<!-- <ul>
+							<li class="icon i_article_white">Introduction: <a href="#">About the 1930s Collection</a></li>
+							<li class="icon i_article_white">Article: <a href="#">The 30s Today</a></li>
+							<li class="icon i_teachers_white">Teachers' Resources: <a href="#">30s in the Classroom</a></li>
+							<li class="icon i_photo_white">Photo Gallery: <a href="#">Shots from the 1930s</a></li>
+							<li class="icon i_video_white">Bonus Video: <a href="#">Voices from the 1930s</a></li>
+							<li class="icon i_highlights_white">Story Highlights: <a href="#">1930s at a Glance</a></li>
+						</ul> -->
+						<ul>
+
+								<li class="icon" style="background:url(http://ec2-184-73-243-168.compute-1.amazonaws.com/wgbh/americanexperience/media/uploads/special_features/icons/interview.png) no-repeat scroll 0 0 transparent">Original Interview: <a href="/wgbh/americanexperience/features/Original-interview/clemente-memories/">Interview with Orlando Cepeda</a></li>
+
+
+								<li class="icon" style="background:url(http://ec2-184-73-243-168.compute-1.amazonaws.com/wgbh/americanexperience/media/uploads/special_features/icons/general_article.png) no-repeat scroll 0 0 transparent">General Article: <a href="/wgbh/americanexperience/features/general-article/clemente-family/">His Family and His Legacy</a></li>
+
+								<li class="icon" style="background:url(http://ec2-184-73-243-168.compute-1.amazonaws.com/wgbh/americanexperience/media/uploads/special_features/icons/general_article.png) no-repeat scroll 0 0 transparent">Primary Resources: <a href="/wgbh/americanexperience/features/primary-resources/clemente-dec-1972/">December 1972: Plane Crash</a></li>
+
+								<li class="icon" style="background:url(http://ec2-184-73-243-168.compute-1.amazonaws.com/wgbh/americanexperience/media/uploads/special_features/icons/interview.png) no-repeat scroll 0 0 transparent">Original Interview: <a href="/wgbh/americanexperience/features/Original-interview/clemente-ruiz/">Interview with Bernardo Ruiz</a></li>
+
+								<li class="icon" style="background:url(http://ec2-184-73-243-168.compute-1.amazonaws.com/wgbh/americanexperience/media/uploads/special_features/icons/general_article.png) no-repeat scroll 0 0 transparent">Primary Resources: <a href="/wgbh/americanexperience/features/primary-resources/clemente-3000-career-hit/">September 1972: 3,000th Hit</a></li>
+
+								<li class="icon" style="background:url(http://ec2-184-73-243-168.compute-1.amazonaws.com/wgbh/americanexperience/media/uploads/special_features/icons/general_article.png) no-repeat scroll 0 0 transparent">Primary Resources: <a href="/wgbh/americanexperience/features/primary-resources/clemente-news-october-1960/">October 1960: World Series</a></li>
+
+
+						</ul>
+						
+					</div>
+				</div>
+				<div id="lower_content">
+					<div id="featured_left">
+						<div id="hero_content">
+							<div id="hero_callouts">
+								<h1 id="single_callout"><a href="#">The 1930s Collection</a></h1>
+							</div>
+							<div id="hero_desc">
+								<p>The 1930s collection examines America’s response to the unprecedented economic crisis that threatened the nation during one of history’s most tumultuous decades a decade that is increasingly a touchstone for our own. <a href="#">Continue Reading</a>.</p>
+							</div>
+						</div>
+						<div class="hero_misc">
+							<h1 id="shop_pbs_header" class="tr"><a href="#">Shop PBS</a></h1>
+							<ul class="half">
+								<li>
+															<a href="http://www.shoppbs.org/entry.point?entry=3839141&amp;source=PBSCS_CONTENT_AMEX_AMX62200_1930s:N:DGR:N:N:1009:QPBS">
+																<img src="http://www-tc.pbs.org/wgbh/americanexperience/media/uploads/1930s.png" alt="Available on iTunes" width="30" height="42" /> 
+																<span>Buy The 1930s DVD Set</span>
+															</a>
+
+															<br class="clr" />
+														</li>
+
+														<li>
+															<a href="http://www.shoppbs.org/entry.point?entry=3828045&amp;source=PBSCS_CONTENT_AMEX_AMEX6308_CRASH1929:N:DGR:N:N:909:QPBS">
+																<img src="http://www-tc.pbs.org/wgbh/americanexperience/media/uploads/films/shopIcons/crash1929.png" alt="Available on iTunes" width="30" height="42" /> 
+																<span>Buy the The Crash of 1929 DVD</span>
+															</a>
+															<br class="clr" />
+														</li>
+
+
+														<li>
+															<a href="http://www.shoppbs.org/entry.point?entry=3839142&amp;source=PBSCS_CONTENT_AMEX_AMX62201_CIVILIANCONSERVATIONCORPS:N:DGR:N:N:1009:QPBS">
+																<img src="http://www-tc.pbs.org/wgbh/americanexperience/media/uploads/films/shopIcons/ccc.png" alt="Available on iTunes" width="30" height="42" /> 
+																<span>Buy the The Civilian Conservation Corps DVD</span>
+															</a>
+															<br class="clr" />
+														</li>
+
+														<li>
+															<a href="http://www.shoppbs.org/entry.point?entry=1402908&amp;source=PBSCS_CONTENT_AMEX_AMER6511:N:DGR:N:N:909:QPBS">
+
+																<img src="http://www-tc.pbs.org/wgbh/americanexperience/media/uploads/films/shopIcons/seabiscuit.png" alt="Available on iTunes" width="30" height="42" /> 
+																<span>Buy the Seabiscuit DVD</span>
+															</a>
+															<br class="clr" />
+														</li>
+
+														<li>
+															<a href="http://www.shoppbs.org/entry.point?entry=2792205&amp;source=PBSCS_CONTENT_AMEX_AMER4108_DUSTBOWL:N:DGR:N:N:1009:QPBS">
+																<img src="http://www-tc.pbs.org/wgbh/americanexperience/media/uploads/films/shopIcons/dustbowl.png" alt="Available on iTunes" width="30" height="42" /> 
+																<span>Buy the Surviving the Dust Bowl DVD unless you are a jerk who can't buy any dvds because they won't let you in to the dvd store i hope that is not the case </span>
+
+															</a>
+															<br class="clr" />
+														</li>
+
+														<li>
+															<a href="http://www.shoppbs.org/entry.point?entry=2807672&amp;source=PBSCS_CONTENT_AMEX_AMEX4103:N:DGR:N:N:909:QPBS">
+																<img src="http://www-tc.pbs.org/wgbh/americanexperience/media/uploads/films/shopIcons/hover.png" alt="Available on iTunes" width="30" height="42" /> 
+																<span>Buy the Hoover Dam DVD</span>
+															</a>
+															<br class="clr" />
+
+														</li>
+
+														<li>
+															<a href="http://www.shoppbs.org/entry.point?entry=3157679&amp;source=PBSCS_CONTENT_AMEX_WG36689_RIDINGTHERAILS:N:DGR:N:N:510:QPBS">
+																<img src="http://www-tc.pbs.org/wgbh/americanexperience/media/uploads/rails_dvd.png" alt="Available on iTunes" width="30" height="42" /> 
+																<span>Buy Riding the Rails on DVD</span>
+															</a>
+															<br class="clr" />
+														</li>
+								
+							</ul>
+							<br class="clr" />
+						</div>
+					</div>
+					<div id="featured_right">
+						<div id="my_amex">
+							<h1 id="my_amex_header" class="tr">My American Experience</h1>
+							<img src="../images/my_amex_link_photos.png" alt="My American Experience photos" width="80" height="57" id="my_amex_photos" />
+							<h2><a href="#">Share Your Story</a></h2>
+							<p>Did you live through this time period? Do you remember when the first Atomic bomb was dropped? Share your experience lorem.</p>
+							<div class="small_callout"><p><a href="#">What do the 1930s mean to you?</a></p></div>
+							<br class="clr" />
+						</div>
+						<div id="series_blog">
+							<h1 id="series_blog_header" class="tr"><a href="../blog/">Series Blog</a></h1>
+							<h2><a href="#">Blog Post Title Lorem Ipsum</a></h2>
+							<div class="date">December 12, 2009</div>
+							<p>Lorem ipsum dolor sitels amet lorem ipsum dolor sit amet lorem ipsum dolo Lorem ipsum dolor sitels amet lorem ipsum dolor sit amet lorem ipsum...</p>
+						</div>
+					</div>
+					<br class="clr" />
+					<div id="related_films">
+						<div id="related_films_top">
+							<h1 id="films_in_this_collection" class="tr">Films in this Collection</h1>
+							<br class="clr" />
+						</div>
+						<div class="film_canister">
+											<div class="film_foto">
+												<a href="/wgbh/americanexperience/films/ThatRhythmThoseBlues/"><img src="http://ec2-184-73-243-168.compute-1.amazonaws.com/wgbh/americanexperience/media/uploads/filmAssets/thumbImages/films_generic_thumb2.jpg" height="81" width="139" alt="" /></a>
+											</div>
+											<div class="film_content">
+												<h2><a href="/wgbh/americanexperience/films/ThatRhythmThoseBlues/">That Rhythm, Those Blues</a></h2>
+												<p>The evolution of rhythm and blues through the careers of singers Ruth Brown and Charles Brown, from the 1940s into the 50s, with contemporary performances by both.</p>
+
+												<a href="http://ec2-184-73-243-168.compute-1.amazonaws.com/wgbh/americanexperience/features/introduction/ThatRhythmThoseBlues-introduction" class="red_arrow">Film Details</a>
+											</div>
+										</div>				
+
+										<div class="film_canister">
+											<div class="film_foto">
+												<a href="/wgbh/americanexperience/films/GeorgeWashingtonTheManWhoWouldntBeKing/"><img src="http://ec2-184-73-243-168.compute-1.amazonaws.com/wgbh/americanexperience/media/uploads/filmAssets/thumbImages/films_generic_thumb2.jpg" height="81" width="139" alt="" /></a>
+											</div>
+											<div class="film_content">
+												<h2><a href="/wgbh/americanexperience/films/GeorgeWashingtonTheManWhoWouldntBeKing/">George Washington - The Man George Washington - The Man George Washington - The Man Who Wouldn&#39;t Be King</a></h2>
+
+												<p>Before he became the first U.S. president, service to the colonies would profoundly change George Washington. The man who came to symbolize the American Revolution scorned attempts to participate in any system but democracy.</p>
+												<a href="http://ec2-184-73-243-168.compute-1.amazonaws.com/wgbh/americanexperience/features/introduction/GeorgeWashingtonTheManWhoWouldntBeKing-introduction" class="red_arrow">Film Details</a>
+											</div>
+										</div>				
+
+										<div class="film_canister">
+											<div class="film_foto">
+												<a href="/wgbh/americanexperience/films/dolley/"><img src="http://ec2-184-73-243-168.compute-1.amazonaws.com/wgbh/americanexperience/media/uploads/films/thumbImages/dolley_thumbnail.jpg" height="81" width="139" alt="Dolley Madison" /></a>
+											</div>
+
+											<div class="film_content">
+												<h2><a href="/wgbh/americanexperience/films/dolley/">Dolley Madison</a></h2>
+												<p>She defined the role of the President?s wife, became America?s first First Lady, and in the process changed the face of the American presidency.</p>
+												<a href="http://ec2-184-73-243-168.compute-1.amazonaws.com/wgbh/americanexperience/films/dolley" class="red_arrow">Film Details</a>
+											</div>
+										</div>				
+
+										<div class="film_canister">
+											<div class="film_foto">
+
+												<a href="/wgbh/americanexperience/films/clemente/"><img src="http://ec2-184-73-243-168.compute-1.amazonaws.com/wgbh/americanexperience/media/uploads/films/thumbImages/clemente_thumbnail.jpg" height="81" width="139" alt="Roberto Clemente" /></a>
+											</div>
+											<div class="film_content">
+												<h2><a href="/wgbh/americanexperience/films/clemente/">Roberto Clemente</a></h2>
+												<p>Born in Puerto Rico, Clemente was an exceptional baseball player and humanitarian whose career sheds light on larger issues of immigration, civil rights and cultural change. He would die in a tragic plane crash.</p>
+												<a href="http://ec2-184-73-243-168.compute-1.amazonaws.com/wgbh/americanexperience/films/clemente" class="red_arrow">Film Details</a>
+											</div>
+
+										</div>				
+
+										<div class="film_canister">
+											<div class="film_foto">
+												<a href="/wgbh/americanexperience/films/TheRadioPriest/"><img src="http://ec2-184-73-243-168.compute-1.amazonaws.com/wgbh/americanexperience/media/uploads/filmAssets/thumbImages/films_generic_thumb2.jpg" height="81" width="139" alt="" /></a>
+											</div>
+											<div class="film_content">
+												<h2><a href="/wgbh/americanexperience/films/TheRadioPriest/">The Radio Priest</a></h2>
+												<p>Roman Catholic priest Father Charles Coughlin used the power of radio to become one of the first media stars as he railed against the nation's economic system in the midst of the Depression.</p>
+
+												<a href="http://ec2-184-73-243-168.compute-1.amazonaws.com/wgbh/americanexperience/features/introduction/TheRadioPriest-introduction" class="red_arrow">Film Details</a>
+											</div>
+										</div>				
+
+										<div class="film_canister">
+											<div class="film_foto">
+												<a href="/wgbh/americanexperience/films/clemente/"><img src="http://ec2-184-73-243-168.compute-1.amazonaws.com/wgbh/americanexperience/media/uploads/films/thumbImages/clemente_thumbnail.jpg" height="81" width="139" alt="Roberto Clemente" /></a>
+											</div>
+											<div class="film_content">
+												<h2><a href="/wgbh/americanexperience/films/clemente/">Roberto Clemente</a></h2>
+
+												<p>Born in Puerto Rico, Clemente was an exceptional baseball player and humanitarian whose career sheds light on larger issues of immigration, civil rights and cultural change. He would die in a tragic plane crash.</p>
+												<a href="http://ec2-184-73-243-168.compute-1.amazonaws.com/wgbh/americanexperience/films/clemente" class="red_arrow">Film Details</a>
+											</div>
+										</div>				
+
+										<div class="film_canister">
+											<div class="film_foto">
+												<a href="/wgbh/americanexperience/films/MidnightRamble/"><img src="http://ec2-184-73-243-168.compute-1.amazonaws.com/wgbh/americanexperience/media/uploads/filmAssets/thumbImages/films_generic_thumb2.jpg" height="81" width="139" alt="" /></a>
+											</div>
+
+											<div class="film_content">
+												<h2><a href="/wgbh/americanexperience/films/MidnightRamble/">Midnight Ramble</a></h2>
+												<p>The little-known story of a black independent film industry that produced nearly 500 feature films for African American audiences, dealing with issues such as crime, racism and lynching.</p>
+												<a href="http://ec2-184-73-243-168.compute-1.amazonaws.com/wgbh/americanexperience/features/introduction/MidnightRamble-introduction" class="red_arrow">Film Details</a>
+											</div>
+										</div>				
+
+										<div class="film_canister">
+											<div class="film_foto">
+
+												<a href="/wgbh/americanexperience/films/HeartsandHands/"><img src="http://ec2-184-73-243-168.compute-1.amazonaws.com/wgbh/americanexperience/media/uploads/filmAssets/thumbImages/films_generic_thumb2.jpg" height="81" width="139" alt="" /></a>
+											</div>
+											<div class="film_content">
+												<h2><a href="/wgbh/americanexperience/films/HeartsandHands/">Hearts and Hands</a></h2>
+												<p>Quilting and the intimate clues it yields about the lives of 19th century women.</p>
+												<a href="http://ec2-184-73-243-168.compute-1.amazonaws.com/wgbh/americanexperience/features/introduction/HeartsandHands-introduction" class="red_arrow">Film Details</a>
+											</div>
+
+										</div>
+						<br class="clr" />
+					</div>
+					<br class="clr" />
+				</div>
+			</div>
+			<div id="banner_column">
+				<h1 id="button_teachers_resources" class="tr"><a href="#">Teachers' Resources</a></h1>
+				<img src="../images/banner_header.png" alt="Exclusive corporate funding provided by" width="162" height="8" id="banner_header" />
+				<div id="banner">
+					<a href="#"><img src="../images/fpo_banner.jpg" alt="banner banner banner" /></a>
+				</div>
+				<div id="sns_callouts">
+					<h1 id="follow_us_on_header" class="tr">Follow us on:</h1>
+					<ul class="list_of_icons">
+						<li><a href="#" class="icon i_facebook">Facebook</a></li>
+						<li><a href="#" class="icon i_flickr">Flickr</a></li>
+						<li><a href="#" class="icon i_twitter">Twitter</a></li>
+						<li><a href="#" class="icon i_youtube">YouTube</a></li>
+					</ul>
+				</div>
+			</div><br class="clr" />
+		</div>
+	</div>
+</div>
+<br class="clr" />
+<div id="footer">
+	<div id="util_nav">
+		<div class="footer_container">
+			<ul>
+				<li class="first"><a href="#">About the Series</a></li>
+				<li><a href="#">Podcasts</a></li>
+				<li><a href="#">Contact Us</a></li>
+				<li><a href="#">Sign up for our Newsletter</a></li>
+				<li><a href="#">Shop PBS</a></li>
+				<li class="last"><a href="#">For Teachers</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="footer_bottom">
+		<div class="footer_container">
+			<div id="footer_bottom_left">
+				<a href="#"><img src="../images/wgbh_logo.gif" alt="Produced by WGBH" width="52" height="28" /></a>
+				<ul>
+					<li><a href="#">Terms of Use</a></li>
+					<li class="last"><a href="#">Privacy Policy</a></li>
+				</ul>
+				<br />
+				<div class="footer_text">Website &copy;1996-2010 WGBH Educational Foundation. This site is produced for PBS by WGBH</div>
+			</div>
+			<div id="footer_bottom_right">
+				<ul>
+					<li class="footer_text">Additional Funding Provided By:</li>
+					<li id="cpb"><a href="#"><img src="../images/footer_cpb.gif" alt="Corporation for Public Broadcasting" width="111" height="24" /></a></li>
+					<li><a href="#"><img src="../images/footer_vly.gif" alt="Viewers Like You!" width="56" height="24" /></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

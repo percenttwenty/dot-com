@@ -1,0 +1,501 @@
+<studies>
+<!--
+	list of pbat case studies.  used in /case-studies/ map.
+
+	<study
+		title=""
+		blurb=""
+		img=""		 * image filename. 170x75, goes in /images/cs/. use default.jpg if you don't have an image
+		url=""
+		location=""  
+		industry=""
+		profession=""
+		issue=""
+		lat=""		 * i recommend http://gmaptools.googlepages.com/findLatLong.html 
+		lng=""
+		icontype=""  * default | new | lg (for leadership group)
+		featured="">  
+	</study>	
+-->
+	<study 
+		title="A.T. Kearney and the Metropolitan Pier and Exposition Authority"
+		blurb="A.T. Kearney helps the MPEA improve Chicago's Navy Pier."
+		img="01.jpg"
+		url="/case-studies/a.t.-kearney-and-the-metropolitan-pier-and-exposition-authority/"
+		location="Chicago, IL" 
+		industry="Professional Services" 
+		profession="Strategy Consulting" 
+		issue="Social Services" 
+		lat="41.879535" 
+		lng="-87.624333"
+		icontype="default"
+		featured="">
+	</study>
+	<study 
+		title="Accenture and AMREF"
+		blurb="Accenture and AMREF address the critical nursing shortage in Kenya."
+		img="02.jpg"
+		url="/case-studies/accenture-and-amref/"
+		location="Kenya" 
+		industry="Professional Services" 
+		profession="Information Technology" 
+		issue="Health" 
+		lat="-0.023559" 
+		lng="37.906193"
+		icontype="default"
+		featured="">
+	</study>
+	<study 
+		title="Accenture and Medshare International"
+		blurb="Accenture helps MedShare International improve healthcare in developing countries."
+		img="03.jpg"
+		url="/case-studies/accenture-and-medshare-international/"
+		location="Atlanta, GA"
+		industry="Professional Services"
+		profession="Information Technology"
+		issue="Health"
+		lat="33.754487"
+		lng="-84.389663"
+		icontype="default"
+		featured="">
+	</study>
+	<study
+		title="Boston Consulting Group and Chicago Public Schools"
+		blurb="The Boston Consulting Group and Chicago Public Schools strategize for a public high school improvement initiative."
+		img="04.jpg"
+		url="/case-studies/boston-consulting-group-and-chicago-public-schools/"
+		location="Chicago, IL"
+		industry="Professional Services"
+		profession="Marketing"
+		issue="Education"
+		lat="41.879535"
+		lng="-87.624333"
+		icontype="default"
+		featured="">
+	</study>
+	<study
+		title="Best Buy and Geek Squad Summer Academy"
+		blurb="Best Buy supports Geek Squad Summer Academy to inspire kids to become future technology leaders."
+		img="default.jpg"
+		url="/case-studies/best-buy-and-geek-squad-summer-academy/"
+		location="Richfield, Minnesota"
+		industry="Corporate"
+		profession="Information Technology"
+		issue="Education"
+		lat="44.876308"
+		lng="-93.278171"
+		icontype="new"
+		featured="true">
+	</study>
+	<study
+		title="Business Objects and Arts Umbrella"
+		blurb="Business Objects works with Arts Umbrella to create a donor predictability system."
+		img="06.jpg"
+		url="/case-studies/business-objects-and-arts-umbrella/"
+		location="Vancouver, Canada"
+		industry="Professional Services"
+		profession="Marketing"
+		issue="Education"
+		lat="49.263588"
+		lng="-123.138565"
+		icontype="default"
+		featured="">
+	</study>
+	<study
+		title="Capital One: Pro Bono Leader"
+		blurb=""
+		img="07.jpg"
+		url="/case-studies/capital-one-pro-bono-leader/"
+		location="Richmond, VA"
+		industry="Leadership Group"
+		profession=""
+		issue=""
+		lat="37.540778"
+		lng="-77.433928"
+		icontype="lg"
+		featured="">
+	</study>		
+	<study
+		title="Capital One Brand Corps and St. Joseph's Villa"
+		blurb="Capital One helps an at-risk residential facility build their operational capacity."
+		img="default.jpg"
+		url="/case-studies/capital-one-brand-corps-st.-josephs-villa/"
+		location="Richmond, VA"
+		industry="Leadership Group"
+		profession="Marketing"
+		issue="Social Services"
+		lat="37.540778"
+		lng="-77.433928"
+		icontype="lg"
+		featured="">
+	</study>
+	<study
+		title="Capital One Brand Corps and the District of Columbia College Access Program (DC-CAP)"
+		blurb="Capital One helps reinvigorate the District of Columbia College Access brand."
+		img="default.jpg"
+		url="/case-studies/capital-one-brand-corps-and-the-district-of-columbia-college-access-program-dc-cap/"
+		location="Richmond, VA"
+		industry="Leadership Group"
+		profession="Marketing"
+		issue="Education"
+		lat="37.540778"
+		lng="-77.433928"
+		icontype="lg"
+		featured="">
+	</study>
+	<study
+		title="Citi and Microfinance Institutions"
+		blurb="Citi develops and delivers critical trainings to Microfinance Institutions."
+		img="10.jpg"
+		url="/case-studies/citi-and-microfinance-institutions/"
+		location="New York, NY"
+		industry="Corporate"
+		profession="Financial"
+		issue="Social Services"
+		lat="40.756054"
+		lng="-73.986951"
+		icontype="default"
+		featured="">
+	</study>
+	<study
+		title="The Council of Public Relations Firms' Digital Marketing workshops for Nonprofit Organizations"
+		blurb="The Council of PR Firms hosts digital marketing workshops for nonprofits across the country."
+		img="default.jpg"
+		url="/case-studies/the-council-of-public-relations-firms-digital-marketing-workshops-for-nonprofit-organizations/"
+		location="New York, NY"
+		industry="Corporate"
+		profession="Financial"
+		issue="Social Services"
+		lat="40.756054"
+		lng="-73.986951"
+		icontype="new"
+		featured="">
+	</study>
+	<study
+		title="Dell and the Williamson County Literacy Council"
+		blurb="Dell provides the Literacy Council with marketing communications improvement."
+		img="12.jpg"
+		url="/case-studies/dell-and-the-literacy-council/"
+		location="Williamson County, TX"
+		industry="Corporate"
+		profession="Marketing"
+		issue="Education"
+		lat="30.759169"
+		lng="-97.698227"
+		icontype="new"
+		featured="">
+	</study>		
+	<study
+		title="Deloitte: Pro Bono Leader"
+		blurb=""
+		img="13.jpg"
+		url="/case-studies/deloitte-pro-bono-leader/"
+		location="New York City, NY"
+		industry="Leadership Group"
+		profession=""
+		issue=""
+		lat="40.756054"
+		lng="-73.986951"
+		icontype="lg"
+		featured="">
+	</study>
+	<study
+		title="Deloitte and College Summit"
+		blurb="Deloitte helps College Summit overcome their operational challenges."
+		img="14.jpg"
+		url="/case-studies/deloitte-and-college-summit/"
+		location="Washington, DC"
+		industry="Leadership Group"
+		profession="Information Technology"
+		issue="Education"
+		lat="40.756054"
+		lng="-73.986951"
+		icontype="lg"
+		featured="">
+	</study>	
+	<study
+		title="Deloitte and Gleaners Community Food Bank"
+		blurb="Deloitte develops a plan to optimize volunteer support at Gleaners Community Food Bank."
+		img="15.jpg"
+		url="/case-studies/deloitte-and-gleaners-community-food-bank/"
+		location="Michigan"
+		industry="Leadership Group"
+		profession="Human Resources"
+		issue="Social Services"
+		lat="44.314844"
+		lng="-85.602364"
+		icontype="lg"
+		featured="">
+	</study>
+	<study
+		title="Deloitte and United Nations Development Programme"
+		blurb="Deloitte advises the UNDP in the aftermath of the 2004 Tsunami."
+		img="default.jpg"
+		url="/case-studies/deloitte-and-united-nations-development-programme/"
+		location="Indonesia"
+		industry="Leadership Group"
+		profession="Human Resources"
+		issue="Social Services"
+		lat="-0.789275"
+		lng="113.921327"
+		icontype="lg"
+		featured="">
+	</study>
+	<study
+		title="Gap, Inc.: Pro Bono Leader"
+		blurb=""
+		img="17.jpg"
+		url="/case-studies/gap-inc.-pro-bono-leader/"
+		location="San Francisco, CA"
+		industry="Leadership Group"
+		profession=""
+		issue=""
+		lat="37.775196"
+		lng="-122.419204"
+		icontype="lg"
+		featured="">
+	</study>
+	<study
+		title="GE and the Jefferson and Stamford County Public Schools"
+		blurb="The GE Foundation supports school districts to close student achievement gaps."
+		img="default.jpg"
+		url="/case-studies/ge-and-the-jefferson-and-stamford-county-public-schools/"
+		location="Louisville, KY"
+		industry="Corporate"
+		profession="Strategy Consulting"
+		issue="Education"
+		lat="38.256065"
+		lng="-85.75154"
+		icontype="default"
+		featured="">
+	</study>
+	<study
+		title="IBM and United Way's 2-1-1 Technology"
+		blurb="IBM develops an IT system to help CA officials cope with wildfire assistance."
+		img="19.jpg"
+		url="/case-studies/ibm-and-united-ways-2-1-1-technology/"
+		location="San Diego, CA"
+		industry="Corporate"
+		profession="Information Technology"
+		issue="Social Services"
+		lat="32.718834"
+		lng="-117.163841"
+		icontype="default"
+		featured="">
+	</study>
+	<study
+		title="Kraft and the United Nations Volunteers (UNV) Programme"
+		blurb="KRAFT and United Nations Volunteers improve food processing with the Jamaican Scientific Research Council."
+		img="20.jpg"
+		url="/case-studies/kraft-and-the-united-nations-volunteers-unv-programme/"
+		location="Jamaica"
+		industry="Corporate"
+		profession="Strategy Consulting"
+		issue="Health"
+		lat="18.109581"
+		lng="-77.297508"
+		icontype="new"
+		featured="true">
+	</study>
+	<study
+		title="McGraw-Hill, Writers to the Rescue and MOUSE"
+		blurb="McGraw-Hill develops key communication materials for MOUSE."
+		img="21.jpg"
+		url="/case-studies/mcgraw-hill-writers-to-the-rescue-and-mouse/"
+		location="NYC"
+		industry="Corporate"
+		profession="Marketing"
+		issue="Education"
+		lat="40.756054"
+		lng="-73.986951"
+		icontype="default"
+		featured="">
+	</study>
+	<study
+		title="MICA and JHU Design Collective"
+		blurb="MICA and Johns Hopkins develop tools to communicate public health information to local residents."
+		img="default.jpg"
+		url="/case-studies/mica-and-jhu-design-collective/"
+		location="Baltimore"
+		industry="Professional Schools"
+		profession="Marketing"
+		issue="Health"
+		lat="39.294255"
+		lng="-76.614275"
+		icontype="default"
+		featured="">
+	</study>
+	<study
+		title="Morgan Stanley and Microfinance Institutions"
+		blurb="Morgan Stanley and Women's World Banking host Microfinance conference."
+		img="default.jpg"
+		url="/case-studies/morgan-stanley-microfinance-institutions/"
+		location="Nicaragua"
+		industry="Corporate"
+		profession="Finance"
+		issue="Social Services"
+		lat="12.865416"
+		lng="-85.207229"
+		icontype="default"
+		featured="">
+	</study>
+	<study
+		title="Pfizer and the Global Health Fellows Program"
+		blurb="Pfizer's Global Health Fellows Program expands and improves healthcare across the world."
+		img="default.jpg"
+		url="/case-studies/pfizer-and-the-global-health-fellows-program/"
+		location="Washington DC"
+		industry="Corporate"
+		profession="Strategy Consulting"
+		issue="Health"
+		lat="38.892091"
+		lng="-77.024055"
+		icontype="default"
+		featured="true">
+	</study>
+	<study
+		title="Public Architecture: Boor Bridges Architecture and the San Francisco School Volunteers"
+		blurb="Boor Bridges Architecture dramatically improves the work environment of San Francisco School Volunteers."
+		img="25.jpg"
+		url="/case-studies/boor-bridges-architecture-and-san-francisco-school-volunteers-headquarters/"
+		location="San Francisco"
+		industry="Professional Services"
+		profession="Architecture"
+		issue="Social Services"
+		lat="37.775196"
+		lng="-122.419204"
+		icontype="default"
+		featured="">
+	</study>
+	<study
+		title="Public Architecture: Bartizan Group Architects and Hogar de Ninos Que Quieren Sonreir"
+		blurb="Bartizan redesigns an American Cancer Society office to make it more comfortable for young cancer patients."
+		img="26.jpg"
+		url="/case-studies/bartizan-group-architects-and-hogar-de-ninos-que-quieren-sonreir/"
+		location="San Juan, PR"
+		industry="Professional Services"
+		profession="Architecture"
+		issue="Social Services"
+		lat="18.46646"
+		lng="-66.118302"
+		icontype="default"
+		featured="">
+	</study>		
+	<study
+		title="Public Architecture: CAST Architecture and Interbay P-Patch Garden Hub"
+		blurb="CAST constructs a garden shed for a community garden in Seattle."
+		img="27.jpg"
+		url="/case-studies/cast-architecture-and-interbay-p-patch-garden-hub/"
+		location="Seattle"
+		industry="Professional Services"
+		profession="Architecture"
+		issue="Social Services"
+		lat="47.620973"
+		lng="-122.347276"
+		icontype="new"
+		featured="">
+	</study>		
+	<study
+		title="Rural Studio at Auburn University"
+		blurb="The Rural Studio designs and builds houses and civic facilities for residents of the surrounding communities."
+		img="default.jpg"
+		url="/case-studies/rural-studio-at-auburn-university/"
+		location="Auburn, Georgia"
+		industry="Professional Schools"
+		profession="Architecture"
+		issue="Social Services"
+		lat="34.012413"
+		lng="-83.831283"
+		icontype="default"
+		featured="">
+	</study>		
+	<study
+		title="Target: Pro Bono Leader"
+		blurb=""
+		img="29.jpg"
+		url="/case-studies/target-pro-bono-leader/"
+		location="Minneapolis, MN (HQ)"
+		industry="Leadership Group"
+		profession=""
+		issue=""
+		lat="44.977482"
+		lng="-93.264351"
+		icontype="lg"
+		featured="">
+	</study>		
+	<study
+		title="Target and Law Enforcement Agencies"
+		blurb="Target's Forensics Service team partners with law enforcement agencies."
+		img="30.jpg"
+		url="/case-studies/target-and-law-enforcement-agencies/"
+		location="Grand Forks, ND"
+		industry="Leadership Group"
+		profession="Information Technology"
+		issue="Social Services"
+		lat="47.909156"
+		lng="-97.055612"
+		icontype="lg"
+		featured="">
+	</study>
+	<study
+		title="Target and the National Domestic Violence Hotline Call Center"
+		blurb="Target renovates the National Domestic Violence Hotline call center."
+		img="31.jpg"
+		url="/case-studies/target-and-the-national-domestic-violence-hotline-call-center/"
+		location="Austin, Texas"
+		industry="Leadership Group"
+		profession="Facilities Design"
+		issue="Social Services"
+		lat="30.268735"
+		lng="-97.745209"
+		icontype="lg"
+		featured="">
+	</study>
+	<study
+		title="Target Redesigns School Libraries"
+		blurb="Target renovates school libraries across the country."
+		img="32.jpg"
+		url="/case-studies/target-redesigns-school-libraries/"
+		location="DC"
+		industry="Leadership Group"
+		profession="Facilities Design"
+		issue="Education"
+		lat="38.892091"
+		lng="-77.024055"
+		icontype="lg"
+		featured="">
+	</study>
+	<study
+		title="Wells Fargo and Family Connections"
+		blurb="Wells Fargo creates a donor and sponsor brochure for Family Connections."
+		img="default.jpg"
+		url="/case-studies/wells-fargo-and-family-connections/"
+		location="San Francisco, CA"
+		industry="Corporate"
+		profession="Marketing"
+		issue="Social Services"
+		lat="37.775196"
+		lng="-122.419204"
+		icontype="default"
+		featured="">
+	</study>
+
+	<!-- 
+
+	<study
+		title=""
+		blurb=""
+		img=""
+		url=""
+		location=""
+		industry=""
+		profession=""
+		issue=""
+		lat=""
+		lng=""
+		icontype=""
+		featured="">
+	</study>		
+	
+	 -->
+</studies>

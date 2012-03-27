@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>PBAT - Case Studies</title>
+	<link rel="stylesheet" type="text/css" href="css/pbat.css" />
+	
+	<link rel="stylesheet" href="css/sifr.css" type="text/css" />
+	<script src="js/sifr.js" type="text/javascript"></script>
+
+	<script src="js/sifr-config.js" type="text/javascript"></script>
+
+	
+	 <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAbx2_QR7nzbfEkcsPCbe5lBR2oBgLfX0bFENIydithE4N7RP2wxSXWNOwd0bQR7hoxna-mS6zF3KBuQ"
+      type="text/javascript"></script>
+</head>
+<body onunload="GUnload()">
+	<div id="util_nav">
+		<ul><li><a href="contact.html">contact us</a></li><li><a href="media_center.html">media center</a></li><li><a href="#">subscribe</a></li></ul>
+		<form action="#">
+			<input type="text" name="search_box" id="search_box" value="search" />
+			<input type="submit" name="search_submit" id="search_submit" value="&raquo;" />
+		</form>
+	</div>
+	<div id="main">			
+		<h1 id="logo"><a href="#" class="tr">Pro Bono Action Tank - The Taproot Foundation</a></h1>
+		<div id="sidebar">
+			<ul id="nav">
+				<li><a href="mission.html">About Pro Bono Action Tank</a></li>
+				<li><a href="standards_landing.html">Pro Bono Standards</a></li>
+				<li class="selected"><a href="case_study_landing.html">Case Studies</a></li>
+				<li><a href="resources.html">Resources</a></li>
+				<li><a href="events_landing.html">Events</a></li>
+				<li><a href="leadership_landing.html">Leadership Group &amp; Partners</a></li>
+				<li><a href="#">Blog</a></li>
+			</ul>
+			
+
+		</div>
+		<div id="content">
+			<div id="content_header">
+				<h1><span class="title">Case Studies:</span><span class="subtitle">Thinking globally. Acting locally.</span></h1>
+				<br class="clr" />
+			</div>
+			<p>Across the world, business professionals are helping nonprofit organizations address society's most pressing needs through pro bono service.</p>
+			<div id="case_study_map_container">
+				<div id="case_study_map"></div>
+			</div>
+			<div id="case_study_map_links">
+				<ul>
+					<li><a href="#">View Featured &raquo;</a></li>
+					<li><a href="#" onclick="showAll(); return false;">View All &raquo;</a></li>
+				</ul>
+			</div>
+			
+			<h3 class="filter_title">Filter the case studies:</h3>
+			<div id="case_study_map_filters">
+			<form action="">
+				<div class="filter_col">
+					<h3>By Industry Segment:</h3>
+					<input type="radio" id="is_c" name="filter" onclick="boxclick(this,'industry','Corporate')" /><label for="is_c">Corporations</label><br />
+					<input type="radio" id="is_psf" name="filter" onclick="boxclick(this,'industry','Professional Services')" /><label for="is_psf">Professional Services Firms</label><br />
+					<input type="radio" id="is_ps" name="filter" onclick="boxclick(this,'industry','Professional Schools')" /><label for="is_ps">Professional Schools</label><br />
+					<input type="radio" id="is_ta" name="filter" onclick="boxclick(this,'industry','Trade Association')" /><label for="is_ta">Trade Associations</label><br />
+				</div>
+				<div class="filter_col">
+					<h3>By Profession:</h3>
+					<input type="radio" id="p_a" name="filter" onclick="boxclick(this,'profession','Architecture')" /><label for="p_a">Architecture</label><br />
+					<input type="radio" id="p_sc" name="filter" onclick="boxclick(this,'profession','Strategy Consulting')" /><label for="p_sc">Strategy Consulting</label><br />
+					<input type="radio" id="p_it" name="filter" onclick="boxclick(this,'profession','Information Technology')" /><label for="p_it">Information Technology</label><br />
+					<input type="radio" id="p_hr" name="filter" onclick="boxclick(this,'profession','Human Resources')" /><label for="p_hr">Human Resources</label><br />
+					<input type="radio" id="p_m" name="filter" onclick="boxclick(this,'profession','Marketing')" /><label for="p_m">Marketing</label><br />
+					<input type="radio" id="p_f" name="filter" onclick="boxclick(this,'profession','Finance')" /><label for="p_f">Finance</label><br />
+				</div>
+				<div class="filter_col">
+					<h3>By Issue Area:</h3>
+					<input type="radio" id="ia_ac" name="filter" onclick="boxclick(this,'issue','Arts and Culture')" /><label for="01">Arts and Culture</label><br />
+					<input type="radio" id="ia_ed" name="filter" onclick="boxclick(this,'issue','Education')" /><label for="01">Education</label><br />
+					<input type="radio" id="ia_en" name="filter" onclick="boxclick(this,'issue','Environment')" /><label for="01">Environment</label><br />
+					<input type="radio" id="ia_h" name="filter" onclick="boxclick(this,'issue','Health')" /><label for="01">Health</label><br />
+					<input type="radio" id="ia_ss" name="filter" onclick="boxclick(this,'issue','Social Services')" /><label for="01">Social Services</label><br />
+				</div>
+			</form>
+			<br class="clr" />
+			</div>
+		</div>
+	</div>
+	<br class="clr" />
+	<div id="footer">
+		<h2><a href="#" class="tr">A Program of the Taproot Foundation</a></h2>
+	</div>
+
+
+    <script type="text/javascript">
+    //<![CDATA[
+
+    if (GBrowserIsCompatible()) {
+      var gmarkers = [];
+      var gicons = [];
+
+/*
+      gicons["theatre"] = new GIcon(G_DEFAULT_ICON,"colour086.png");
+      gicons["golf"] = new GIcon(G_DEFAULT_ICON,"colour108.png");
+      gicons["info"] = new GIcon(G_DEFAULT_ICON,"colour125.png");
+*/
+
+      // A function to create the marker and set up the event window
+      function createMarker(point,html,industry,profession,issue) {
+        var marker = new GMarker(point);
+        // === Store the category and name info as a marker properties ===
+//        marker.mycategory = category;                                 
+		marker.myindustry = industry;
+		marker.myprofession = profession;
+		marker.myissue = issue;
+        GEvent.addListener(marker, "click", function() {
+          marker.openInfoWindowHtml(html);
+        });
+        gmarkers.push(marker);
+        return marker;
+      }
+
+      // == shows all markers of a particular category, and ensures the checkbox is checked ==
+      function show(category) {
+        for (var i=0; i<gmarkers.length; i++) {
+          if (gmarkers[i].mycategory == category) {
+            gmarkers[i].show();
+          }
+        }
+        // == check the checkbox ==
+      //  document.getElementById(category+"box").checked = true;
+      }
+      
+      function showTwo(filtertype,filtervalue) {
+        for (var i=0; i<gmarkers.length; i++) {
+		  if(filtertype == "industry") {
+		  	if (gmarkers[i].myindustry == filtervalue) {
+            	gmarkers[i].show();
+          	} else {
+          		gmarkers[i].hide();
+          	}
+		  }
+		  else if(filtertype == "profession") {
+		  	if (gmarkers[i].myprofession == filtervalue) {
+            	gmarkers[i].show();
+          	} else {
+          		gmarkers[i].hide();
+          	}
+		  }
+		  else if(filtertype == "issue") {
+		  	if (gmarkers[i].myissue == filtervalue) {
+            	gmarkers[i].show();
+          	} else {
+          		gmarkers[i].hide();
+          	}
+		  }
+        }
+		marker.openInfoWindowHtml(bubble);
+      }
+
+      // == hides all markers of a particular category, and ensures the checkbox is cleared ==
+      function hide(category) {
+        for (var i=0; i<gmarkers.length; i++) {
+          if (gmarkers[i].mycategory == category) {
+            gmarkers[i].hide();
+          }
+        }
+        // == clear the checkbox ==
+        document.getElementById(category+"box").checked = false;
+        // == close the info window, in case its open on a marker that we just hid
+        map.closeInfoWindow();
+      }
+
+      function hideTwo(filtertype,filtervalue) {
+        for (var i=0; i<gmarkers.length; i++) {
+		  if(filtertype == "industry") {
+		  	if (gmarkers[i].myindustry == filtervalue) {
+            	gmarkers[i].hide();
+          	}
+		  }
+		  if(filtertype == "profession") {
+		  	if (gmarkers[i].myprofession == filtervalue) {
+            	gmarkers[i].hide();
+          	}
+		  }
+		  if(filtertype == "issue") {
+		  	if (gmarkers[i].myissue == filtervalue) {
+            	gmarkers[i].hide();
+          	}
+		  }
+        }
+        // == clear the checkbox ==
+//        document.getElementById(category+"box").checked = false;
+        // == close the info window, in case its open on a marker that we just hid
+        map.closeInfoWindow();
+      }
+            
+
+      // == a checkbox has been clicked ==
+      function boxclick(box,filtertitle,filtervalue) {
+        if (box.checked) {
+          showTwo(filtertitle,filtervalue);
+        } else {
+          hideTwo(filtertitle,filtervalue);
+        }
+      }
+
+      function myclick(i) {
+        GEvent.trigger(gmarkers[i],"click");
+      }
+      
+      function showAll() {
+		for (var i=0; i<gmarkers.length; i++) {
+            gmarkers[i].show();
+        }
+		
+      }
+
+
+      // create the map
+        var map = new GMap2(document.getElementById("case_study_map"));
+		map.setCenter(new GLatLng(22.593726,-24.609375), 2);
+		map.removeMapType(G_NORMAL_MAP);
+		map.removeMapType(G_SATELLITE_MAP);		
+
+
+      // Read the data
+      GDownloadUrl("casestudies.xml", function(doc) {
+        var xmlDoc = GXml.parse(doc);
+        var markers = xmlDoc.documentElement.getElementsByTagName("study");
+          
+        for (var i = 0; i < markers.length; i++) {
+          // obtain the attribues of each marker
+          var lat = parseFloat(markers[i].getAttribute("lat"));
+          var lng = parseFloat(markers[i].getAttribute("lng"));
+          var point = new GLatLng(lat,lng);
+		  var html = GXml.value(markers[i].getElementsByTagName("bubble")[0]);
+          var industry = markers[i].getAttribute("industry");
+          var profession = markers[i].getAttribute("profession");
+          var issue = markers[i].getAttribute("issue");
+          
+          // create the marker
+          var marker = createMarker(point,html,industry,profession,issue);
+          map.addOverlay(marker);
+        }
+
+        showAll();
+      });
+    }
+
+    else {
+      alert("Sorry, the Google Maps API is not compatible with this browser");
+    }
+
+    //]]>
+    </script>
+
+
+</body>
+</html>

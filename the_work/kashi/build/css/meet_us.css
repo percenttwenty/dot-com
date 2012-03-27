@@ -1,0 +1,52 @@
+#featured_employees .user_details{
+	float:right;
+	padding:10px 0;
+	border-bottom: 1px dotted #ACACAC;
+	width:610px;
+}
+#featured_employees .user_details img{
+	float:left;
+	padding:0 10px 6px 10px;
+}
+#featured_employees .user_details{
+	padding:10px 5px;
+}
+#featured_employees .user_details h3{
+	
+}
+#featured_employees .user_blurb{
+	padding:10px 0;
+}
+#featured_employees .user_blurb .challenges{
+	padding-top:20px;
+	width:92px;
+	font-size:10px;
+	text-align:center;
+}
+#featured_employees .user_blurb .challenges a{
+	font-size:22px;
+	color:#613C0B;
+	display:block;
+}
+.community_name{
+	color:#613C0B;
+	text-transform:uppercase;
+	font-size:10px;
+	padding-bottom:3px;
+	font-weight:bold;
+}
+.community_name a{
+	text-transform:none;
+	font-size:12px;
+	color:#9EB11F;
+}
+div#mission_statement h2{
+	color:#613C0B;
+	padding:20px 10px 5px 10px;
+}
+div#mission_statement p{
+	padding:5px 10px 20px;
+	font-size:12px;
+	line-height:14px;
+	font-weight:bold;
+}

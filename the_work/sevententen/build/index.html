@@ -1,0 +1,458 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" media="screen" type="text/css" href="css/gettinmarried.css" />
+	<link media="only screen and (max-device-width: 480px)" href="css/iphone.css" type="text/css" rel="stylesheet" />
+	<!-- <meta name="viewport" content="width=550" /> -->
+	<meta name="viewport" content="width=550,maximum-scale=1.0" />
+	<!-- <meta name="viewport" content="width=device-width" /> -->
+		
+	<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico" />
+
+	<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+<!--[if lte IE 6]>
+	<script type="text/javascript" src="js/supersleight.plugin.js"></script>
+	<link rel="stylesheet" media="screen" type="text/css" href="css/ie6.css">
+<![endif]-->
+<!--[if IE]>
+	<link rel="stylesheet" media="screen" type="text/css" href="css/ie.css">
+<![endif]-->
+	<script type="text/javascript" src="js/scrolltopcontrol.js"></script>
+	<script type="text/javascript" src="js/cufon-yui.js"></script>
+	<script type="text/javascript" src="js/Archer_350_withextra.font.js"></script>
+	<script type="text/javascript">
+		Cufon.replace('h1');
+		Cufon.replace('h2');
+		Cufon.replace('.archer');
+	</script>
+	<script src="js-global/FancyZoom.js" type="text/javascript"></script>
+	<script src="js-global/FancyZoomHTML.js" type="text/javascript"></script>
+	
+	<title>July 10, 2010 dot com</title>
+
+</head>
+<body id="home"><div id="fancy_bg">
+<a name="top"></a>
+	<script type="text/javascript">
+		
+	$(document).ready(function(){
+		var user_interacted = false;
+		var currentone = "home";
+		setupZoom();
+		
+		$(".details_link").click(function() {
+			if(currentone != "details") {
+				$(".current_photo").fadeOut("fast", function() {
+					$("#details_photo").fadeIn("slow");	
+					$("#details_photo").addClass("current_photo");	
+					$(this).removeClass("current_photo");
+				});
+				$(".current_content").fadeOut("fast", function() {
+					$("#block_details").fadeIn("slow");
+					$("#block_details").addClass("current_content");
+					$(this).removeClass("current_content");
+				});
+			}
+			if(!user_interacted) {
+				user_interacted = true;
+				$("#welcome").hide();
+				$("#home_link").show();
+			}
+			currentone = "details";
+			return false;
+		});
+		
+		$("#whattodo_link").click(function() {
+			if(currentone != "whattodo") {
+				$(".current_photo").fadeOut("fast", function() {
+					$("#whattodo_photo").fadeIn("slow");	
+					$("#whattodo_photo").addClass("current_photo");	
+					$(this).removeClass("current_photo");
+				});
+				$(".current_content").fadeOut("fast", function() {
+				
+					$("#block_whattodo").fadeIn("slow");
+					$("#block_whattodo").addClass("current_content");
+					$(this).removeClass("current_content");
+				});	
+			}
+			if(!user_interacted) {
+				user_interacted = true;
+				$("#welcome").hide();
+				$("#home_link").show();
+			}
+			currentone = "whattodo";
+			return false;
+		});
+		
+		$(".rsvp_link").click(function() {
+			// window.open ("rsvp_popup.php", "itsawindow","location=0,status=1,scrollbars=1,toolbar=0,menubar=0,resizable=1, width=600,height=700");
+			return false;
+		});
+
+		$("#registry_link").click(function() {
+			$(".current_photo").fadeOut("fast", function() {
+				$("#registry_photo").fadeIn("slow");	
+				$("#registry_photo").addClass("current_photo");	
+				$(this).removeClass("current_photo");
+			});
+			
+			$(".current_content").fadeOut("fast", function() {
+				$("#block_registry").fadeIn("slow");
+				$("#block_registry").addClass("current_content");
+				$(this).removeClass("current_content");
+			});	
+			if(!user_interacted) {
+				user_interacted = true;
+				$("#welcome").hide();
+				$("#home_link").show();
+			}
+			return false;
+		});
+
+		$("#home_link").click(function() {
+			if(currentone != "home") {
+				$(".current_photo").fadeOut("fast", function() {
+					$("#hello_photo").fadeIn("slow");	
+					$("#hello_photo").addClass("current_photo");	
+					$(this).removeClass("current_photo");
+				});			
+				$(".current_content").fadeOut("fast", function() {
+					$("#block_home").fadeIn("slow");
+					$("#block_home").addClass("current_content");
+					$(this).removeClass("current_content");
+				});
+			}	
+			currentone = "home";
+			return false;
+		});
+		
+		
+		$(".registry_link").click(function() {
+			if(currentone != "details") {
+				$(".current_photo").fadeOut("fast", function() {
+					$("#details_photo").fadeIn("slow");	
+					$("#details_photo").addClass("current_photo");	
+					$(this).removeClass("current_photo");
+				});
+				$(".current_content").fadeOut("fast", function() {
+					$("#block_details").fadeIn("slow");
+					$("#block_details").addClass("current_content");
+					$(this).removeClass("current_content");
+				});
+			}
+			if(!user_interacted) {
+				user_interacted = true;
+				$("#welcome").hide();
+				$("#home_link").show();
+			}
+			currentone = "details";
+		});
+		
+		//ie 6 png transparency
+//		$("#nav").supersleight();
+//		$("#lace").supersleight();
+		
+		
+		
+	})
+	</script>
+	
+	<div class="content header">
+		<div id="image_holder">
+			<img src="images/engagement07.jpg" width="340" height="340" alt="down the alley behind our apartment" id="hello_photo" class="hero_photo current_photo" />	
+			<img src="images/engagement08.jpg" width="340" height="340" alt="on the mass ave bridge, facing west" id="details_photo" class="hero_photo" style="display: none;" />
+			<img src="images/kenmore.jpg" width="340" height="340" alt="kenmore square at night" id="whattodo_photo" class="hero_photo" style="display: none;" />
+			<img src="images/engagement04.jpg" width="340" height="340" alt="push that bike" id="registry_photo" class="hero_photo" style="display: none;" />
+		</div>
+	
+		<div id="nav">
+			<p>
+				<span class="nav_item nav00" id="welcome">Welcome.</span>
+				<a href="/" id="home_link" class="nav_item nav01">Welcome.</a>
+				<span class="nav_item nav02">Lauren &amp; Kenji</span>
+				<span class="nav_item nav03">are</span> 
+				<a href="schedule/" class="nav_item details_link nav04">getting married!</a>
+				<span class="nav_item nav05">It's happening on 7/10/10</span>
+		 		<span class="nav_item nav06">in</span> 
+				<a href="boston/" id="whattodo_link" class="nav_item nav07">Cambridge, Massachusetts.</a>
+				<span class="nav_item nav08">Did we mention that you're invited?</span>
+				<!-- <a href="rsvp_popup.php" class="rsvp_link nav_item nav09">Please join us!</a> -->
+				<a href="#" class="rsvp_link nav_item nav09">Please join us!</a>
+			</p>
+		</div>
+		<br class="clr" />
+	</div>
+	
+	<div class="content_outer_2">
+	<div id="block_home" class="current_content content">
+		<div id="recent_updates">
+			<h1>Recent Updates</h1>
+			<div class="entry first">
+				<div class="archer update_date">07|09|10</div>
+				<p>Don't forget, come on by to <a href="http://www.easternstandardboston.com/">Eastern Standard</a> tonight at 8 for a drink, a bite to eat, and incredibly embarrassing photos of us!</p>
+			</div>
+			<div class="entry">
+				<div class="archer update_date">06|09|10</div>
+				<p>Lest you worry we'd neglect the non-romantic responsibilities of our impending nuptials &mdash; rest assured, we have all the bases covered! On Monday, we biked over to Cambridge City Hall and formally applied for our marriage license. It was a moment of seriousness: witnessed by a City Clerk, the two of us stood together in a marble-floored office, raised our right hands, and solemnly swore that the information we provided was legitimate.</p>
+				<p><small>Except for Lauren. She accidentally said "no".</small></p>
+				<div class="image_section">
+					<a href="images/updates/city_hall.jpg" title="Probably the only 'fun' reason to have to go to City Hall."><img src="images/updates/city_hall_thumb.jpg" alt="Cambridge City Hall" width="100" height="100" /></a>
+				</div>
+			</div>
+			<div class="entry">
+				<div class="archer update_date">04|11|10</div>
+				<p>THIS JUST IN - Are you going to be in town the night before the wedding?  If so, we'd like to invite you to join us for a drink on Friday, 7/09/10.  We'll be celebrating at one of our local favorites, <a href="http://www.easternstandardboston.com/">Eastern Standard</a>, which is located at <a href="http://maps.google.com/maps?hl=en&amp;safe=off&amp;client=safari&amp;ie=UTF8&amp;cid=0,0,2903064501732029609&amp;fb=1&amp;hq=eastern+standard&amp;hnear=Boston,+MA+02215&amp;gl=us&amp;daddr=528+Commonwealth+Avenue,+Boston,+MA+02215-2606&amp;geocode=5628360320207844782,42.348736,-71.096314&amp;ei=tLnDS--dO4KB8gaT-aGHCQ&amp;ved=0CAwQngIwAA&amp;z=16" title="Google maps link">528 Commonwealth Ave</a> in Kenmore Square.  Stop in at 8pm and say hi!  We'll be in the private room, just ask the ma&icirc;tre d' for the Holmes-Ross party.</p>
+				<div class="image_section">
+					<a href="images/updates/eastern_standard.jpg" title="We took this photo on Sunday, just before enjoying a couple drinks inside with Chris &amp; Tracey."><img src="images/updates/eastern_standard_thumb.jpg" alt="Eastern Standard" width="100" height="100" /></a>
+				</div>
+			</div>
+			<div class="entry">
+				<div class="archer update_date">03|20|10</div>
+				<p>Blimey! We're so excited.  We just took the plunge and booked our honeymoon, for OMG TURKS AND CAICOS!!!  That's in the British West Indies <small>(thanks wikipedia)</small>.  The place is so great that we had to show you some pictures... another reason we can't wait for July.</p>
+				<div class="image_section">
+					<a href="images/updates/beach.jpg" title="We are going to sit on that seat right there and order drinks and not leave until they make us."><img src="images/updates/beach_thumb.jpg" alt="Beach" width="100" height="100" /></a>
+					<a href="images/updates/pool.jpg" title="We are going to sit by the edge of this pool and order food and not leave until they make us."><img src="images/updates/pool_thumb.jpg" alt="The Pool" width="100" height="100" /></a>
+					<a href="images/updates/restaurant.jpg" title="Here's the restaurant, where... ah, you get the idea."><img src="images/updates/restaurant_thumb.jpg" alt="Restaurant" width="100" height="100" /></a>
+				</div>
+			</div>
+			<div class="entry last">
+				<div class="archer update_date">02|22|10</div>
+				<p>Wedding planning is going smoothly, but man, there sure are a lot of decisions to make! A lot of the hard ones are out of the way, though, and we're finally getting to think about what we'll do after the wedding... going someplace. Here is our cartography montage!</p>
+				<div class="image_section">
+					<a href="images/updates/honeymoon_decision_montage.gif" title="I wish all our plannning was based on pointing at maps. (might take a second to load)"><img src="images/updates/montage_thumb.jpg" alt="Montage" width="100" height="100" /></a>
+				</div>
+			</div>
+			<!-- <div class="entry last">
+				<div class="archer update_date">01|31|10</div>
+				<p>We stopped into our excellent <a href="http://www.personastyle.com/">local jeweler</a> before Christmas to get Gary started on our wedding rings, and were pleasantly surprised this week to hear that they were complete! It's probably bad luck to show you pictures of them now, but we wanted to show you <em>something</em>, so... </p>
+				<div class="image_section">
+					<a href="images/updates/two_ring_boxes.jpg" title="Our wedding rings are in here, probably."><img src="images/updates/two_ring_boxes_thumb.jpg" alt="Wedding ring boxes" width="100" height="100" /></a>
+				</div>
+				<p>Also, thanks to all of you that have responded!  Your messages have been so fun to read - we're thrilled to hear so many of you are coming. If you haven't hit our <a href="rsvp_popup.php" class="rsvp_link">fancy RSVP form</a> yet, please do so at your earliest convenience.</p> 
+			</div> -->
+			<!-- <div class="entry last">
+				<div class="archer update_date">12|12|09</div>
+				<p>The invites are in the mail, so you guys should be showing up here soon!</p>
+				<div class="image_section">
+					<a href="images/working_on_invitations.jpg" title="Working on invitations at home."><img src="images/working_on_invitations_thumb.jpg" alt="working on invitations" width="100" height="100" /></a>
+					<a href="images/updates/puttin_on_stamps.jpg" title="We bought 7 (!) books of stamps and got to work."><img src="images/updates/puttin_on_stamps_thumb.jpg" alt="puttin on stamps" width="100" height="100" /></a>
+					<a href="images/updates/mailing_the_invites.jpg" title="A friendly postman at the Kenmore Square Post Office offered to take our picture when he learned we were mailing out our wedding invitations."><img src="images/updates/mailing_the_invites_thumb.jpg" alt="at the post office" width="100" height="100" /></a>
+				</div>
+				<p>Meanwhile, we've been having fun making our registry and think we've just about got it wrapped up.  Head over to the <a href="#" class="details_link">getting married section</a> (near the bottom) to check it out.</p>
+			</div> -->
+			<!-- <div class="entry last">
+				<div class="archer update_date">12|03|09</div> 
+				<p>sevententen.com is live! Keep an eye on this space, because we'll be making updates and announcements.</p>
+				<p>The website you're looking at was designed by our friend Kristen Smith. Kenji can't make stuff look like this by himself, no way. Hopefully you'll get to see her and her new husband Doug at the wedding! We'll introduce you.</p>
+			</div> -->
+		</div>
+	</div>
+	</div>
+
+	<div id="block_details" class="block_of_content" style="display: none;">
+		
+	<!-- <div id="block_details" class="block_of_content"> -->
+		
+				
+		<div class="content_outer"><div class="content">
+			<h1>The Wedding</h1>
+			<a href="images/cmac_night_big.jpg" id="cmac_photo_01"><img src="images/cmac_night.jpg" alt="CMAC at night" width="300" height="200" style="float: right; margin-left: 14px;" /></a>
+			
+			<p>Our wedding will be held at the <a href="http://www.cmacusa.org/">Cambridge Multicultural Arts Center</a> (or CMAC), located in East Cambridge, Massachusetts. Designed by renown Boston architect <a href="http://en.wikipedia.org/wiki/Charles_Bulfinch">Charles Bulfinch</a> in 1814, the building opened in 1889 as the Cambridge City Courthouse. The city government has since outgrown its digs and moved a few blocks over, and the CMAC took over in 1978.</p>
+			<p>It‘s now a lovely, community-oriented arts center with multiple gallery spaces and a huge theater, which hosts dance, jazz, world music, gospel, and loads of other events. Weather permitting, we'll be getting married outside in their courtyard, then heading inside the <a href="images/theater_big.jpg" id="cmac_photo_02">theater</a> for dinner and merriment.</p>
+		</div></div>
+		
+		<div class="content_outer_2"><div class="content">
+			<h1>Schedule</h1>
+			<div class="archer update_date" style="width: 120px;">Friday</div>
+			<p>For those in town Friday night, we invite you to join us for a drink at <a href="http://www.easternstandardboston.com/">Eastern Standard</a>, conveniently located at <a href="http://maps.google.com/maps?hl=en&amp;safe=off&amp;client=safari&amp;ie=UTF8&amp;cid=0,0,2903064501732029609&amp;fb=1&amp;hq=eastern+standard&amp;hnear=Boston,+MA+02215&amp;gl=us&amp;daddr=528+Commonwealth+Avenue,+Boston,+MA+02215-2606&amp;geocode=5628360320207844782,42.348736,-71.096314&amp;ei=tLnDS--dO4KB8gaT-aGHCQ&amp;ved=0CAwQngIwAA&amp;z=16" title="Google maps link">528 Commonwealth Ave</a> in Kenmore Square. Come on by at 8pm and ask for the Holmes-Ross party in the private room.</p>
+			<br class="clr" />
+			<div class="archer update_date" style="width: 120px;">Saturday</div>
+			<p>Please join us for the wedding ceremony, to be held in the CMAC courtyard on Saturday afternoon, July 10, at 5:30pm.  We'll enjoy a leisurely cocktail hour, then head inside for a locally-sourced, seasonal dinner and lots of dancing.</p>
+			<p>We suggest summer cocktail attire.  Just wear something that's kinda fancy&mdash;but light, comfortable, and makes you want to dance. Cause you'll be dancing.</p>
+			<br class="clr" />
+			<div class="archer update_date" style="width: 120px;">Sunday</div>
+			<p>If anyone's still around the city on Sunday morning, we'll likely be eating a 10AM brunch at <a href="http://www.artbarcambridge.com/">ArtBar</a>, just a couple blocks from the wedding, in the Royal Sonesta.</p>
+			<br class="clr" />
+		</div></div>
+
+		<div class="content_outer_2"><div class="content_outer"><div class="content">
+			<h1>Here's Where You're Going</h1>
+			<p>Check out this map and more detailed directions on the CMAC's rather exhaustive <a href="http://cmacusa.org/HTML/aboutdirections.htm" target="_blank">directions page</a>. You can also do the whole point-to-point directions thing <a href="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=cambridge+multicultural+arts+center&amp;sll=37.0625,-95.677068&amp;sspn=40.681389,74.003906&amp;ie=UTF8&amp;hq=multicultural+arts+center&amp;hnear=Cambridge,+MA&amp;ll=42.373764,-71.078796&amp;spn=0.037157,0.072269&amp;z=14&amp;iwloc=A&amp;cid=2024911350685593739" target="_blank">on google</a>.</p>
+			<div id="map_container">
+				<a href="http://cmacusa.org/HTML/aboutdirections.htm"><img src="http://cmacusa.org/images/AboutCMAC/map1.jpg" alt="CMAC area map" width="432" height="336" style="margin: 0 auto;" /></a>
+			</div>
+		</div></div></div>
+	
+		<div class="content_outer"><div class="content">
+			<h1>What About Parking?</h1>
+			<p>If you're driving straight to the wedding, you'll probably be best off parking at the nearby garage. Its entrance is on Spring Street, between First &amp; Second Streets, just a block away from the CMAC (see above map).</p>
+			<p style="margin-left: 10px;">	
+			Nights (after 5pm) and weekends:<br />
+			1 hrs or less $1.00<br />
+			1 to 3 hrs $2.00<br />
+			3 hrs till Garage Close $3.00<br />
+			</p>
+			<p>There is also limited metered parking in the area. Make sure to read posted street signs and the meters themselves to make sure you can park for as long as you need. Believe us, Cambridge <em>loves</em> giving out parking tickets.</p>
+		</div></div>
+	
+		<div class="content_outer_2"><div class="content_outer"><div class="content">
+			<h1>Rest Up for a Serious Party</h1>
+			<p>You should stay at one of these places, we've already called ahead and let them know you'd be in touch. When you call, be sure to mention the <strong>Holmes&ndash;Ross</strong> wedding.</p>
+	
+			<div class="hotel">
+				<img src="images/sonesta.jpg" alt="" width="300" height="300" />
+				<div>
+					<p class="hotel_title"><a href="http://www.sonesta.com/Boston/" target="_blank" class="h2">Royal Sonesta</a></p>
+					<p>
+						40 Edwin Land Boulevard <br />
+						Cambridge, MA, USA 02142<br />
+						617.806.4200 <br />
+						the Sonesta offers <a href="https://reservations.synxis.com/XBE/rez.aspx?Hotel=12050&Chain=5157&lang=1&group=8634X0&arrive=7/9/2010&depart=7/11/2010&adult=2" target="_blank">online booking</a>.
+					</p>
+					<!-- <a href="mailto:reservations@sonesta-boston.com">reservations@sonesta-boston.com</a> -->
+					<p>
+						Single &amp; double rooms - $139<br />
+						"Deluxe Riverview" room - $214<br />
+						Executive Suite - $289
+					</p>
+					<p class="aside">Lauren and I have visited all three hotels, and though they're all totally manageable, the Sonesta is probably our first recommendation.  It's a good rate, they seem quite friendly, and your stay includes a free boat ride and bike rental. Oh, and free ice cream! It'll be summer then, you'll totally want that.</p>
+				</div>
+				<br class="clr" />
+			</div>
+			
+			<br class="clr" />
+	
+			<div class="hotel">
+				<img src="images/marlowe_300.jpg" alt="Hotel Marlowe" width="300" height="225" />
+				<div>
+					<p class="hotel_title"><a href="http://www.hotelmarlowe.com/" target="_blank" class="h2">Hotel Marlowe</a></p>
+					<p>
+						25 Edwin H. Land Blvd.<br />
+						Cambridge, MA  02141<br />
+						800.825.7040<br /><br />
+						Regular room - $169/night<br />
+						Suite - $269/night<br />
+					</p>
+					<p class="aside">The Marlowe is the hip place for cool people, just across the street from the Sonesta. They practice a more modern, eclectic vibe&mdash;leopard-print rugs and bath robes, ornate lounge areas, a Wii out in the lobby, &amp;c. We had a few drinks in their bar a couple months ago and the bartenders were super friendly.  Also, some rooms come with goldfish.  Just sayin'.</p>
+				</div>
+				<br class="clr" />
+			</div>
+	
+			<br class="clr" />
+
+			<div class="hotel">
+				<img src="images/holidayinn.jpg" alt="" width="300" height="300" />		
+				<div>
+					<p class="hotel_title"><a href="http://www.ichotelsgroup.com/h/d/ex/1/en/hotel/BOSCB/welcome?start=1&rpb=hotel&crUrl=/h/d/hi/1/en/hotelsearchresults" target="_blank" class="h2">Holiday Inn Express Hotel &amp; Suites</a></p>
+					<p>
+						250 Monsignor O'Brien Hwy <br />
+						Cambridge, MA 02141<br />
+						617.577.7600<br /><br />
+						King w/sofa bed, Double, or Queen Suite - $119/night
+					</p>
+					
+					<!-- <object width="320" height="25"><param name="movie" value="http://www.youtube.com/v/Gv5QzqsdwJw&hl=en_US&fs=1&rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/Gv5QzqsdwJw&hl=en_US&fs=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="false" width="320" height="25"></embed></object> -->
+					
+				</div>
+				<br class="clr" />
+			</div>
+		</div></div></div>
+		
+		<br class="clr" />
+		<div class="content_outer_2"><div class="content_outer"><div class="content" id="registry_section">	
+			<h1>Registry</h1>
+			<p>Your attendance at our wedding is what we want most!</p>
+			<p>Anyhow, if you're so inclined, we've set up a couple registries.</p>
+
+			<img src="images/amazon_registry_logo.gif" alt="Amazon Wedding Registry" width="155" height="87" style="float: right; margin-left: 20px" />
+			<p>We handled our master list through the Amazon Universal Registry&mdash;basically a bookmarking service that Amazon.com offers.  The items listed, for the most part, aren't for sale on Amazon; you're merely "reserving" it on Amazon (this removes it from the registry so other people don't buy it too) and purchasing directly from the online retailer.  For each item, be sure to note any <span style="color: rgb(102, 187, 80); font-size: 10px; font-family: Verdana; font-weight: bold; background: #fff; padding: 0 2px;">COMMENTS</span> we've made&mdash;often, the color/variation we have picked out is not selected by default on the retailer site. You'll have to do that. Sorry!</p>
+			<a href="http://www.amazon.com/gp/registry/wedding/2TJFDY0O1YIN7" target="_blank" class="archer h2">Amazon Wedding Registry</a>
+			<br /><br />
+			<p>If you need it, our registry address is:
+			<address style="font-style: normal; font-size: 13px;" class="aside">
+			Holmes<br />
+			593 Lincoln St.<br />
+			Duxbury, MA 02332
+			</address>
+			</p>
+			<br />
+			<img src="images/heath_logo.gif" alt="Heath Ceramics" width="155" height="87" style="float: left; margin-right: 20px" />
+			<p>For tableware-type business, we've picked out some radical handmade things from <a href="http://www.heathceramics.com/">Heath Ceramics</a> in Sausalito, CA.  However, we set up a good deal with a local shop, Didriks, to get free shipping, so you should buy from them. Thanks!</p>
+			<a href="http://www.ewish.com/X/?lholmes" target="_blank" class="archer h2">Didriks Wedding Registry</a>
+		</div></div></div>
+		
+		
+		<div class="content_outer_2"><div class="content top_link">
+			<a href="#top" class="archer">back to top</a>
+		</div></div>
+		
+		<br class="clr" />
+		
+		<div class="contact_us">Need help? Have questions? Can't believe we're actually going to get married? Let us know! <a href="mailto:laurenandkenji@sevententen.com">laurenandkenji@sevententen.com</a></div>
+	</div>
+	
+	<div id="block_whattodo" class="block_of_content" style="display: none;">
+
+		<div class="content_outer"><div class="content">
+			<h1>We love Boston and want you to have a great time while you're here.</h1>
+			<h2>Here are some pretty cool things to do.</h2>
+		</div></div>
+
+		<div class="content_outer_2"><div class="content">
+			<h1>Wandering (stuff you could walk to)</h1>
+			<p>From the hotels in Cambridge, you'll be adjacent to the Charles River and (on the Boston side) the lovely Esplanade. Though the Fourth of July crowds will have (thankfully) dispersed, it's still one of the most peaceful, lovely places in town for a stroll.</p>
+			<p>Once you're on the Boston side of the river, you should pop over and check out the Boston Common. Centrally located to fancy shopping, Boston's downtown, and Beacon Hill, the Common acted as campgrounds for American soldiers heading into historic Revolutionary War battles.  Nowadays, it's lovingly maintained by the City and is always full of flowers and swan boats.</p>
+			<p>It's been confirmed that the Red Sox will be out of town the weekend of the wedding. On the one hand, this is kind of a drag, but it probably works to our advantage; there will be 1,000,000 fewer people and cars in the city.</p>
+		</div></div>
+
+		<div class="content_outer_2"><div class="content_outer"><div class="content">
+			<h1>Shopping</h1>
+			<p>Our hotels, and the wedding venue itself, are located just blocks away from the Cambridgeside Galleria, the largest proper mall in the area. That said, it's <em>boring</em>. It just has the same stores as every other mall in the world. For a more unique experience, head east a couple blocks to the Cambridge Antiques Market, a five-story monolith of a building packed with art, furniture, collectibles, ephemera, and a good bit of junk. Kenji bought Lauren her oldey-timey bike (a 1964 British steel-frame affair) from the bike shop in the basement here; you may have seen it in some of the engagement photos.</p>
+			<p>Also recommended is the entire stretch of Newbury Street. Kenji works here (and lived nearby for years) and can testify to the sheer number of shops, salons, and restaurants that line each block. It seems expensive (and it is, at times), but there's loads of deals to be had.</p>
+		</div></div></div>
+
+		
+		<div class="content_outer_2"><div class="content_outer"><div class="content">	
+			<h1>Food</h1>
+			<p>Boston and Cambridge feature serious, world-class cuisine, at any price or fanciness level you desire. We eat out a lot around here, and these are our personal recommendations.</p>
+			<p><strong>Cambridge</strong>: <a href="http://www.hungrymothercambridge.com/">Hungry Mother</a> (a brilliant, tiny place; Southern food with French preparation), <a href="http://www.annastaqueria.com/">Anna's Taqueria</a> (everyone's favorite quick burrito/taco shop), <a href="http://www.helmandrestaurantcambridge.com/">Helmand</a> (incredible Afghani cuisine; reputedly run by the elder brother of Afghan President Hamid Karzai), <a href="http://www.yelp.com/biz/moodys-falafel-palace-cambridge">Moody's Falafel Palace</a> (possibly the best falafel in town), <a href="http://www.cuchicuchi.cc/">Cuchi Cuchi</a> (international food on shared plates (like tapas); the restaurant has a wonderful 1920s nightlife vibe).</p>
+
+			<p><strong>Boston</strong>: <a href="http://www.theuppercrustpizzeria.com/">The Upper Crust</a> (by the slice or whole, it's the best thin-crust pizza in town), <a href="http://www.cafejaffa.net/">Caf&eacute; Jaffa</a> (affordable, delicious Middle Eastern sandwiches and plates), <a href="http://www.uburgerboston.com/">UBurger</a> (Boston's answer to California's In-N-Out burger; if you eat at the McDonald's across the street instead, you are no longer invited to our wedding), <a href="http://www.oyarestaurantboston.com/">O Ya</a> (absurdly expensive sushi, but so so mind-blowing), <a href="http://www.osushirestaurant.com/">Osushi</a> (cheaper, more accessible sushi (still not "cheap" though)).</p>
+		</div></div></div>
+	
+		<div class="content_outer_2"><div class="content_outer"><div class="content">
+			<h1>Nightlife</h1>
+			<p>We don't exactly stay up all night dancing and jumping from club to club, but we do get out a fair bit. I mean, come on, we're not <em>married</em> yet.</p>
+			<p><strong>Cambridge</strong>: East Cambridge, where the hotels are, isn't terribly hopping with nightlife, but if you head west, you'll bump into some good times.  Over on Massachusetts Avenue, south of Central Square, you can find <a href="http://www.yelp.com/biz/miracle-of-science-bar-and-grill-cambridge">Miracle of Science</a> (a lightly nerdy bar on MIT campus; their menu is arranged as the periodic table), <a href="http://www.middlesexlounge.us/">Middlesex Lounge</a> (usually techno and electronic music; a long line Fri and Sat nights), the aforementioned <a href="http://www.cuchicuchi.cc/">Cuchi Cuchi</a>, and <a href="http://www.enormous.tv/">The Enormous Room</a> (a loungey space with big couches and tapestries on the floor for hanging out).  You'll also find <a href="http://www.mideastclub.com/">The Middle East</a> and <a href="http://ttthebears.com/">TT the Bear's</a> - two of the best venues in town for live music. Check their schedules to see if anyone you like is playing that night.</p>
+			<p><strong>Boston</strong>: The newly-renovated Liberty Hotel, located at the top of Charles Street, offers a mix of modern architecture and, uh, prison chic (it used to be a jail).  Around the corner (on Cambridge Street) is Harvard Gardens, where a bunch of our friends used to work.  Further down Charles street is one of our favorite dive bars, The Sevens. Cash only and no liquor license, so it's beer and wine only.</p>
+		</div></div></div>
+		
+		<div class="content_outer_2"><div class="content top_link">
+			<a href="#top" class="archer">back to top</a>
+		</div></div>
+	
+		<div class="contact_us">Need help? Have questions? Can't believe we're actually going to get married? Let us know! <a href="mailto:laurenandkenji@sevententen.com">laurenandkenji@sevententen.com</a></div>
+	</div>	
+
+<!-- <div id="block_registry" class="block_of_content" style="display: none;">
+
+	<div class="contact_us">Need help? Have questions? Can't believe we're actually gonna get married? How rude! <a href="mailto:laurenandkenji@sevententen.com">laurenandkenji@sevententen.com</a></div>
+</div> -->
+	
+
+<script type="text/javascript"> Cufon.now(); </script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-11726379-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</div></body>
+</html>

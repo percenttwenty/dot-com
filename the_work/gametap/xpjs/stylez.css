@@ -1,0 +1,76 @@
+/* 
+	XPJS STYLESHEET DOUBLE DANGLE 
+	approved by Tank Granite 07/20/05
+*/
+
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	background: url(images/explodicon_bg.jpg) repeat top left;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+object {
+	margin: 0px auto;
+}
+h1 {
+	margin: 3px 0 3px 0;
+	font-size: 14px;
+	text-align: center;
+}
+a:link {
+	color: #FCE058;
+	text-decoration: none;
+}
+a:hover, a:visited:hover {
+	border-top: 1px solid #FCE058;
+
+}
+#main {
+	width: 840px;
+	height: 100%;
+	margin: 0px auto;
+	padding: 0;
+	background: url(images/nonemoreblack.gif) repeat-y top right;
+
+}
+#main td.dangler {
+	width: 41px;
+}
+#kontent {
+	font-family: "Courier New", Courier, sans-serif;
+	font-size: 13px;
+}
+#left_gutter {
+	padding: 20px 0 0 29px;
+	background: #000;
+}
+#headline {
+	margin-bottom: 10px;
+}
+#wordz {
+	padding: 0px 35px 30px 25px;
+	background: #000;
+}
+.cancelled {
+	color: #CD0707;
+/*	text-decoration: blink; */
+}
+
+#videoz #main {
+	background: url(images/wizard_bg.gif) no-repeat bottom right;
+}
+#videoz #clipz {
+	margin-left: 60px;
+	margin-top: 90px;
+
+}
+#videosz #clipz img {
+	display: inline;
+	float: left;
+	margin-top: 0;
+	clear: none;
+}

@@ -1,0 +1,211 @@
+body {
+	font-family: Georgia, "Times New Roman", Times, sans-serif;
+	font-size: 12px;
+	color: #55514c;
+	margin: 0 0 0 0;
+	padding-right: 11px;
+	background: #fff;
+}
+a {
+	color: #406775;
+	border-bottom: 1px dotted #406775;
+	text-decoration: none;
+}
+a img {
+	border-bottom: 0;
+}
+
+#doc3 .pbs_sb_rss_button {
+	margin: 0;
+}
+#doc3 .pbs_sb_rss_button a {
+	border: 0;
+}
+#doc3 .pbs_sb_rss_button:before {
+	font-style: italic;
+	content: "Follow this discussion: ";
+}
+
+/*the big list of comments*/
+
+#pbs_sb_story_list li:first-child {
+	padding-top: 0;
+}
+#pbs_sb_story_list li {
+	padding-top: 26px;
+	border: 0;
+	border-bottom: 1px dashed #d1d0cf;
+}
+#pbs_sb_story_list li h3 {
+	padding-bottom: 0;
+	border-bottom: 0;
+	color: #890103;
+	font-size: 12px;
+	margin: 0;
+	font-weight: normal;
+	padding-left: 34px;
+	min-height: 27px;
+
+/*	background: transparent url(../images/icons/comment.png) 0 0 no-repeat;*/
+	background: transparent url(http://www.pbs.org/wgbh/americanexperience/media/images/icons/comment.png) 0 0 no-repeat; 
+}
+#pbs_sb_story_list li h4 {
+	margin: 0;
+	font-style: italic;
+	font-size: 11px;
+	font-weight: normal;
+	color: #11100d;
+	padding-left: 34px;
+	margin-top: -12px;
+	margin-bottom: 20px;
+}
+.pbs_sb_expand_control {
+	width: 15px;
+	height: 15px;
+	margin: 0;
+	padding: 0;
+	line-height: 0.8em;
+}
+.pbs_sb_expand_control a {
+	display: block;
+	padding: 3px 4px 8px 4px;
+	border-bottom: 0;
+}
+/*inline comments*/
+.pbs_sb_author {
+	font-style: italic;
+	color: #9b9588;
+	font-size: 11px;
+}
+.pbs_sb_story, .pbs_sb_story_abstract {
+	line-height: 1.4em;
+}
+.pbs_engage_commentsengine_response p {
+	font-size: 12px;
+	color: #11100d;
+	font-style: italic;
+}
+.pbs_engage_commentsengine_formtable {
+	font-weight: normal;
+}
+
+/*entering new comments (at the bottom)*/
+.pbs_sb_storyform {
+	border: 0;
+	margin: 20px 11px 0 11px;
+}
+h2.pbs_sb_form_header {
+	background-color: inherit;
+	color: #890103;
+	font-size: 16px;
+	font-weight: normal;
+	padding: 0;
+	margin-bottom: 8px;
+}
+.pbs_sb_instructions {
+	background-color: inherit;
+	color: #11100d;
+	font-size: 11px;
+	font-style: italic;
+	padding: 0;
+	margin-bottom: 15px;
+}
+.pbs_sb_required_msg {
+	padding-left: 0;
+	color: #11100d;
+	font-size: 11px;
+	font-style: italic;
+}
+.pbs_sb_storyform label, .pbs_engage_commentsengine_formtable th {
+	font-weight: normal;
+	line-height: 1.6em;
+	font-size: 12px;
+}
+.pbs_sb_storyform input, table.pbs_engage_commentsengine_formtable input {
+	border: 1px solid #c5c3c0;
+	background: #efefef;
+	padding: 6px 4px;
+}
+.pbs_sb_storyform textarea, table.pbs_engage_commentsengine_formtable textarea {
+	border: 1px solid #c5c3c0;
+	background: #efefef;
+}
+.pbs_sb_storyform_max_length, .pbs_engage_commentsengine_response .pbs_engage_commentsengine_instructions {
+	font-size: 11px;
+	color: #11100d;
+	font-size: 11px;
+	font-style: italic;
+	padding: 0;
+	text-align: left !important;
+}
+.pbs_engage_commentsengine_response .pbs_engage_commentsengine_instructions {
+	margin: 0 0 10px 0;
+}
+.pbs_sb_storyform_upload_header {
+	padding-left: 0;
+	font-weight: normal;
+}
+.pbs_sb_storyform_field_image {
+	border: 0;
+	padding: 0;
+	background-image: none;
+	margin-bottom: 25px;
+}
+.pbs_sb_storyform_field_image input {
+	margin: 0;
+}
+.pbs_sb_storyform_field_image label {
+	padding-left: 36px;
+	background: transparent url(http://www-tc.pbs.org/social_media/media/img/storyboard/image.png) 0 -4px no-repeat;
+}
+.pbs_sb_storyform_image_instructions {
+	font-size: 11px;
+	color: #11100d;
+	font-size: 11px;
+	font-style: italic;
+	padding: 0;
+}
+.pbs_sb_storyform_field_video {
+	border: 0;
+	background-image: none;
+	padding: 0;
+}
+.pbs_sb_storyform_field_video label {
+	height: 32px;
+	padding-left: 36px;
+	background: transparent url(http://www-tc.pbs.org/social_media/media/img/storyboard/video.png) 1px -4px no-repeat;
+}
+.pbs_sb_storyform_video_instructions {
+	font-size: 11px;
+	color: #11100d;
+	font-size: 11px;
+	font-style: italic;
+	padding: 0;
+	margin-top: 6px;
+}
+.pbs_sb_storyform .pbs_sb_storyform_submit {
+	height: 34px;
+
+/*	background: #950103 url(../images/bg_storyboard_form_button_submit.jpg) 0 0 repeat-x;*/
+	background: transparent url(http://www.pbs.org/wgbh/americanexperience/media/images/bg_storyboard_form_button_submit.jpg) 0 0 repeat-x; 
+
+	font-size: 12px;
+	color: #fff;
+	font-style: italic;
+	border: 0;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.pbs_sb_storyform_reset {
+/*	reset buttons are bad */
+	display: none;
+}
+.pbs_engage_commentsengine_instructions {
+	font-size: 11px;
+	font-style: italic;
+	color: #9b9588;
+}
+
+
+
+

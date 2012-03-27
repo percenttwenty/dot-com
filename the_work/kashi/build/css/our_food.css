@@ -1,0 +1,71 @@
+div#our_food_top{
+	padding:20px 10px;
+	border-bottom: 1px dotted #ACACAC;
+	margin-bottom:20px;
+}
+div#our_food_bottom{
+	background:url(../images/where_to_buy_food.jpg) 50% 100% no-repeat;
+	padding-bottom:255px;
+	margin-bottom:40px;
+}
+div#our_food_top h2,
+div#our_food_bottom h2{
+	color:#613C0B;
+	
+}
+div#our_food_top p,
+div#our_food_bottom p{
+	font-size:12px;
+	line-height:14px;
+	padding:10px 0 20px;
+	font-weight:bold;
+}
+div#our_food_top ul{
+	list-style:none;
+}
+div#our_food_top ul li a{
+	float:left;
+	font-size:14px;
+	font-weight:bold;
+	padding:124px 23px 0 23px;
+	width:121px;
+	text-align:center;
+}
+div#our_food_top ul li#food_nav_cereal a{
+	background:url(../images/food_cereal.jpg) 50% 0 no-repeat;
+}
+div#our_food_top ul li#food_nav_snacks a{
+	background:url(../images/food_snacks.jpg) 50% 10px no-repeat;
+}
+div#our_food_top ul li#food_nav_frozen a{
+	background:url(../images/food_frozen.jpg) 50% 0 no-repeat;
+}
+div#our_food_top ul li#food_nav_waffles a{
+	background:url(../images/food_waffles.jpg) 50% 22px no-repeat;
+}
+
+div#new_recipes{
+	margin-bottom:30px;
+}
+div.recipe_preview{
+	border-top: 1px dotted #ACACAC;	
+	padding:12px 11px 11px 11px;
+}
+div.recipe_preview h4{
+	color:#9EB11F;
+	font-size:14px;
+	margin-top:0;
+	float:left;
+}
+div.recipe_preview span{
+	float:left;
+	font-size:10px;
+	padding:.4em .5em 0 1em;
+}
+div.recipe_preview p{
+	padding:5px 0 0 0;
+	font-weight:bold;
+	font-size:12px;
+	line-height:14px;
+	clear:both;
+}

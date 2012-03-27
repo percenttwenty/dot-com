@@ -1,0 +1,396 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<title>Broadcast Schedule - WGBH American Experience</title>
+	<link rel="stylesheet" href="../css/reset.css" type="text/css" />
+	<link rel="stylesheet" href="../css/old_hickory.css" type="text/css" />
+	
+	<!--[if lt IE 8]>
+		<link rel="stylesheet" href="../css/ie7.css" type="text/css" />
+	<![endif]-->
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.colorbox-min.js"></script>
+	<script type="text/javascript" src="../js/init.js"></script>	
+
+</head>
+<body class="schedule">
+<div id="bg_container">
+	<div id="inner_container">
+		<div id="header_bar">
+			<div id="head_nav">
+				<h1><a href="../">American Experience: TV's most-watched history series.</a></h1>
+				<ul>
+					<li id="nav_01" class="selected"><a href="../schedule/">Broadcast Schedule</a></li>
+					<li id="nav_02"><a href="../films/">All Films</a></li>
+					<li id="nav_03"><a href="../features/">Special Features</a></li>
+					<li id="nav_04"><a href="../blog/">Inside American Experience</a></li>
+					<li id="nav_05"><a href="#">Shop American Experience</a></li>
+					<li id="head_search">
+						<form action="#">
+							<label for="q">Search American Experience</label>
+							<input type="text" name="q" id="q" />
+							<input type="image" name="q_submit" id="main_search_submit" src="../images/search_submit.png" alt="Submit" />
+						</form>
+					</li>
+				</ul>
+			</div>
+			<ul id="head_sponsor_bar">
+				<li id="sponsor_sloan"><a href="#">Major funding by: Alfred P. Sloan Foundation</a></li>
+				<li id="sponsor_liberty"><a href="#">Exclusive corporate funding provided by: Liberty Mutual</a></li>
+			</ul>
+		</div>
+		<div id="main">
+			<div id="content_column">
+				<div id="schedule_widget">
+					<div id="instructions">
+						<h1>Find your local schedule</h1>
+						<h2>American Experience airs Monday nights at 9pm on most PBS stations.</h2>
+					</div>
+					<div id="zip_box">
+						<form action="#" id="zip_entry_form">
+							<label for="zipcode">Enter your zip code:</label>
+							<input type="text" name="zipcode" id="zipcode" maxlength="5" />
+							<input type="image" id="submit_zip" src="../images/arrow_submit_widget.png" />
+						</form>
+					</div>
+				</div>
+				<div id="schedule_widget_open" style="display: none;">
+					<div id="step_one" style="display: none;">
+						<div class="step_number">Step 1: <span>Select a Channel</span></div>
+						<form action="#">
+							<ul>
+								<li>
+									<input type="radio" name="channel" value="channel01" />
+									<img src="../images/wgbh_logo_scheduler.jpg" alt="WGBH" width="75" height="50" />
+									<div class="channel_info">
+										<div>WGBH / Channel 2</div>
+										Boston, MA
+									</div>
+								</li>
+								<li>
+									<input type="radio" name="channel" value="channel02" />
+									<img src="../images/wgbh_logo_scheduler.jpg" alt="WGBH" width="75" height="50" />
+									<div class="channel_info">
+										<div>WGBH / Channel 2</div>
+										Boston, MA
+									</div>
+								</li>
+								<li>
+									<input type="radio" name="channel" value="channel03" />
+									<img src="../images/wgbh_logo_scheduler.jpg" alt="WGBH" width="75" height="50" />
+									<div class="channel_info">
+										<div>WGBH / Channel 2</div>
+										Boston, MA
+									</div>
+								</li>
+								<li>
+									<input type="radio" name="channel" value="channel04" />
+									<img src="../images/wgbh_logo_scheduler.jpg" alt="WGBH" width="75" height="50" />
+									<div class="channel_info">
+										<div>WGBH / Channel 2</div>
+										Boston, MA
+									</div>
+								</li>
+							</ul>
+						</form>
+						
+					</div>
+					
+					<div id="step_two" style="display: none;">
+						<div class="step_number">Step 2: <span>Select Your Local Station</span></div>
+						<form action="#">
+							<ul>
+								<li>
+									<input type="radio" name="station" value="station01" id="station01" />
+									<label for="station01"><span>WGBH:</span> Channel 2</label>
+								</li>
+								<li>
+									<input type="radio" name="station" value="station02" id="station02" />
+									<label for="station02"><span>WGBH-HD:</span> Channel 2</label>
+								</li>
+								<li>
+									<input type="radio" name="station" value="station03" id="station03" />
+									<label for="station03"><span>WGBH-DT:</span> Channel 2</label>
+								</li>
+								<li>
+									<input type="radio" name="station" value="station04" id="station04" />
+									<label for="station04"><span>WGBX:</span> Channel 44</label>
+								</li>
+								<li>
+									<input type="radio" name="station" value="station05" id="station05" />
+									<label for="station05"><span>WGBH World:</span> Channel 44</label>
+								</li>
+								<li>
+									<input type="radio" name="station" value="station01" id="station01" />
+									<label for="station01"><span>WGBH:</span> Channel 2</label>
+								</li>
+								<li>
+									<input type="radio" name="station" value="station02" id="station02" />
+									<label for="station02"><span>WGBH-HD:</span> Channel 2</label>
+								</li>
+								<li>
+									<input type="radio" name="station" value="station03" id="station03" />
+									<label for="station03"><span>WGBH-DT:</span> Channel 2</label>
+								</li>
+								<li>
+									<input type="radio" name="station" value="station04" id="station04" />
+									<label for="station04"><span>WGBX:</span> Channel 44</label>
+								</li>
+								<li>
+									<input type="radio" name="station" value="station05" id="station05" />
+									<label for="station05"><span>WGBH World:</span> Channel 44</label>
+								</li>
+							</ul>
+							<a href="#" class="primary_watch_button">
+								<span>Show My Schedule</span>
+							</a>
+							<br class="clr" />
+							<input type="checkbox" name="remember" id="remember" /><label for="remember">Remember this channel for future use.</label>
+						</form>
+					</div>
+					<br class="clr" id="clear_two" />
+
+					
+					<div id="step_three" class="new">
+						<div id="step_three_films">
+							<div class="step_number"><span>Upcoming Films for Your Station:</span></div>
+							<ul>
+								<li>
+									<div class="month_day">
+										<div class="month">Jan</div>
+										<div class="day">04</div>
+									</div>
+									<div class="film_title"><a href="#">Abraham and Mary Lincoln: A House Divided</a></div>
+									<div class="link_callout"><a href="#" class="red_arrow right">Watch the Film</a></div>
+								</li>
+								<li>
+									<div class="month_day">
+										<div class="month">Jan</div>
+										<div class="day">04</div>
+									</div>
+									<div class="film_title"><a href="#">Abraham and Mary Lincoln: A House Divided</a></div>
+									<div class="link_callout"><a href="#" class="blue_arrow right">Film Details</a></div>
+								</li>
+								<li>
+									<div class="month_day">
+										<div class="month">Jan</div>
+										<div class="day">04</div>
+									</div>
+									<div class="film_title"><a href="#">Abraham and Mary Lincoln: A House Divided</a></div>
+									<div class="link_callout"><a href="#" class="red_arrow right">Watch the Film</a></div>
+								</li>
+								<li>
+									<div class="month_day">
+										<div class="month">Jan</div>
+										<div class="day">04</div>
+									</div>
+									<div class="film_title"><a href="#">Abraham and Mary Lincoln: A House Divided</a></div>
+									<div class="link_callout"><a href="#" class="blue_arrow right">Film Details</a></div>
+								</li>
+							</ul>
+							<a href="#" class="back_to_stations">Choose a different station</a>
+						</div>
+						<!-- <div id="step_three_calendars">
+							
+						</div> -->
+						<br class="clr" />
+					</div>
+					<script type="text/javascript">
+						$("#submit_zip").click(function() {
+							$("#schedule_widget_open").show();
+							$("#step_one").slideDown("slow");
+							return false;
+						});
+						$("#step_one li input").click(function () {
+							$("#schedule_widget_open").addClass("on_step_two");
+							$("#step_two").slideDown("slow", function() {
+								var left_height = $("#step_one").height();
+								var right_height = $("#step_two").height();
+								if(left_height > right_height) {
+									$("#step_two").height(left_height);
+								} else {
+									$("#step_one").height(right_height);
+								}								
+							});
+						});
+						$(".primary_watch_button").click(function () {
+							$("#step_one").hide();
+							$("#step_two").hide();
+							$("#clear_two").hide();
+							$("#step_three").show();
+						});
+					
+					</script>
+				</div>
+				<br class="clr" />
+				<div class="film_list_wide">
+					<div class="films_top">
+						<h1 id="upcoming_films_header" class="tr">Upcoming Films</h1>
+						<a href="#" class="blue_arrow right_side">Sign up for our newsletter to receive schedule info</a>
+						<br class="clr" />
+					</div>
+					<div class="film_canister">
+						<div class="film_foto">
+							<a href="#"><img src="../images/lincolns_thumbnail.jpg" height="81" width="139" alt="The Lincolns" /></a>
+						</div>
+						<div class="film_showtime">
+							Jan 18, 2010
+						</div>
+						<div class="film_content">
+							<h2><a href="#">Abraham and Mary Lincoln A House: <span>90 min</span></a></h2>
+							<p>It was the worst epidemic in American history, killing over 600,000 people—until it disappeared as quick...</p>
+							<a href="#" class="red_arrow">Watch the Trailer</a>
+						</div>
+					</div>
+					<div class="film_canister">
+						<div class="film_foto">
+							<a href="#"><img src="../images/lincolns_thumbnail.jpg" height="81" width="139" alt="The Lincolns" /></a>
+						</div>
+						<div class="film_showtime">
+							Premiere: Jan 25, 2010
+						</div>
+						<div class="film_content">
+							<h2><a href="#">Wyatt Earp: <span>1 hr.</span></a></h2>
+							<p>A central figure in the narrative of how the west was won, Wyatt Earp and his story became an ...</p>
+							<a href="#" class="red_arrow">Watch the Trailer</a>
+						</div>
+					</div>
+					<div class="film_canister">
+						<div class="film_foto">
+							<a href="#"><img src="../images/lincolns_thumbnail.jpg" height="81" width="139" alt="The Lincolns" /></a>
+						</div>
+						<div class="film_showtime">
+							Feb 15, 2010
+						</div>
+						<div class="film_content">
+							<h2><a href="#">The Kennedys: <span>3 hrs.</span></a></h2>
+							<p>A dramatic portrait of America’s most famous political family and their repeated pursuit of the ...</p>
+							<a href="#" class="red_arrow">Watch the Trailer</a>
+						</div>
+					</div>
+					<div class="film_canister">
+						<div class="film_foto">
+							<a href="#"><img src="../images/lincolns_thumbnail.jpg" height="81" width="139" alt="The Lincolns" /></a>
+						</div>
+						<div class="film_showtime">
+							Feb 15, 2010
+						</div>
+						<div class="film_content">
+							<h2><a href="#">Dolley Madison: <span>3 hrs.</span></a></h2>
+							<p>America's "first First Lady" used her unelected position to legitimize the nation’s new capital, create a ...</p>
+							<a href="#" class="red_arrow">Watch the Trailer</a>
+						</div>
+					</div>
+				</div>
+				<br class="clr" />
+				<div class="film_list_wide">
+					<div class="films_top">
+						<h1 id="recent_broadcasts_header" class="tr">Recent Broadcasts</h1>
+						<a href="#" class="blue_arrow right_side">Browse all films</a>
+						<br class="clr" />
+					</div>
+					<div class="film_canister">
+						<div class="film_foto">
+							<a href="#"><img src="../images/lincolns_thumbnail.jpg" height="81" width="139" alt="The Lincolns" /></a>
+						</div>
+						<div class="film_content">
+							<h2><a href="#">Abraham and Mary Lincoln: <span>90 min</span></a></h2>
+							<p>It was the worst epidemic in American history, killing over 600,000 people—until it disappeared as quick...</p>
+							<a href="#" class="red_arrow">Watch the Trailer</a>
+						</div>
+					</div>
+					<div class="film_canister">
+						<div class="film_foto">
+							<a href="#"><img src="../images/lincolns_thumbnail.jpg" height="81" width="139" alt="The Lincolns" /></a>
+						</div>
+
+						<div class="film_content">
+							<h2><a href="#">Wyatt Earp: <span>1 hr.</span></a></h2>
+							<p>A central figure in the narrative of how the west was won, Wyatt Earp and his story became an ...</p>
+							<a href="#" class="red_arrow">Watch the Trailer</a>
+						</div>
+					</div>
+					<div class="film_canister">
+						<div class="film_foto">
+							<a href="#"><img src="../images/lincolns_thumbnail.jpg" height="81" width="139" alt="The Lincolns" /></a>
+						</div>
+
+						<div class="film_content">
+							<h2><a href="#">The Kennedys: <span>3 hrs.</span></a></h2>
+							<p>A central figure in the narrative of how the west was won, Wyatt Earp and his story became an ...</p>
+							<a href="#" class="red_arrow">Watch the Trailer</a>
+						</div>
+					</div>
+					<div class="film_canister">
+						<div class="film_foto">
+							<a href="#"><img src="../images/lincolns_thumbnail.jpg" height="81" width="139" alt="The Lincolns" /></a>
+						</div>
+
+						<div class="film_content">
+							<h2><a href="#">The Kennedys: <span>3 hrs.</span></a></h2>
+							<p>A central figure in the narrative of how the west was won, Wyatt Earp and his story became an ...</p>
+							<a href="#" class="red_arrow">Watch the Trailer</a>
+						</div>
+					</div>
+				</div>
+				<br class="clr" />
+			</div>
+			<div id="banner_column">
+				<h1 id="button_teachers_resources" class="tr"><a href="#">Teachers' Resources</a></h1>
+				<img src="../images/banner_header.png" alt="Exclusive corporate funding provided by" width="162" height="8" id="banner_header" />
+				<div id="banner">
+					<a href="#"><img src="../images/fpo_banner.jpg" alt="banner banner banner" /></a>
+				</div>
+				<div id="sns_callouts">
+					<h1 id="follow_us_on_header" class="tr">Follow us on:</h1>
+					<ul class="list_of_icons">
+						<li><a href="#" class="icon i_facebook">Facebook</a></li>
+						<li><a href="#" class="icon i_flickr">Flickr</a></li>
+						<li><a href="#" class="icon i_twitter">Twitter</a></li>
+						<li><a href="#" class="icon i_youtube">YouTube</a></li>
+					</ul>
+				</div>
+			</div><br class="clr" />
+		</div>
+	</div>
+</div>
+<br class="clr" />
+<div id="footer">
+	<div id="util_nav">
+		<div class="footer_container">
+			<ul>
+				<li class="first"><a href="#">About the Series</a></li>
+				<li><a href="#">Podcasts</a></li>
+				<li><a href="#">Contact Us</a></li>
+				<li><a href="#">Sign up for our Newsletter</a></li>
+				<li><a href="#">Shop PBS</a></li>
+				<li class="last"><a href="#">For Teachers</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="footer_bottom">
+		<div class="footer_container">
+			<div id="footer_bottom_left">
+				<a href="#"><img src="../images/wgbh_logo.gif" alt="Produced by WGBH" width="52" height="28" /></a>
+				<ul>
+					<li><a href="#">Terms of Use</a></li>
+					<li class="last"><a href="#">Privacy Policy</a></li>
+				</ul>
+				<br />
+				<div class="footer_text">Website &copy;1996-2010 WGBH Educational Foundation. This site is produced for PBS by WGBH</div>
+			</div>
+			<div id="footer_bottom_right">
+				<ul>
+					<li class="footer_text">Additional Funding Provided By:</li>
+					<li id="cpb"><a href="#"><img src="../images/footer_cpb.gif" alt="Corporation for Public Broadcasting" width="111" height="24" /></a></li>
+					<li><a href="#"><img src="../images/footer_vly.gif" alt="Viewers Like You!" width="56" height="24" /></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

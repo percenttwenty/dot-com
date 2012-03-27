@@ -1,0 +1,424 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background: #efe5d4 url(../images/bg_tile.jpg) top left repeat;
+}
+body#rsvp {
+	background: #efe5d4 url(../images/bg05.jpg) top right no-repeat;
+}
+#fancy_bg {
+	width: 100%;
+	background: transparent url(../images/bg05.jpg) top center no-repeat;
+}
+
+h1, a.h1 {
+	font-size: 24px;
+	text-align: center;
+	padding-bottom: 15px;
+	background: transparent url(../images/little_line.gif) center bottom no-repeat;
+	margin-bottom: 19px;
+}
+h2, a.h2 {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+h3 {
+	margin: 20px 0 10px;
+}
+h4 {
+	margin: 10px;
+}
+a {
+/*	color: #e8b95a;*/
+	color: #cd9a34;
+	text-decoration: none;
+}
+a:hover {
+	border-bottom: 1px dotted #e8b95a;
+}
+a img {
+	border: 0;
+}
+p {
+	font-size: 14px;
+	margin: 0 0 10px 0;
+}
+.clr {
+	clear: both;
+}
+.content {
+	width: 720px; /*820-100*/
+	margin: 0 auto 100px auto;
+	background: #fff;	
+	padding: 25px 50px;
+	line-height: 1.3em;
+}
+.content_outer {
+	width: 100%;
+	background: transparent url(../images/ribbon.jpg) 0 20% repeat-x;
+}
+.content_outer_2 {
+	width: 100%;
+	background: transparent url(../images/ribbon.jpg) 0 63% repeat-x;	
+}
+div.header {
+	width: 930px;
+	background: transparent;
+	margin-bottom: 100px;
+	padding: 0 0 0 0 !important;
+}
+#image_holder {
+	float: left;
+	margin: 42px 0 0 20px;	
+	width: 340px;
+	height: 340px;
+}
+
+#top {
+	display: none;
+}
+#lace {
+	background: transparent url(../images/lace.png) 0 0 no-repeat;
+	width: 219px;
+	height: 100px;
+	position: absolute;
+	left: 70%;
+	top: 0;
+	
+}
+#hello, .hero_photo {
+	float: left;
+}
+
+.update_date {
+	font-size: 150%; 
+	margin-right: 20px; 
+	float: left;
+}
+.aside {
+	margin-top: 5px;
+	border-left: 2px solid #e8b95a;
+	padding: 10px 0 10px 10px;
+}
+.top_link {
+	text-align: center;
+	letter-spacing: 0.20em;
+	padding-top: 20px;
+}
+.top_link a {
+	width: 200px;
+	margin: 0 auto;
+	font-size: 28px;
+	text-align: center;
+}
+.top_link a:hover {
+
+}
+
+
+#parking_info {
+	margin: 10px 0;
+	width: 350px;
+/*	background: #ddd;*/
+	padding: 20px;
+	border: 2px solid #ccc;
+}
+
+.hotel {
+	padding: 10px;
+}
+.hotel img {
+	float: left;
+	margin-top: 10px;
+}
+.hotel div {
+	width: 300px;
+	float: left;
+	margin-left: 20px;
+}
+.hotel .h2 {
+	margin-top: 10px;
+}
+.hotel .hotel_title {
+	margin: 10px 0;
+}
+
+.contact_us {
+	width: 100%;
+	padding: 10px 0;
+	text-align: center;
+	background: #fff;
+	font-style: italic;
+	color: #666;
+	margin-top: 15px;
+	font-size: 13px;
+}
+.coming_soon {
+	padding: 15px 30px 5px 30px;
+	background: #F17E7E;
+	border: 2px solid #8F4848;
+}
+#map_container {
+	width: 500px;
+	margin: 10px auto 0 auto;
+}
+
+#nav, #nav p {
+	text-align: left;
+	letter-spacing: 0.03em;
+	margin: 0 0 0 0;
+}
+#nav {
+	font-weight: normal;
+	margin: 90px 0 0 15px;
+	width: 540px;
+	height: 271px;
+	float: right;	
+	position: relative;
+}
+
+#nav a {
+	color: #e8b95a;
+	text-decoration: none;
+	font-style: italic;
+}
+#nav a:hover {
+	/*text-decoration: underline;*/
+	border-bottom: 2px dotted #e8b95a;
+}
+
+.nav_item {
+	text-indent: -9999px;
+	overflow: hidden;
+	display: block;
+	
+	position: absolute;
+}
+
+.nav00 {
+/*	welcome (not a link)*/
+	background: transparent url(../images/nav00.png) 0 0 no-repeat;
+	width: 101px;
+	height: 24px;
+
+	top: 0; left: 0;
+}
+.nav01 {
+	display: none;
+/*	welcome (link)*/
+	background: transparent url(../images/nav01.png) 0 0 no-repeat;
+	width: 101px;
+	height: 24px;
+
+	top: 0; left: 0;
+}
+.nav02 {
+/*	lauren and kenji*/
+	background: transparent url(../images/nav02.png) 0 0 no-repeat;
+	width: 333px;
+	height: 53px;
+	
+	top: 24px; left: 0;
+}
+.nav03 {
+/*	are*/
+	background: transparent url(../images/nav03.png) 0 0 no-repeat;
+	width: 21px;
+	height: 38px;
+	
+	top: 73px; left: 0;
+}
+.nav04 {
+/*	getting married!*/
+	background: transparent url(../images/nav04.png) 0 0 no-repeat;
+	width: 268px;
+	height: 38px;
+
+	top: 73px; left: 21px;
+}
+.nav05 {
+/*	it's happening on 7/10/10 */
+	background: transparent url(../images/nav05.png) 0 0 no-repeat;
+	width: 357px;
+	height: 42px;
+
+	top: 108px; left: 0px;
+}
+.nav06 {
+/*	in*/
+	background: transparent url(../images/nav06.png) 0 0 no-repeat;
+	width: 21px;
+	height: 42px;
+
+	top: 150px; left: -2px;	
+}
+.nav07 {
+/*	Cambridge, MA*/
+	background: transparent url(../images/nav07.png) 0 0 no-repeat;
+	width: 444px;
+	height: 42px;
+
+	top: 150px; left: 23px;	
+}
+.nav08 {
+/*	Did we mention that you're invited? We didn't but, you know, by asking that question we sort of 
+	inadverdently breach the subject! lol */
+	background: transparent url(../images/nav08.png) 0 0 no-repeat;
+	width: 272px;
+	height: 78px;
+
+	top: 192px; left: -2px;	
+}
+.nav09 {
+/*	Please join us! */
+	background: transparent url(../images/nav09.png) 0 0 no-repeat;
+	width: 256px;
+	height: 49px;
+
+	top: 202px; left: 278px;
+}
+
+/*rsvp form*/
+#rsvp #rsvp_content {
+	padding-top: 30px;
+	width: 90%;
+	height: 100%;
+	margin: 0 auto;
+	background: #fff;
+	font-size: 14px;
+}
+#rsvp #rsvp_content h1 {
+	font-size: 36px;
+}
+#rsvp table {
+	width: 90%;
+	margin: 0 auto;
+	
+}
+#rsvp table .thelabel {
+	text-align: right;	
+	width: 190px;
+	padding-right: 10px;
+}
+#rsvp table .theinput {
+	
+}
+
+#rsvp input {
+	margin: 10px 0;
+}
+#rsvp .ribboninput {
+	color: #362d27;
+/*	border: 2px solid #efd89e;*/
+	border: 0;
+	background: transparent url(../images/ribbon.jpg) 0 0 repeat-x;
+	padding: 5px 6px;
+	font-size: 16px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	width: 300px;
+	margin-left: 10px;
+}
+#rsvp #radiosection_callout {
+	padding-top: 15px;
+	text-align: left;
+
+}
+#rsvp #radiosection_callout p {
+	line-height: 1.5em;
+}
+#rsvp #radiosection_callout p, #rsvp .messagesection p {
+	margin-left: 10px;
+}
+#rsvp #radiosection #asdfasdf {
+	margin-left: 60px;
+}
+#rsvp #radiosection input {
+	float: left;
+	margin: 3px 10px 7px 0;
+}
+#rsvp #radiosection label {
+	float: left;
+}
+#rsvp .messagesection {
+	padding-top: 15px;
+}
+#rsvp .messagesection textarea {
+	border: 1px solid #000;
+/*	background: #f7ecd0 url(../images/ribbon.jpg) 0 65% repeat-x;*/
+	background: #f7ecd0 url(../images/lace.png) 270px 0 no-repeat;	
+	width: 90%;
+	margin-left: 10px;
+	height: 170px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 13px;
+	padding: 8px 10px;
+}
+#rsvp #thesubmit {
+	font-size: 14px;
+	padding: 6px 4px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	margin-left: 10px;
+}
+.response {
+	height: 400px;
+	text-align: left;
+	padding: 0 25px;
+}
+.response h1 {
+	margin-bottom: 20px;
+}
+.response p {
+	
+}
+.response img {
+	margin: 10px 0 0 90px;
+}
+
+.image_section {
+	width: 90%;
+	margin: 15px auto 5px auto;
+	text-align: center;
+}
+.image_section img {
+	border: 1px solid #cd9a34;
+	margin-right: 10px;
+}
+
+
+.entry {
+	background: transparent url(../images/little_line.gif) center bottom no-repeat;
+	padding: 20px 0 15px 0;
+}
+.first {
+	padding-top: 0;
+}
+.last {
+	background-image: none;
+}
+
+/* afterparty */
+#new_header, #new_footer {
+	border: 10px solid #fff;
+	width: 800px;
+	margin: 0 auto;
+}
+.afterparty .header {
+	width: 820px;
+	margin-top: 40px;
+	margin-bottom: 50px;
+}
+.afterparty .entry h2 {
+	text-align: center;
+}
+ol, .entry ul li {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	list-style-position: inside;
+}
+ol li {
+	margin-bottom: 4px;
+}

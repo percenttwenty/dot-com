@@ -1,0 +1,1425 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	height: 100%;
+	font-family: "Trebuchet MS", Helvetica;
+	font-size: 11px;
+	color: #B6A480;
+}
+a {
+	color: #ED6C23;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+a img {
+	border: 0;
+}
+span.brown{
+	color:#613C0B;
+}
+h1.mainheader {	/* tan, all-caps header */
+	color: #B6A480;
+	text-transform: uppercase;
+	font-size: 11px;
+	padding-bottom: 10px;
+	border-bottom: 1px dotted #ACACAC;
+	margin-bottom: 20px;
+}
+h3.small_caps{
+	text-transform:uppercase;
+	font-size:11px;
+	height:auto;
+	padding:10px;
+	margin:0;
+}
+h3.bordered{
+	border-bottom: 1px dotted #ACACAC;
+}
+.clr {
+	clear: both;
+}
+.section_link { /* lime green-colored links */
+	color: #9EB11F;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 10px;
+}
+
+.blurb { /* wheat background (shorter) */
+	width: 649px;
+	height: 38px;
+	background: url(../images/blurb_bg.gif) no-repeat top left;
+	padding: 20px;
+	margin: 20px 0;
+}
+.blurb h1, .blurb_tall h1 {
+	font-weight: normal;
+	font-size: 16px;
+	color: #613C0B;
+}
+.blurb p, .blurb_tall p {
+	font-size: 12px;
+	font-weight: normal;
+}
+.blurb_tall { /* also wheat background (taller) */
+	width: 651px;
+	height: 135px;
+	background: url(../images/blurb_tall_bg.gif) no-repeat top left;
+	margin: 20px 0;
+	padding: 25px 20px 0 20px;
+	overflow: hidden;
+}
+.blurb_tall .blurb_col {
+	margin-top: 10px;
+	float: left;
+	width: 215px;
+}
+.blurb_tall .blurb_col .participants {
+	margin-top: 3px;
+}
+
+
+.brownbutton {
+	background: url(../images/brown_button_01.jpg) no-repeat left top;
+	height: 21px;
+	overflow: hidden;
+	font-size: 14px;
+	text-align: center;
+	float: left;
+	margin-right: 5px;
+}
+.brownbutton a, #challenge_detail .brownbutton a {
+	display: block;
+	background: url(../images/brown_button_02.jpg) no-repeat right top;
+	color: #fff;
+	height: 17px;
+	padding: 2px 9px;
+}
+.brownbuttton:hover{
+	background: url(../images/orange_button_01.gif) no-repeat left top;
+}
+.brownbutton a:hover {
+	text-decoration: none;
+	background: url(../images/orange_button_02.gif) no-repeat right top;
+	
+}
+.brownbutton.single {	/* very small "+" or "-" button  */
+	font-size: 30px;
+}
+.brownbutton.single a {
+	height: 21px;
+	padding: 0 2px;
+	line-height: 0.6em;
+}
+
+
+
+#container {
+	width: 950px;
+	/* kenji -- is there a reason for doing it this way?
+	position: absolute;
+	left: 50%;
+	margin-left: -475px;
+	as opposed to this? */
+	margin:0 auto;
+}
+#header {
+	margin-top: 19px;
+}
+#header #banner_logo { /* kashi logo */
+	width: 150px;
+	height: 74px;
+	background: #fff url(../images/kashi_logo.gif) no-repeat left top;
+	text-indent: -5000px;
+	float: left;
+	display: inline;
+	margin-left: 21px;
+}
+
+/*		utility nav		*/
+#header #util_nav {
+	font-family: Arial, sans-serif;
+	font-size: 10px;
+	list-style-type: none;
+	float: right;
+}
+#header #util_nav .text{
+	font-weight:bold;
+	color: #392900;
+	margin-top: 7px;
+	border-left: 1px solid #999;
+	padding:0 10px;
+	margin-left: 0;
+}
+#header #util_nav .textlink.first {
+	border-left: 0;
+}
+#header #util_nav .textlink {
+	margin-top: 7px;
+	margin-left: 0;
+	border-left: 1px solid #999;
+}
+#header #util_nav .textlink a {
+	padding: 7px 10px;
+}
+#header #util_nav li {
+	display: inline;
+	float: left;
+	margin-left: 5px;
+}
+#header #util_nav li a {
+	color: #392900;
+}
+#header #util_nav form input {
+	height: 15px;
+	width: 121px;
+	background: #F5F2EC;
+	border-top: 1px solid #B6A480;
+	border-left: 1px solid #B6A480;
+	border-right: 1px solid #EBE5D9;
+	border-bottom: 1px solid #EBE5D9;
+	color: #392900;
+	padding: 2px 3px;
+	margin-right: 10px;
+	margin-top: 1px;
+	vertical-align: top;
+}
+
+/*		main nav		*/
+#header #main_nav {
+	list-style-type: none;
+	display: block;
+	float: right;
+	margin-top: 15px;
+	width: 770px;
+}
+#header #main_nav li {
+	display: inline;
+	float: left;
+	margin-left: 3px;
+}
+#header #main_nav li a {
+	height: 44px;
+	display: block;
+	padding: 44px 0 0 0;
+	overflow: hidden;
+	height: 0;
+}
+#header #main_nav #mainnav_food a {
+	background: url(../images/main_nav_03.gif) no-repeat 0 0;
+	width: 117px;
+}
+#header #main_nav #mainnav_food a:hover, #header #main_nav #mainnav_food a#selected {
+	background: url(../images/main_nav_03.gif) no-repeat 0 -44px;
+}
+#header #main_nav #mainnav_challenge a {
+	background: url(../images/main_nav_05.gif) no-repeat 0 0;
+	width: 186px;
+}
+#header #main_nav #mainnav_challenge a:hover, #header #main_nav #mainnav_challenge a#selected {
+	background: url(../images/main_nav_05.gif) no-repeat 0 -44px;
+}
+#header #main_nav #mainnav_wellness a {
+	background: url(../images/main_nav_07.gif) no-repeat 0 0;
+	width: 146px;
+}
+#header #main_nav #mainnav_wellness a:hover, #header #main_nav #mainnav_wellness a#selected {
+	background: url(../images/main_nav_07.gif) no-repeat 0 -44px;
+}
+#header #main_nav #mainnav_meet a {
+	background: url(../images/main_nav_09.gif) no-repeat 0 0;
+	width: 117px;
+}
+#header #main_nav #mainnav_meet a:hover, #header #main_nav #mainnav_meet a#selected {
+	background: url(../images/main_nav_09.gif) no-repeat 0 -44px;	
+}
+#header #main_nav #mainnav_friends a {
+	background: url(../images/main_nav_11.gif) no-repeat 0 0;
+	width: 186px;
+}
+#header #main_nav #mainnav_friends a:hover, #header #main_nav #mainnav_friends a#selected {
+	background: url(../images/main_nav_11.gif) no-repeat 0 -44px;
+}
+#header #main_nav_drop #mainnav_drop_home a {
+	background: url(../images/main_nav_drop_01.jpg) no-repeat 0 0;
+	width: 109px;
+}
+
+/* MAIN NAV WITH DROP DOWN */
+#header #main_nav_drop {
+	list-style-type: none;
+	display: block;
+	float: right;
+	background:url(../images/main_nav_food_bg.gif) no-repeat 116px 0;
+	margin-top: 15px;
+	width: 762px;
+}
+#header #main_nav_drop.food {
+	background-image:url(../images/main_nav_food_bg.gif);
+}
+#header #main_nav_drop.challenge {
+	background-image:url(../images/main_nav_challenge_bg.gif);
+}
+
+#header #main_nav_drop.wellness {
+	background-image:url(../images/main_nav_wellness_bg.gif);
+}
+
+#header #main_nav_drop.friends {
+	background-image:url(../images/main_nav_friends_bg.gif);
+}
+#header #main_nav_drop.meet {
+	background-image:url(../images/main_nav_meet_bg.gif);
+}
+
+
+#header #main_nav_drop li {
+	display: inline;
+	float: left;
+}
+#header #main_nav_drop li a {
+	height: 43px;
+	display: block;
+	padding: 43px 0 0 0;
+	overflow: hidden;
+	height: 0;
+}
+
+#header #main_nav_home_subnav li a {
+	height: 26px;
+	display: block;
+	padding: 26px 0 0 0;
+	overflow: hidden;
+	height: 0;
+}
+#header #main_nav_drop li:hover ul{
+	left:auto;
+}
+#header #main_nav_home_subnav{
+	position:absolute;
+	background:url(../images/main_nav_drop_bg.gif) no-repeat 0 0;
+	margin:0;
+	width:184px;
+	height:181px;
+	left:-999em;
+	list-style:none;
+}
+#header #main_nav_home_subnav li{
+	float:none;
+	height:26px;
+	margin:0;
+	width:184px;
+}
+/* DROP DOWN MENU */
+#header #main_nav_drop #mainnav_drop_home:hover a.main {
+	background: url(../images/main_nav_drop_01.jpg) no-repeat 0 -44px;
+}
+#header #main_nav_drop #mainnav_drop_food a {
+	margin-top:6px;
+	background: url(../images/main_nav_drop_03.jpg) no-repeat 0 0;
+	width: 182px;
+}
+#header #main_nav_drop #mainnav_drop_food a:hover {
+	background: url(../images/main_nav_drop_03.jpg) no-repeat 0 -26px;
+}
+#header #main_nav_drop #mainnav_drop_challenge a {
+	margin-top:10px;
+	background: url(../images/main_nav_drop_04.jpg) no-repeat 0 0;
+	width: 182px;
+}
+#header #main_nav_drop #mainnav_drop_challenge a:hover {
+	background: url(../images/main_nav_drop_04.jpg) no-repeat 0 -26px;
+}
+#header #main_nav_drop #mainnav_drop_wellness a {
+	margin-top:5px;
+	background: url(../images/main_nav_drop_05.jpg) no-repeat 0 0;
+	width: 182px;
+}
+#header #main_nav_drop #mainnav_drop_wellness a:hover {
+	background: url(../images/main_nav_drop_05.jpg) no-repeat 0 -26px;
+}
+#header #main_nav_drop #mainnav_drop_meet a {
+	margin-top:8px;
+	background: url(../images/main_nav_drop_06.jpg) no-repeat 0 0;
+	width: 182px;
+}
+#header #main_nav_drop #mainnav_drop_meet a:hover {
+	background: url(../images/main_nav_drop_06.jpg) no-repeat 0 -26px;
+}
+#header #main_nav_drop #mainnav_drop_friends a {
+	margin-top:6px;
+	background: url(../images/main_nav_drop_07.jpg) no-repeat 0 0;
+	width: 182px;
+}
+#header #main_nav_drop #mainnav_drop_friends a:hover {
+	background: url(../images/main_nav_drop_07.jpg) no-repeat 0 -26px;
+}
+#header #main_nav_drop li.label{
+	display:none;
+}
+/* FOOD MENU */
+
+#header #main_nav_drop #mainnav_food_hot a{
+	background: url(../images/main_nav_food_02.jpg) no-repeat 0 0;
+	width: 143px;
+	margin-left:103px;
+}
+#header #main_nav_drop #mainnav_food_hot a:hover{
+	background: url(../images/main_nav_food_02.jpg) no-repeat 0 -43px;
+}
+#header #main_nav_drop #mainnav_food_snacks a{
+	background: url(../images/main_nav_food_03.jpg) no-repeat 0 0;
+	width: 121px;
+}
+#header #main_nav_drop #mainnav_food_snacks a:hover{
+	background: url(../images/main_nav_food_03.jpg) no-repeat 0 -43px;
+}
+#header #main_nav_drop #mainnav_food_frozen a{
+	background: url(../images/main_nav_food_04.jpg) no-repeat 0 0;
+	width: 114px;
+}
+#header #main_nav_drop #mainnav_food_frozen a:hover{
+	background: url(../images/main_nav_food_04.jpg) no-repeat 0 -43px;
+}
+#header #main_nav_drop #mainnav_food_waffles a{
+	background: url(../images/main_nav_food_05.jpg) no-repeat 0 0;
+	width: 71px;
+}
+#header #main_nav_drop #mainnav_food_waffles a:hover{
+	background: url(../images/main_nav_food_05.jpg) no-repeat 0 -43px;
+}
+#header #main_nav_drop #mainnav_food_recipes a{
+	background: url(../images/main_nav_food_06.jpg) no-repeat 0 0;
+	width: 67px;
+}
+#header #main_nav_drop #mainnav_food_recipes a:hover{
+	background: url(../images/main_nav_food_06.jpg) no-repeat 0 -43px;
+}
+
+/* CHALLENGE MENU */
+
+#header #main_nav_drop #mainnav_challenge_natural a{
+	background: url(../images/main_nav_challenge_01.jpg) no-repeat 0 0;
+	width: 110px;
+	margin-left:172px;
+}
+#header #main_nav_drop #mainnav_challenge_natural a:hover{
+	background: url(../images/main_nav_challenge_01.jpg) no-repeat 0 -43px;
+}
+#header #main_nav_drop #mainnav_challenge_nutrition a{
+	background: url(../images/main_nav_challenge_02.jpg) no-repeat 0 0;
+	width: 157px;
+}
+#header #main_nav_drop #mainnav_challenge_nutrition a:hover{
+	background: url(../images/main_nav_challenge_02.jpg) no-repeat 0 -43px;
+}
+#header #main_nav_drop #mainnav_challenge_natural2 a{
+	background: url(../images/main_nav_challenge_03.jpg) no-repeat 0 0;
+	width: 134px;
+}
+#header #main_nav_drop #mainnav_challenge_natural2 a:hover{
+	background: url(../images/main_nav_challenge_03.jpg) no-repeat 0 -43px;
+}
+#header #main_nav_drop #mainnav_challenge_fitness a{
+	background: url(../images/main_nav_challenge_04.jpg) no-repeat 0 0;
+	width: 64px;
+}
+#header #main_nav_drop #mainnav_challenge_fitness a:hover{
+	background: url(../images/main_nav_challenge_04.jpg) no-repeat 0 -43px;
+}
+
+/* FRIENDS MENU */
+#header #main_nav_drop #mainnav_friends_day a{
+	background: url(../images/main_nav_friends_01.jpg) no-repeat 0 0;
+	width: 109px;
+	margin-left:172px;
+}
+#header #main_nav_drop #mainnav_friends_day a:hover{
+	background: url(../images/main_nav_friends_01.jpg) no-repeat 0 -43px;
+}
+#header #main_nav_drop #mainnav_friends_partners a{
+	background: url(../images/main_nav_friends_02.jpg) no-repeat 0 0;
+	width: 84px;
+}
+#header #main_nav_drop #mainnav_friends_partners a:hover{
+	background: url(../images/main_nav_friends_02.jpg) no-repeat 0 -43px;
+}
+
+/* MEET MENU */
+#header #main_nav_drop #mainnav_meet_people a{
+	background: url(../images/main_nav_meet_01.jpg) no-repeat 0 0;
+	width: 95px;
+	margin-left:103px;
+}
+#header #main_nav_drop #mainnav_meet_people a:hover{
+	background: url(../images/main_nav_meet_01.jpg) no-repeat 0 -43px;
+}
+#header #main_nav_drop #mainnav_meet_history a{
+	background: url(../images/main_nav_meet_02.jpg) no-repeat 0 0;
+	width: 99px;
+}
+#header #main_nav_drop #mainnav_meet_history a:hover{
+	background: url(../images/main_nav_meet_02.jpg) no-repeat 0 -43px;
+}
+#header #main_nav_drop #mainnav_meet_careers a{
+	background: url(../images/main_nav_meet_03.jpg) no-repeat 0 0;
+	width: 72px;
+}
+#header #main_nav_drop #mainnav_meet_careers a:hover{
+	background: url(../images/main_nav_meet_03.jpg) no-repeat 0 -43px;
+}
+#header #main_nav_drop #mainnav_meet_contact a{
+	background: url(../images/main_nav_meet_04.jpg) no-repeat 0 0;
+	width: 91px;
+}
+#header #main_nav_drop #mainnav_meet_contact a:hover{
+	background: url(../images/main_nav_meet_04.jpg) no-repeat 0 -43px;
+}
+#header #main_nav_drop #mainnav_meet_media a{
+	background: url(../images/main_nav_meet_05.jpg) no-repeat 0 0;
+	width: 137px;
+}
+#header #main_nav_drop #mainnav_meet_media a:hover{
+	background: url(../images/main_nav_meet_05.jpg) no-repeat 0 -43px;
+}
+
+/* WELLNESS MENU */
+
+#header #main_nav_drop #mainnav_wellness_natural a{
+	background: url(../images/main_nav_wellness_01.jpg) no-repeat 0 0;
+	width: 109px;
+	margin-left:135px;
+}
+#header #main_nav_drop #mainnav_wellness_natural a:hover{
+	background: url(../images/main_nav_wellness_01.jpg) no-repeat 0 -43px;
+}
+#header #main_nav_drop #mainnav_wellness_nutrition a{
+	background: url(../images/main_nav_wellness_02.jpg) no-repeat 0 0;
+	width: 159px;
+}
+#header #main_nav_drop #mainnav_wellness_nutrition a:hover{
+	background: url(../images/main_nav_wellness_02.jpg) no-repeat 0 -43px;
+}
+#header #main_nav_drop #mainnav_wellness_natural2 a{
+	background: url(../images/main_nav_wellness_03.jpg) no-repeat 0 0;
+	width: 134px;
+}
+#header #main_nav_drop #mainnav_wellness_natural2 a:hover{
+	background: url(../images/main_nav_wellness_03.jpg) no-repeat 0 -43px;
+}
+#header #main_nav_drop #mainnav_wellness_fitness a{
+	background: url(../images/main_nav_wellness_04.jpg) no-repeat 0 0;
+	width: 66px;
+}
+#header #main_nav_drop #mainnav_wellness_fitness a:hover{
+	background: url(../images/main_nav_wellness_04.jpg) no-repeat 0 -43px;
+}
+
+
+
+#content {
+	margin-top: 10px;
+}
+#content #main {
+	width: 690px;
+	float:left;
+}
+
+/* ----------------------- home page-specific ----------------------- */
+#home #content #main {
+	width: 730px;
+}
+#home #content #main #three_features {
+	margin-top: 30px;
+}
+#home #content #main #three_features .feature_copy {
+	margin-bottom: 18px;
+	line-height: 1.20em;
+}
+#home #content #main #three_features .feature_copy .left {
+	float: left;
+	margin-right: 8px;
+}
+#home #content #main #three_features .feature_copy .right {
+	float: right;
+	margin-left: 8px;
+}
+#home #content #main #three_features h2 {
+	margin-bottom: 3px;
+}
+#home #content #main #three_features h2 a {
+	font-size: 12px;
+	color: #9EB11F;
+}
+#home #content #popular_topics, #content #feature_two, #content #feature_three {
+	width: 230px;
+	float: left;
+}
+#home #content #feature_two, #content #feature_three {
+	margin-left: 20px;
+}
+
+/*  challenge sidebar for the home page (narrower) */
+#home #content .challenge_sidebar {
+	width: 205px;
+	float: right;
+}
+#home #content .challenge_sidebar .sidebar_rule {
+	width: 178px;
+}
+#home #content .challenge_sidebar #sidebar_bottom {
+	width: 204px;
+	height: 15px;
+	background: transparent url(../images/challenge_bar_bottom.gif) bottom left no-repeat;	
+	margin-top: -14px;
+}
+#home #content .challenge_sidebar h1, #home #content .challenge_sidebar h2, #home #content .challenge_sidebar p, #home #content .challenge_sidebar .comments {
+	margin-left: 10px;
+}
+#home #content .challenge_sidebar #sidebar_first_half {
+	background: #EED78B url(../images/challenge_sidebar_bg.jpg) no-repeat left top;
+	padding: 5px 6px 5px 5px;
+}
+#home #content .challenge_sidebar #sidebar_second_half {
+	background: #EED78B url(../images/challenge_sidebar_bg.jpg) no-repeat left -80px;
+	padding: 0 6px 5px 5px;
+}
+
+/*  -------------/homepage----------------------- */
+
+
+
+/* for all content headers */
+#content #main .section_header {
+	width: 689px;
+	height: 160px;
+	/* KENJI CODE - Commented out by Adam
+	using positioning values was hiding our drop-down nav 
+	position: relative; */
+}
+#content #main .section_header div {
+	width: 400px;
+	/* KENJI CODE - Commented out by Adam
+	using positioning values was hiding our drop-down nav
+	position: absolute;
+	left: 30px;
+	top: 30px; */
+	padding-left:30px;
+	padding-top:30px;
+}
+#content #main .section_header h1 {
+	color: #EBD179;
+	font-size: 28px;
+}
+#content #main .section_header p {
+	color: #fff;
+	font-size: 12px;
+	text-shadow: 0 0 0 #000;
+	font-weight: bold;
+}
+#content #main .section_header a {
+	color: #EBD179;
+}
+/* for specific sections */
+#content #main #challenges_header {
+	background: url(../images/header_bg_challenge.jpg) no-repeat left top;
+}
+#content #main #our_food_header {
+	background: url(../images/header_bg_our_food.jpg) no-repeat left top;
+}
+#content #main #friends_header {
+	background: url(../images/header_bg_friends.jpg) no-repeat left top;
+}
+#content #main #meet_header {
+	background: url(../images/header_bg_meet.jpg) no-repeat left top;
+}
+#content #main #wellness_header {
+	background: url(../images/header_bg_wellness.jpg) no-repeat left top;
+}
+#popular_topics ol li {
+	line-height: 1.5em;
+	list-style-position: inside;
+}
+#popular_topics ol li.column2 {
+	margin-left: 10em;
+}
+#popular_topics ol li.reset {
+	margin-top: -7.5em;
+}
+#popular_topics ol li a {
+	font-weight: bold;
+	color: #613C0B;
+}
+* html ol li { /* ie hack */
+	position: relative;
+}
+
+
+
+
+#sidebar {
+	float: right;
+	width: 250px;
+}
+#sidebar #popular_topics {
+	float: right;
+	margin-top: 20px;
+	padding-left: 10px;
+}
+#sidebar #popular_topics ol {
+	margin: 10px 0;
+}
+
+/* challenges sidebar - global values */
+.challenge_sidebar {
+	float: right;
+	display: block;
+	font-size: 12px;
+	font-weight: bold;
+	color: #B6A480;
+}
+.challenge_sidebar h1 {
+	color: #392900;
+	font-size: 16px;
+	margin-top: 8px;
+}
+.challenge_sidebar h2 {
+	font-size: 14px;
+	margin-top: 8px;
+}
+.challenge_sidebar p {
+	margin: 5px 10px;
+}
+.challenge_sidebar img{
+	float:left;
+	padding:0 20px 5px;
+}
+
+.challenge_sidebar .meal_type, 
+.challenge_sidebar .date,
+.challenge_sidebar .comments{
+	color:#613C0B;
+	font-size:10px;
+}
+.challenge_sidebar .meal_type{
+	text-transform:uppercase;
+}
+.challenge_sidebar .meal_type a{
+	text-transform:none;
+	color:#9EB11F;
+}
+.challenge_sidebar .sidebar_rule {
+	height: 1px;
+	border-top: 1px solid #BBAA89;
+	margin: 10px auto;
+}
+.challenge_sidebar .challenge_header {
+	background: #EBD179;
+	color: #613C0B;
+	text-transform: uppercase;
+	font-size: 10px;
+	padding: 4px 0 4px 8px;
+}
+.challenge_sidebar .comments {
+	font-size: 10px;
+	margin-bottom: 5px;
+}
+
+
+/*  challenge sidebar for internal (wider) pages */
+#content #sidebar .challenge_sidebar {
+	width: 250px;
+	background: #EED78B url(../images/challenge_sidebar_wide_bg.jpg) no-repeat left top;
+}
+#content #sidebar .challenge_sidebar h1 {
+	margin-top: 20px;
+}
+#content #sidebar .challenge_sidebar .sidebar_rule {
+	width: 223px;
+}
+#content #sidebar .challenge_sidebar #sidebar_bottom {
+	width: 250px;
+	height: 17px;
+	background: transparent url(../images/challenge_bar_wide_bottom2.gif) bottom left no-repeat;	
+	margin-top: 0px;
+}
+#content #sidebar .challenge_sidebar h1, #content #sidebar .challenge_sidebar h2, #content #sidebar .challenge_sidebar p, #content #sidebar .challenge_sidebar .comments {
+	margin-left: 20px;
+}
+
+/* Challnege sidebar - Featured member */
+/* repurpusing the challenge sidebar for showcasing members */
+#content #sidebar .challenge_sidebar .featured_member img{
+	float:left;
+	margin:0 14px 0 20px;
+}
+#content #sidebar .challenge_sidebar .featured_member .member_details{
+	text-transform:uppercase;
+	font-size:10px;
+}
+#content #sidebar .challenge_sidebar .featured_member p{
+	color:#613C0B;
+}
+#content #sidebar .challenge_sidebar .featured_member .member_details h2{
+	margin-left:0;
+	text-transform:none;
+	margin-top:0;
+}
+/*  main section below content_header  */
+#content #main .content_block {
+	width: 689px;
+	margin-top: 20px;
+	font-weight: bold;
+}
+#content #main .content_block .challenge_block { /* there should be 4 of these  */
+	width: 320px;
+	float: left;
+	margin: 0 0 20px 0;
+	padding-right: 20px;
+}
+#content #main .content_block .challenge_block .challenge_category {
+	text-transform: uppercase;
+	color: #613C0B;
+	font-size: 11px;
+	width: 81px;
+	text-align: right;
+	float: left;
+	margin: 6px 0 10px 0;
+	padding-right: 4px;
+}
+#content #main .content_block .challenge_block .challenge_category_title {
+	margin: 0 0 10px 88px;
+}
+#content #main .content_block .challenge_block .challenge_category_title h2 {
+	font-size: 17px;
+	color: #613C0B;
+}
+#content #main .content_block .challenge_block .participants {
+	width: 70px;
+	text-align: center;
+	font-size: 22px;
+	color: #9EB11F;
+	float: left;
+	padding: 10px 15px 0 0;
+}
+#content #main .content_block .challenge_block .participants span {
+	display: block;
+	font-size: 10px;
+	color: #B6A480;
+}
+#content #main .content_block .challenge_block .challenge_content {
+	margin-left: 88px;
+	font-size: 12px;
+}
+#content #main .content_block .challenge_block .challenge_content .meta_detail {
+	font-size: 10px;
+	text-transform: uppercase;
+	color: #613C0B;
+	margin-bottom: 3px;
+}
+#content #main .content_block .challenge_block .challenge_content h3 {
+	font-size: 14px;
+	margin-bottom: 3px;
+}
+#content #main .content_block .challenge_block .challenge_content h3 a {
+	color: #ED6C23;
+}
+.challenge_length {
+	font-size: 12px;
+	color: #613C0B;
+	margin-bottom: 6px;
+}
+
+/* profile styles */
+#main #profile_details_left{
+	float:left;
+	width:199px;
+	margin-right:16px;
+}
+#main #profile_details_left .brownbutton{
+	margin:10px auto;
+}
+#main #profile_details{
+	float:left;
+	margin-bottom:40px;
+	width:473px;
+}
+#main #profile_details.kashi_employee{
+	background: url('../images/kashi_employee.gif') no-repeat top right;
+}
+
+#main #profile_details h1{
+	color:#ED6C22;
+}
+#main #profile_details #member_since{
+	border-right:2px solid #DDD5C4;
+	padding-right:10px;
+	margin-right:10px;
+	float:left;
+}
+#main #profile_details #location{
+	float:left;
+}
+
+#main #profile_details p{
+	margin:10px 0;
+	font-size:12px;
+	line-height:18px;
+}
+#main #article_list .article_blurb{
+	border-bottom: 1px dotted #ACACAC;
+	padding-bottom:15px;
+	margin-bottom:15px;
+}
+#main #article_list{
+	margin-bottom:30px;
+}
+#main #article_list .last{
+	border-bottom: none;
+}
+#main #article_list .article_blurb .aricle_details{
+	float:right;
+	width:598px;
+}
+#main #article_list .article_blurb .aricle_details .written_on{
+	font-weight:bold;
+	text-transform:uppercase;
+	color:#613C0B;
+	border-right:2px solid #DDD5C4;
+	padding-right:10px;
+	margin-right:10px;
+	font-size:10px;
+	
+}
+#main #article_list .article_blurb .aricle_details .written_by{
+	color:#613C0B;
+	font-size:10px;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+#main #article_list .article_blurb .aricle_details .written_by a{
+	color:#9EB11F;
+	font-size:12px;
+	font-weight:bold;
+	text-transform:none;
+}
+#main #article_list .article_blurb .aricle_details img{
+	float:left;
+	margin-right:14px;
+}
+#main #article_list .article_blurb .aricle_details h3{
+	margin:3px 0;
+}
+#main #article_list .article_blurb .aricle_details p{
+	line-height:16px;
+}
+#main #article_list .article_blurb .article_comments{
+	float:left;
+	text-align:center;
+	padding-top:14px;
+	width:64px;
+}
+#main #article_list .article_blurb .article_comments a{
+	display:block;
+	font-size:22px;
+	color:#613C0B;
+	
+}
+label{
+	font-weight:normal;
+}
+
+/* Challenge Box - profile page style */
+div.challenge_section{
+	margin-right:-10px;
+	margin-bottom:30px;
+}
+div.profile_section_head{
+	border-bottom: 1px dotted #ACACAC;
+	margin-right:10px;
+	margin-bottom: 6px;
+}
+div.profile_section_head h2{
+	margin-right:10px;
+	float:left;
+	padding: 5px 10px;
+	color:#392900;
+}
+div.profile_section_head .section_options{
+	float:right;
+	margin-top:10px;
+}
+div.profile_section_head .section_options a{
+	color:#9EB11F;
+	background:url('../images/arrow_down.gif') 70% right no-repeat;
+	padding-right:14px;
+	margin-right:4px;
+	
+}
+div.profile_section_head .section_options .showing{
+	border-right:2px solid #DDD5C4;
+	padding-right:10px;
+	margin-right:10px;
+}
+div.challenge_section .challenge{
+	display:inline-block;
+	float:left;
+	width:340px;
+	padding-top:10px;
+	margin:10px 10px 0 0;
+	background: #FDFAF1 url('../images/rounded_top_340.gif') no-repeat top left;
+}
+div.challenge_section .challenge_wide{
+	width:361px;
+	margin:8px 8px 0 0;
+	
+	background: #FDFAF1 url('../images/rounded_top_361.gif') no-repeat top left;
+}
+div.challenge_section .challenge .progress{
+	width:340px;
+	padding-bottom:10px;
+	background: url('../images/rounded_bottom_340.gif') no-repeat bottom left;
+}
+div.challenge_section .challenge_wide .progress{
+	width:361px;
+	background: url('../images/rounded_bottom_361.gif') no-repeat bottom left;
+}
+div.challenge_section .challenge h3{
+	margin:0 11px 4px 11px;
+	color:#ED6C23;
+	font-size:14px;
+}
+div.challenge_section .challenge .started_on,
+div.challenge_section .challenge .duration,
+div.challenge_section .challenge .progress_text{
+	text-transform:uppercase;
+	margin:0 11px 4px 11px;
+	font-size:10px;
+	font-weight:bold;
+}
+div.challenge_section .challenge .progress{
+	margin-top:6px;
+}
+div.challenge_section .challenge .progress_text{
+	float:left;
+	padding:8px 0 0 0;
+}
+div.challenge_section .challenge a.log_performance{
+	float:right;
+	color:#9EB11F;
+	font-weight:bold;
+	background:url('../images/feed_icon.gif') no-repeat 0 50%;
+	padding:5px 0 0px 22px;
+	margin-right:12px;
+	margin-bottom:2px;
+	min-height:16px;
+}
+div.challenge_section .challenge .progress_bar{
+	background:#F9D87B url('../images/progress_bar_mask.gif') no-repeat top left;
+	width:317px;
+	height:8px;
+	margin:0 11px;
+}
+div.challenge_section .challenge_wide .progress_bar{
+	background:#F9D87B url('../images/progress_bar_mask_wide.gif') no-repeat top left;
+	width:339px;
+}
+div.challenge_section .challenge .progress_bar .progress_bar_inner{
+	text-indent:-9999999px;
+	height:8px;
+	background:#E98950 url('../images/progress_bar_mask.gif') no-repeat bottom left;
+}
+div.challenge_section .challenge .progress_bar_initial{
+	background:#D3C4A8 url('../images/progress_bar_mask.gif') no-repeat top left;
+	width:317px;
+	height:8px;
+	margin:0 11px;
+}
+
+/* FRIENDS STYLES */
+div.friends_blurb{
+	width:320px;
+	float:left;
+	padding:0 20px 0 0;
+}
+div.friends_blurb h2{
+	color:#613C0B;
+	font-size:17px;
+	padding:4px 0;
+}
+div.friends_blurb h3{
+	color:#ED6C23;
+}
+div.friends_blurb img{
+	padding:0 10px 10px 0;
+}
+/* ARTICLE STYLES */
+div.article h1{
+	color:#ED6C23;
+	font-size:21px;
+	padding:5px 0 10px;
+}
+div.article img.main{
+	float:left;
+	padding:0 20px 10px 0;
+}
+div.article .article_details{
+	color:#613C0B;
+	font-weight:bold;
+	font-size:10px;
+	text-transform:uppercase;
+}
+div.article .article_details a{
+	text-transform:none;
+}
+div.article .article_details span.published_on{
+	padding-right:10px;
+	margin-right:10px;
+	border-right:2px solid #B5A48D;
+}
+div.article .article_details span.author{
+	display:block;
+	padding-top:4px;
+}
+div.article a{
+	color:#9EB11F;
+}
+div.article h2{
+	color:#613C0B;
+	font-size:14px;
+}
+div.article p{
+	font-size:12px;
+	font-weight:bold;
+	line-height:16px;
+	margin:10px 0 30px 0;
+}
+/* breadcrumb styles */
+#main #breadcrumbs {
+	width:690px;
+	margin-bottom:16px;
+	background: #F5F2EC url('../images/rounded_top_690.gif') no-repeat top left;
+}
+#main #breadcrumbs ul{
+	background: url('../images/rounded_bottom_690.gif') no-repeat bottom left;
+	list-style:none;
+	margin:0;
+	padding:4px 14px;
+}
+#main #breadcrumbs li{
+	float:left;
+	padding:0 6px 0 8px;
+	margin:0;
+	font-size:80%;
+	background-image: url("../images/breadcrumbs_icon.gif");
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+}
+#main #breadcrumbs li.first{
+	background-image:none;
+	padding:0 6px 0 0;
+}
+#main #breadcrumbs li a {
+	color: #613C0B;
+	font-size:110%;
+}
+#main #breadcrumbs a:hover {
+	color: #ED6C23;
+}
+
+/* REGISTRATION TWO COLUMN */
+div#two_column h1{
+	color:#ED6C22;
+	padding:10px 5px;
+	
+}
+div#two_column p{
+	font-size:12px;
+	line-height:16px;
+	padding:0 5px 20px 5px;
+}
+div#two_column #left{
+	width:330px;
+	padding-left:5px;
+	float:left;
+	
+}
+div#two_column #left table{
+	width:313px;
+	padding:10px 14px 10px 0;
+	border-bottom: 1px dotted #ACACAC;
+}
+div#two_column #left table.last{
+	border-bottom:none;
+}
+div#two_column #left table th{
+	width:114px;
+	font-size:12px;
+}
+div#two_column #right{
+	border-left: 1px dotted #ACACAC;
+	float:left;
+	
+	width:318px;
+	padding:7px 17px;
+	padding-bottom:110px;
+	margin:10px 0;
+}
+div#two_column #right p{
+	font-size:12px;
+	padding:5px 0;
+	line-height:16px;	
+}
+div#two_column #right dl a,
+div#two_column #right a#cancel_registration{
+	color:#B9C65C;
+}
+div#two_column #right a#cancel_registration{
+	float:left;
+	margin:4px 6px;
+	font-size:11px;
+	font-family:arial, sans;
+	font-weight:bold;
+}
+dl{
+	font-size:12px;
+	margin-bottom:30px;
+}
+dl dt{
+	float:left;
+	padding:5px;
+}
+dl dd{
+	padding-top:10px;
+	margin-left:30px;
+	line-height:16px;
+}
+/* FORMS! Get some. */
+
+form input[type=text]{
+	background:#F5F2EC;
+	border:1px solid #B6A480;
+	border-bottom-color:#EBE5D9;
+	border-right-color:#EBE5D9;
+	height:13px;
+	width:100%;
+	padding:4px;
+	color:#613C0B;
+}
+form select{
+	font-size:10px;
+	text-transform:uppercase;
+	color:#613C0B;
+	background:#F5F2EC;
+	border:1px solid #B6A480;
+	border-bottom-color:#EBE5D9;
+	border-right-color:#EBE5D9;
+	height:21px;
+}
+
+/* Table Styling */
+table th{
+	font-weight:normal;
+}
+table td, 
+table th{
+	padding:5px 0;
+}
+table tr{
+	text-align:left;
+}
+/* for individual challenge page */
+#challenge_detail { 
+	width: 535px;
+	float: left;
+	padding: 0 10px;
+	margin-bottom: 20px;
+}
+#challenge_detail p {
+	font-size: 12px;
+}
+#challenge_detail h1 {
+	color: #ED6C23;
+	margin-bottom: 4px;
+}
+#challenge_detail a {
+	color: #9EB11F;
+}
+#challenge_detail .post_info {
+	color: #613C0B;
+	line-height: 1.3em;
+}
+#challenge_detail .buttons {
+	margin-top: 15px;
+}
+#challenge_detail_participants { /* column for big numbers (participants/days logged) */
+	margin-left: 556px;
+	font-size: 40px;
+	width: 106px;
+	text-align: center;
+	color: #613C0B;
+}
+#challenge_detail_participants a {
+	color: #9EB11F;
+}
+#challenge_detail_participants span {
+	font-size: 12px;
+	display: block;
+	color: #B6A480;
+}
+#callenge_progress_widget {
+	margin: 20px 0 30px 0;
+}
+
+
+/* the bottom comments section */
+#comments_header {
+	height: 45px;	
+	border-bottom: 1px dotted #ACACAC;
+}
+#comments_header .num_comments {
+	float: left;
+	color: #613C0B;
+	font-size: 22px;
+	width: 60px;
+	text-align: center;
+}
+#comments_header .num_comments span {
+	display: block;
+	font-size: 10px;
+	color: #B6A480;
+}
+#comments_header .add_comment {
+	margin-top: 12px;
+	float: right;
+}
+#comments_header .add_comment span a {
+	color: #9EB11F;
+	height: 11px;
+	padding: 5px 0;
+	line-height: 1.7em;
+}
+#comments_block .thumb {
+	float: left;
+	margin-left: 5px;
+}
+#comments_block .flag {
+	margin-top: 7px;
+	float: right;
+	font-weight: normal;
+}
+#comments_block .flag a {
+	color: #9EB11F;
+}
+#comments_block .username {
+	margin: 6px 0 0 10px;
+	font-size: 12px;
+}
+#comments_block .datetime {
+	font-weight: normal;
+}
+#comments_block .username, #comments_block .datetime {
+	margin-left: 45px;
+}
+#comments_block .username a {
+	color: #9EB11F;
+}
+#comments_block .wide_block p {
+	margin-left: 5px;
+	font-weight: normal;
+}
+
+
+
+
+/* .post_info is used on individual challenge page and wellness home page, eg:
+	POSTED ON: date | POSTED BY: KashiJeff
+*/
+.post_info { 
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+.post_info a {
+	text-transform: none;
+}
+.post_info .posted_on {
+	float: left;
+	padding-right: 5px;
+	border-right: 1px solid #B5A48D;
+}
+.post_info .posted_by {
+	float: left;
+	padding-left: 10px;
+}
+.post_info .filed_under {
+	clear: both;
+}
+
+/*  'wide list' contains many of 'wide block' - found at the bottom of most second-level pages */
+#content #main .content_block #wide_list h1 {
+	margin-bottom: 0;
+}
+.wide_block {
+	border-bottom: 1px dotted #ACACAC;
+	padding: 15px 0;
+}
+#content #main .content_block #wide_list .wide_block h2 {
+	float: left;
+	font-size: 14px;
+}
+#content #main .content_block #wide_list .wide_block h2 a {
+	color: #9EB11F;
+}
+#content #main .content_block #wide_list .wide_block .meta_detail, #content #main .content_block #wide_list .wide_block .participants {
+	float: left;
+	margin-top: 0.20em;
+	padding-left: 10px;
+}
+#content #main .content_block #wide_list .wide_block .participants span {
+	padding-right: 4px;
+	border-right: 1px solid #B6A480;
+}
+#content #main .content_block #wide_list .wide_block .participants span+span {
+	padding-right: 0;
+	border-right: 0;
+}
+#content #main .content_block #wide_list .wide_block p {
+	padding-top: 3px;
+	clear: both;
+}
+
+#footer {
+	margin: 30px 0 50px 0;
+}
+#footer ul {
+	font-family: Arial, sans-serif;
+	font-size: 10px;
+	float: right;
+	list-style-type: none;
+	margin-top: 10px;
+}
+#footer ul li {
+	float: left;
+	padding: 0 10px;
+	border-left: 1px solid #999;
+}
+#footer ul li.first {
+	border-left: none;
+}
+#footer ul li a {
+	color: #392900;
+}
+
+/* SELF CLEARING FLOATS */
+.float-wrapper:after {
+	content: "."; 
+    display: block; 
+    height: 0;
+    clear: both; 
+    visibility: hidden;
+}

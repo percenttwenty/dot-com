@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>Kashi | Register</title>
+	<style type="text/css">
+		@import "css/main.css";
+	</style>
+	<!--[if IE]>
+		<link rel="stylesheet" type="text/css" href="css/ie.css" />
+	<![endif]-->
+	<meta http-equiv="imagetoolbar" content="no" />
+	<script type="text/javascript" charset="utf-8">
+		//this is not a permant solution, rather for the purposes of markup only. 
+		function toggle_checkmark(id){
+			field = document.getElementById(id);
+			img = document[id+"_img"];
+			if(field.value == "true"){
+				field.value = false;
+				img.src = "images/checkbox_00.gif";
+			}else{
+				field.value = true;
+				img.src = "images/checkbox_01.gif";
+			}
+			
+		}
+	</script>
+</head>
+<body>
+<div id="container">
+
+	<div id="header"  class="float-wrapper">
+		<h1 id="banner_logo"><a href="/" title="Kashi.com">Kashi</a></h1>
+		<ul id="util_nav">
+			<li class="textlink first"><a href="#">where to buy</a></li>
+			<li class="textlink"><a href="#">our newsletter</a></li>
+			<li><form action="#"><input type="text" name="searchbox" id="searchbox" /><img src="images/search_button.gif" alt="Search" width="64" height="22" /></form></li>
+			<li><a href="#"><img src="images/signin_button.gif" alt="sign in" width="63" height="22" /></a></li>
+			<li><a href="#"><img src="images/join_button.gif" alt="join the community" width="124" height="22" /></a></li>
+		</ul>
+		<ul id="main_nav">
+			<li id="mainnav_food"><a href="/food/">our food</a></li>
+			<li id="mainnav_challenge"><a href="/challenges/">challenge yourself</a></li>
+			<li id="mainnav_wellness"><a href="/wellness/">wellness hub</a></li>
+			<li id="mainnav_meet"><a href="/meetus/">meet us</a></li>
+			<li id="mainnav_friends"><a href="/friendsandevents/">friends &amp; events</a></li>
+		</ul>
+	</div>
+	
+	<div id="content" class="float-wrapper">
+		<div id="sidebar">
+			<div class="challenge_sidebar">
+				<h1>Today's challenge</h1>
+				<div class="sidebar_rule"></div>
+				<div class="sidebar_challenge">
+					<h2><a href="#">Go outside and play</a></h2>
+					<p>Plan an outdoor activity with your friends and family. Hiking, biking or Frisbee - anything goes as long as you have fun.</p>
+					<div class="comments"><a href="#">59 participants</a> | <a href="#">254 comments</a></div>
+				</div>
+				<div class="sidebar_rule"></div>
+				<p><a href="#" class="section_link">see more daily challenges &raquo;</a></p>
+				<div id="sidebar_bottom"></div>
+			</div>
+			<div id="popular_topics">
+				<h1 class="mainheader">Popular Topics</h1>
+				<div class="feature_copy">
+					<p>There's a lot on our minds as we head into summer. Here are some of the things we've been most focused on.</p>
+				</div>
+				<ol>
+					<li><a href="#">lorem</a></li>
+					<li><a href="#">lorem ipsum</a></li>
+					<li><a href="#">lorem ipsum</a></li>
+					<li><a href="#">lorem</a></li>
+					<li><a href="#">lorem ipsum</a></li>
+					<li class="column2 reset"><a href="#">lorem ipsum</a></li>
+					<li class="column2"><a href="#">lorem ipsum</a></li>
+					<li class="column2"><a href="#">lorem ipsum</a></li>
+					<li class="column2"><a href="#">lorem ipsum</a></li>
+					<li class="column2"><a href="#">lorem ipsum</a></li>
+				</ol>
+				<p><a href="#" class="section_link">All topics &raquo;</a></p>
+			</div>
+		</div>
+		
+
+		<div id="main">
+			<div id="breadcrumbs">
+		    	<ul class="float-wrapper">
+		      		<li class="first"><a href="#">home</a></li>
+		      		<li><a href="#">join the community</a></li>
+		    	</ul>
+		  	</div>
+  			<div id="two_column">
+				<h1>Welcome to the Kashi Community</h1>
+				<p>Welcome!  To join the Kashi community, you&#8217;ll need to answer a few questions.  We&#8217;ll use this information to build your community profile.  All information is required unless otherwise noted.</p>
+				<form action="/user/create" method="post" accept-charset="utf-8">
+				<div id="left">
+					
+						<table>
+							<tr>
+								<th>First Name:</th>
+								<td colspan="3"><input type="text" name="user_first" value="" id="user_first" /></td>
+							</tr>
+							<tr>
+								<th>Last Name:</th>
+								<td colspan="3"><input type="text" name="user[last]" value="" id="user_last" /></td>
+							</tr>
+							<tr>
+								<th>Birthdate:</th>
+								<td style="padding-right:5px;"><input type="text" name="user_birthday_day" value="" id="user_birthday_day" style="width:40px;"/></td>
+								<td style="padding-right:5px;"><input type="text" name="user_birthday_month" value="" id="user_birthday_month"  style="width:40px;"/></td>
+								<td><input type="text" name="user_birthday_year" value="" id="user_birthday_year" /></td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<th>E-Mail:</th>
+								<td colspan="3"><input type="text" name="user_email" value="" id="user_email" /></td>
+							</tr>
+							<tr class="bordered">
+								<th>Confirm E-Mail:</th>
+								<td colspan="3"><input type="text" name="user_email_confirmation" value="" id="user_email_confirmation" /></td>
+							</tr>
+						</table>
+						<table class="last">
+							<tr>
+								<th>Username:</th>
+								<td colspan="3"><input type="text" name="user_login" value="" id="user_login" /></td>
+							</tr>
+							<tr>
+								<th>Password:</th>
+								<td colspan="3"><input type="text" name="user_password" value="" id="user_password" /></td>
+							</tr>
+							<tr>
+								<th>Confirm Password:</th>
+								<td colspan="3"><input type="text" name="user_password_confirmation" value="" id="user_password_confirmation" /></td>
+							</tr>
+						</table>
+					
+				</div>
+				<div id="right">
+					<p>Occasionally we&#8217;ll send out newsletters and other helpful information by email. Would you like to be added to our mailing list?</p>
+					<dl>
+						<dt><input type="hidden" name="recieve_updates" value="true" id="recieve_updates"><a href="#" onclick="toggle_checkmark('recieve_updates');"><img src="images/checkbox_01.gif" name="recieve_updates_img" id="recieve_updates_img" /></a></dt>
+						<dd>Yes, please send me Kashi newsletters, site updates, promotions, and local Kashi event information. <a href="#">Privacy Policy</a></dd>
+					</dl>
+					<p>Before completing registration, you must agree to the Kashi.com Terms and Conditions.</p>
+					<dl>
+						<dt><input type="hidden" name="agree" value="false" id="agree"><a href="#" onclick="toggle_checkmark('agree');"><img src="images/checkbox_00.gif" name="agree_img" id="agree_img" /></a></dt>
+						<dd>I agree to the <a href="#">Terms and Conditions of Use of Site.</a></dd>
+					</dl>
+					<div class="brownbutton"><a href="#">complete registration</a></div>
+					<a href="#" id="cancel_registration">x cancel registration</a>
+	          		
+				</div>
+				</form>
+  			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<img src="images/fullwidth_hr.jpg" alt="" width="950" height="5" />
+		<ul>
+			<li class="first"><a href="#">careers</a></li>
+			<li><a href="#">media relations</a></li>
+			<li><a href="#">contact us</a></li>
+			<li><a href="#">privacy policy</a></li>
+			<li><a href="#">terms &amp; conditions</a></li>
+		</ul>
+	</div>
+</div> <!-- close #container -->
+</body>
+</html>

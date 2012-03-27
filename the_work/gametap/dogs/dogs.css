@@ -1,0 +1,189 @@
+body {
+	background: #000 url(images/bgtile.gif) top left repeat;
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #fff;
+}
+h2 {
+	margin: 10px 0 5px 0;
+	padding-bottom: 3px;
+	border-bottom: 1px dotted #9B9696;
+	font-size: 15px;
+}
+h3 {
+	margin: 5px 0 3px 0;
+	font-size: 12px;
+}
+h4 {
+	font-size: 12px;
+}
+a img {
+	border: 0;
+}
+a:link {
+	color: #D8C257;
+	text-decoration: none;
+}
+a:visited {
+	color: #b6a035;
+	text-decoration: none;
+}
+a:hover, a:visited:hover {
+	text-decoration: underline;
+}
+ol li {
+	margin-bottom: 5px;
+}
+ul li {
+	margin-bottom: 8px;
+}
+
+/*   --- general layout ---   */
+#container {
+	margin-top: 10%;
+	margin-bottom: 10%;
+	width: 100%;
+	
+	background: #000;
+	border-top: 1px solid #9B9696;
+	border-bottom: 1px solid #9B9696;
+	padding: 4px 0 4px 0;
+}
+#inner_container {
+	margin: 0 auto;
+	width: 800px;
+}
+#seal {
+	border: 1px solid #D2BF35;
+}
+#leftside {
+	width: 191px;
+	float: left;
+}
+#nav {
+	margin-top: 3px;
+	border: 1px solid #9B9696;
+}
+#nav a {
+	display: inline;
+}
+#blurb {
+	background: #5C5C5C;
+	text-transform: uppercase;
+	padding: 10px;
+	line-height: 1.4em;
+}
+
+#content {
+	background: #4B4442;
+	margin-left: 200px;
+	padding: 15px 10px 8px 10px;
+	min-height: 340px;
+	height: 100%;
+}
+#ticker {
+	height: 28px;
+}
+#ticker object {
+	float: left;
+	margin-left: 10px;
+}
+#alert_level {
+	float: right;
+	display: block;
+}
+#headline {
+	margin-bottom: 10px;
+}
+
+
+/*   --- landing ---   */
+#featured table {
+	padding-left: 10px;
+}
+#secondary {
+	margin-left: 202px;
+}
+#secondary {
+	background: #4B4442;
+	margin-top: 6px;
+	padding: 5px;
+	height: 90px;
+
+}
+.tip {
+	width: 290px;
+	margin-top: 0;
+	float: left;
+}
+.tip h4 {
+	font-size: 12px;
+	margin: 0;
+	border: none;
+}
+.tip a {
+	color: #fff;
+}
+.tip a:hover {
+	color: #D8C257;
+	text-decoration: underline;
+}
+.tip img {
+	float: left;
+}
+.secondary_content {
+	margin: 5px 10px 0 91px;
+	line-height: 1.4em;
+}
+.secondary_content p {
+	margin-top: 3px;
+}
+.tips_row {
+	margin-top: 20px;
+	height: 100px;
+}
+
+
+/*   --- safety tips ---   */
+#tips #content table td h2 {
+	margin-bottom: 20px;
+}
+#tips #page_nav {
+	margin-top: 7px;
+	border-top: 1px solid #7A7A7A;
+	border-bottom: 1px solid #7A7A7A;
+	padding: 3px 0 3px 1px;
+}
+#tips #content {
+	min-height: 435px;
+}
+
+/*   --- about dgs ---   */
+#about #content {
+	min-height: 380px;
+}
+
+
+/*   --- regulations ---   */
+#regulations #content {
+	min-height: 360px;
+
+}
+/* apply for a passport */
+#apply .field_header {
+	border-bottom: 1px solid #7A7A7A;
+	margin: 10px 0 7px 0;
+	padding: 2px 0 2px 2px;
+}
+
+
+/*   --- debriefing center --- */
+#debriefing #content {
+	min-height: 410px;
+}
+#press_release p {
+	margin: 5px 0 7px 0;
+	line-height: 1.2em;
+}

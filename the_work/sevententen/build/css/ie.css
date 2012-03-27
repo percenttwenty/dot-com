@@ -1,0 +1,6 @@
+a:hover {
+	border-bottom: 0;
+	text-decoration: underline;
+}
+img { -ms-interpolation-mode:bicubic; }
+

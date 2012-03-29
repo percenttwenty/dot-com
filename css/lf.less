@@ -26,6 +26,7 @@ footer, header, nav, section, audio, video {
 	display: block;
 }
 
+a { text-decoration: none; }
 a img {border: 0;}
 
 
@@ -114,13 +115,21 @@ body {
 	padding-right: 48px;
 	margin: 0 auto;
 	width: 896px;
-	position: relative;
-	
+	position: relative;	
 }
 
 header {
 	width: 28.125%; /*252px / 896*/
 	float: left;
+	h1 {
+		font-family: 'Marmelad', Helvetica, Arial, sans-serif;
+		margin-bottom: 10px;
+	}
+	h2 {
+		font-size: 36px;
+		line-height: 30px;
+		margin-bottom: 15px;
+	}
 }
 #work {
 	width: 69.19643%; /*620 / 896*/
@@ -130,8 +139,10 @@ img {
   max-width: 100%;
 }
 #work {
-	h1 {
-		font-size: 3.3482142857143em;
+	#portfolio_title {
+		font-size: 1.4em;
+		margin-left: 92px;
+		color: #666;
 	}
 }
 
@@ -145,10 +156,24 @@ img {
 	display: block;
 	float: left;
 	
-	background: #ccc;
+/*	background: #ccc;*/
+	.bw-gradient(#ccc, 200, 100);
+	
 	.drop-shadow(0, 2px, 2px, 0.2);
 	.border-radius(0, 4px, 4px, 0);
+
+	&:hover {
+		.drop-shadow(0, 3px, 3px, 0.2);
+/*		.transition-duration(1s);*/
+		a {
+			color: #333;
+		}
+		
+	}
 	
+	a {
+		color: #000;
+	}
 	
 	img {
 		z-index: 4;
@@ -161,6 +186,24 @@ img {
 /*		background: #fff;*/
 		z-index: 6;
 		height: 30px;
+/*		overflow: hidden;*/
+		.project_title {
+			width: 158px;
+			float: left;
+			margin-left: 10px;
+			padding-right: 10px;
+		}
+		.project_date {
+			float: right;
+			width: 64px;
+/*			margin-right: -20px;*/
+/*			background: #fff;*/
+/*			.rotation(-20deg);*/
+/*			padding: 4px 20px;*/
+			text-align: right;
+			margin-right: 10px;
+			color: #555;
+		}
 	}
 
 }

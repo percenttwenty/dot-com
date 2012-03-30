@@ -28,7 +28,9 @@ footer, header, nav, section, audio, video {
 
 a { text-decoration: none; }
 a img {border: 0;}
-
+.clr {
+	clear: both;
+}
 
 
 /*	Typography presets
@@ -145,6 +147,7 @@ header {
 	h4 a:hover {
 		.transition-duration(0.4s);
 		color: #444;
+		margin-bottom: 20px;
 	}
 	h5 {
 		//it's a silly thing
@@ -165,12 +168,12 @@ img {
 		color: #666;
 	}
 }
-
 .project {
 /*	width: 436px;*/
 /*	height: 291px;*/
-	width: 40.64516%;
-	margin-right: 3.8709677419355%;
+/*	width: 40.64516%;*/
+	width: 270px;
+	margin-right: 24px;
 	margin-bottom: 30px;
 	
 	display: block;
@@ -215,33 +218,42 @@ img {
 		font-size: 0.8em;
 		line-height: 1em;
 		display: block;
-/*		background: #fff;*/
 		z-index: 6;
 		height: 30px;
-/*		overflow: hidden;*/
 		.project_title {
 			width: 158px;
 			float: left;
 			margin-left: 10px;
 			padding-right: 10px;
-			vertical-align: middle;
 			display: block;
+			.transition-duration(0.4s);
 		}
 		.project_date {
 			float: right;
 			width: 64px;
-/*			margin-right: -20px;*/
-/*			background: #fff;*/
-/*			.rotation(-20deg);*/
-/*			padding: 4px 20px;*/
 			text-align: right;
 			margin-right: 10px;
 			color: #555;
+			.transition-duration(0.4s);
 		}
 	}
 
 }
-
+footer {
+	width: 100%;
+	
+	h1 {
+		font-size: 2em;
+	}
+	ul {
+		margin-top: 10px;
+	}
+	ul li {
+		list-style-type: none;
+		float: left;
+		margin-right: 10px;
+	}
+}
 
 
 /*		Tablet Layout: 768px.
@@ -255,11 +267,31 @@ px      68    160    252    344    436    528    620    712    */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	
 	body {
-		
 		padding: 48px 28px 60px;
 	}
 	#container {
 		width: 712px;
+		.transition-duration(0.4s);
+	}
+	header {
+		width: 160px;
+	}
+	#work {
+
+	}
+	.project {
+		width: 220px;
+		margin-right: 15px;
+		.info {
+			.project_title {
+				width: 128px;
+				.transition-duration(0.4s);
+			}
+			.project_date {
+				width: 54px;
+				.transition-duration(0.4s);
+			}
+		}
 	}
 }
 
@@ -285,7 +317,13 @@ px      68    160    252    */
 			float: none;
 			width: 252px;
 		}
+		header {
+			margin-bottom: 25px;
+		}
 
+	}
+	h1 {
+/*		color: blue;*/
 	}
 }
 
@@ -302,9 +340,31 @@ px      68    160    252    344    436    */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 	
 	body {
-		width: 436px;
+		
 		padding: 36px 22px 48px;
 	}
+	#container {
+		width: 436px;
+		header, #work {
+			width: 100%;
+		}
+	}
+	.project {
+		width: 200px;
+		margin-right: 10px;
+		.info {
+			.project_title {
+				width: 118px;
+				.transition-duration(0.4s);
+			}
+			.project_date {
+				width: 50px;
+				.transition-duration(0.4s);
+			}
+		}
+	}
+	
+/*	h1 { color: green; }*/
 	
 }
 

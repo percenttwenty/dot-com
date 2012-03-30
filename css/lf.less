@@ -105,7 +105,7 @@ px      68    160    252    344    436    528    620    712    804    896    */
 body {
 
 	padding: 72px 0 84px;
-	background: rgb(232,232,232);
+	background: rgb(232,232,232) url(../images/tile4.png) 0 0 repeat;
 	color: rgb(60,60,60);
 	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
 	font-family: "Buenard", "Times New Roman", Times, serif;
@@ -113,7 +113,7 @@ body {
 #container {
 	padding-left: 48px;
 	padding-right: 48px;
-	margin: 0 auto;
+	margin: 60px auto 20px auto;
 	width: 896px;
 	position: relative;	
 }
@@ -121,14 +121,34 @@ body {
 header {
 	width: 28.125%; /*252px / 896*/
 	float: left;
+	margin-top: -10px;
+
 	h1 {
 		font-family: 'Marmelad', Helvetica, Arial, sans-serif;
-		margin-bottom: 10px;
+		margin-bottom: 20px;
 	}
 	h2 {
-		font-size: 36px;
+		font-size: 30px;
 		line-height: 30px;
-		margin-bottom: 15px;
+		margin-bottom: 25px;
+		color: #444;
+	}
+	h3 {
+		margin-bottom: 25px;
+		color: #666;
+		
+	}
+	h4, h4 a {
+		color: #aaa;
+		.transition-duration(0.4s);
+	}
+	h4 a:hover {
+		.transition-duration(0.4s);
+		color: #444;
+	}
+	h5 {
+		//it's a silly thing
+		display: none;
 	}
 }
 #work {
@@ -158,21 +178,33 @@ img {
 	
 /*	background: #ccc;*/
 	.bw-gradient(#ccc, 200, 100);
-	
+	padding: 4px 4px 2px 4px;
+
 	.drop-shadow(0, 2px, 2px, 0.2);
 	.border-radius(0, 4px, 4px, 0);
-
+	
+	.transition-duration(0.4s);
+	
 	&:hover {
-		.drop-shadow(0, 3px, 3px, 0.2);
-/*		.transition-duration(1s);*/
-		a {
-			color: #333;
-		}
+		
+		.transition-duration(0.4s);
+		.bw-gradient(#ccc, 190, 100);
+		
+/*		.bw-gradient(#ccc, 100, 200);*/
+/*		background: #ccc;*/
+/*		.drop-shadow(0, 0, 0, 0);*/
+/*		.drop-shadow(0, 3px, 5px, 0.2);*/
+/*		.transition-duration(0.4s);*/
 		
 	}
 	
 	a {
 		color: #000;
+		.transition-duration(0.4s);
+		&:hover {
+			.transition-duration(0.4s);
+			color: #333;
+		}
 	}
 	
 	img {
@@ -192,6 +224,8 @@ img {
 			float: left;
 			margin-left: 10px;
 			padding-right: 10px;
+			vertical-align: middle;
+			display: block;
 		}
 		.project_date {
 			float: right;

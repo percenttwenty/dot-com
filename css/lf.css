@@ -1,3 +1,15 @@
+/*---------------------------------------------------
+    LESS Elements 0.6
+  ---------------------------------------------------
+    A set of useful LESS mixins by Dmitry Fadeyev
+    Special thanks for mixin suggestions to:
+      Kris Van Herzeele,
+      Benoit Adam,
+      Portenart Emile-Victor,
+      Ryan Faerman
+
+    More info at: http://lesselements.com
+-----------------------------------------------------*/
 /*	Less Framework 4
 	http://lessframework.com
 	by Joni Korpi
@@ -94,6 +106,9 @@ audio,
 video {
   display: block;
 }
+a {
+  text-decoration: none;
+}
 a img {
   border: 0;
 }
@@ -150,39 +165,18 @@ body {
   -webkit-tap-highlight-color: #ffff9e;
 }
 /* homepage thumbnails */
-#nasdaq a {
-  background-image: url(../the_work/nasdaq/01.jpg);
-}
-#ge_show a {
-  background-image: url(../the_work/ge_show/01.jpg);
-}
-#rockhall a {
-  background-image: url(../the_work/rockhall/01.jpg);
-}
-#wgbh a {
-  background-image: url(../the_work/wgbh_amex/01.jpg);
-}
-#sevententen a {
-  background-image: url(../the_work/sevententen/01.jpg);
-}
-#kashi a {
-  background-image: url(../the_work/kashi/01.jpg);
-}
-#tbg a {
-  background-image: url(../the_work/tbg/01.jpg);
-}
-#pbat a {
-  background-image: url(../the_work/pbat/01.jpg);
-}
-#gametap a {
-  background-image: url(../the_work/gametap/01.jpg);
-}
-#helping_hands a {
-  background-image: url(../the_work/helping_hands/01.jpg);
-}
-#chicken a {
-  background-image: url(../the_work/chicken/01.jpg);
-}
+/*#nasdaq a { background-image: url(../the_work/nasdaq/01.jpg); }
+#ge_show a { background-image: url(../the_work/ge_show/01.jpg); }
+#rockhall a { background-image: url(../the_work/rockhall/01.jpg); }
+#wgbh a { background-image: url(../the_work/wgbh_amex/01.jpg); }
+#sevententen a { background-image: url(../the_work/sevententen/01.jpg); }
+#kashi a { background-image: url(../the_work/kashi/01.jpg); }
+#tbg a { background-image: url(../the_work/tbg/01.jpg); }
+#pbat a { background-image: url(../the_work/pbat/01.jpg); }
+#gametap a { background-image: url(../the_work/gametap/01.jpg); }
+#helping_hands a { background-image: url(../the_work/helping_hands/01.jpg); }
+#chicken a { background-image: url(../the_work/chicken/01.jpg); }
+*/
 /*		Default Layout: 992px. 
 		Gutters: 24px.
 		Outer margins: 48px.
@@ -191,61 +185,179 @@ body {
 cols    1     2      3      4      5      6      7      8      9      10
 px      68    160    252    344    436    528    620    712    804    896    */
 body {
-  width: 896px;
-  padding: 72px 48px 84px;
-  background: #e8e8e8;
+  padding: 72px 0 84px;
+  background: #e8e8e8 url(../images/tile4.png) 0 0 repeat;
   color: #3c3c3c;
   -webkit-text-size-adjust: 100%;
   /* Stops Mobile Safari from auto-adjusting font-sizes */
 
+  font-family: "Buenard", "Times New Roman", Times, serif;
+}
+#container {
+  padding-left: 48px;
+  padding-right: 48px;
+  margin: 60px auto 20px auto;
+  width: 896px;
+  position: relative;
 }
 header {
-  width: 344px;
+  width: 28.125%;
+  /*252px / 896*/
+
   float: left;
+  margin-top: -10px;
+}
+header h1 {
+  font-family: 'Marmelad', Helvetica, Arial, sans-serif;
+  margin-bottom: 20px;
+}
+header h2 {
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 25px;
+  color: #444;
+}
+header h3 {
+  margin-bottom: 25px;
+  color: #666;
+}
+header h4,
+header h4 a {
+  color: #aaa;
+  -moz-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+header h4 a:hover {
+  -moz-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  color: #444;
+}
+header h5 {
+  display: none;
 }
 #work {
-  margin-left: 436px;
+  width: 69.19643%;
+  /*620 / 896*/
+
+  float: right;
+}
+img {
+  max-width: 100%;
+}
+#work #portfolio_title {
+  font-size: 1.4em;
+  margin-left: 92px;
+  color: #666;
 }
 .project {
-  width: 468px;
-  height: 300px;
+  /*	width: 436px;*/
+
+  /*	height: 291px;*/
+
+  width: 40.64516%;
+  margin-right: 3.8709677419355%;
+  margin-bottom: 30px;
   display: block;
   float: left;
-  padding-left: 8px;
-  background-image: url(../images/banner_edge_l.png), url(../images/banner_edge_r.png);
-  background-position: 0 250px, 464px 250px;
-  background-repeat: no-repeat;
-  margin: 0 2px 30px 2px;
+  /*	background: #ccc;*/
+
+  background: #cccccc;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #c8c8c8), color-stop(1, #646464));
+  background: -ms-linear-gradient(bottom, #c8c8c8 0%, #c8c8c8 100%);
+  background: -moz-linear-gradient(center bottom, #c8c8c8 0%, #646464 100%);
+  padding: 4px 4px 2px 4px;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -moz-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.project:hover {
+  -moz-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  background: #cccccc;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #bebebe), color-stop(1, #646464));
+  background: -ms-linear-gradient(bottom, #bebebe 0%, #bebebe 100%);
+  background: -moz-linear-gradient(center bottom, #bebebe 0%, #646464 100%);
+  /*		.bw-gradient(#ccc, 100, 200);*/
+
+  /*		background: #ccc;*/
+
+  /*		.drop-shadow(0, 0, 0, 0);*/
+
+  /*		.drop-shadow(0, 3px, 5px, 0.2);*/
+
+  /*		.transition-duration(0.4s);*/
+
 }
 .project a {
-  font-family: Helvetica, Arial, sans-serif;
-  border: 3px solid #fff;
-  display: block;
-  width: 450px;
-  height: 300px;
-  background-position: top left;
-  background-repeat: no-repeat;
-  position: relative;
-  text-decoration: none;
-}
-.project a .info {
-  background: #fff;
-  position: absolute;
-  right: 0;
-  bottom: 10px;
-  width: 100%;
-  text-align: right;
-  height: 36px;
-}
-.project a .info .project_title {
-  font-size: 20px;
-}
-.project a .info .project_date {
-  font-size: 16px;
+  color: #000;
+  -moz-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
 .project a:hover {
-  /*				background: transparent url(../images/mask.png) 0 0 no-repeat;*/
+  -moz-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  color: #333;
+}
+.project img {
+  z-index: 4;
+}
+.project .info {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.8em;
+  line-height: 1em;
+  display: block;
+  /*		background: #fff;*/
 
+  z-index: 6;
+  height: 30px;
+  /*		overflow: hidden;*/
+
+}
+.project .info .project_title {
+  width: 158px;
+  float: left;
+  margin-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
+  display: block;
+}
+.project .info .project_date {
+  float: right;
+  width: 64px;
+  /*			margin-right: -20px;*/
+
+  /*			background: #fff;*/
+
+  /*			.rotation(-20deg);*/
+
+  /*			padding: 4px 20px;*/
+
+  text-align: right;
+  margin-right: 10px;
+  color: #555;
 }
 /*		Tablet Layout: 768px.
 		Gutters: 24px.
@@ -256,8 +368,10 @@ cols    1     2      3      4      5      6      7      8
 px      68    160    252    344    436    528    620    712    */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   body {
-    width: 712px;
     padding: 48px 28px 60px;
+  }
+  #container {
+    width: 712px;
   }
 }
 /*		Mobile Layout: 320px.
@@ -269,8 +383,15 @@ cols    1     2      3
 px      68    160    252    */
 @media only screen and (max-width: 767px) {
   body {
-    width: 252px;
     padding: 48px 34px 60px;
+  }
+  #container {
+    width: 252px;
+  }
+  #container header,
+  #container #work {
+    float: none;
+    width: 252px;
   }
 }
 /*		Wide Mobile Layout: 480px.

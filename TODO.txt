@@ -3,12 +3,12 @@ to do!
 OVERALL
 - remove application.js and jquery if not necessary
 x change class="new_window" to target="_blank"
-x compile LESS css
+- compile LESS css in project pages
+
+- press for each
 
 
 GE SHOW
-- find titles of GE Show episode 8 segments
-- screenshots
 - edit for length
 
 

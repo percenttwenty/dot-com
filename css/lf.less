@@ -189,16 +189,8 @@ img {
 	.transition-duration(0.4s);
 	
 	&:hover {
-		
 		.transition-duration(0.4s);
 		.bw-gradient(#ccc, 190, 100);
-		
-/*		.bw-gradient(#ccc, 100, 200);*/
-/*		background: #ccc;*/
-/*		.drop-shadow(0, 0, 0, 0);*/
-/*		.drop-shadow(0, 3px, 5px, 0.2);*/
-/*		.transition-duration(0.4s);*/
-		
 	}
 	
 	a {
@@ -256,6 +248,94 @@ footer {
 }
 
 
+/*detail page*/
+.detail {
+	header {
+		width: 100%;
+		margin-bottom: 10px;
+		h1 {
+			float: left;
+			a {
+				color: inherit;
+				.transition-duration(0.4s);
+				&:hover {
+					.transition-duration(0.4s);
+					color: #aaa;
+				}
+			}
+		}
+		h2 {
+			float: right;
+			margin-top: 32px;
+		}
+	}
+	.images {
+		float: left;
+		margin-right: 24px;
+		img {
+			width: 436px;
+			margin-bottom: 10px;
+		}
+	}
+	.project_details {
+		float: right;
+		width: 436px;
+		
+		h1 {
+			font-size: 30px;
+			text-align: right;
+			line-height: 1em;
+		}
+		h2 {
+			text-align: right;
+			font-size: 25px;
+			line-height: 1em;
+		}
+		dl {
+			margin: 15px 0;
+			width: 100%;
+			float: right;
+			line-height: 1.2em;
+			dt {
+				float: left;
+				
+				font-variant: small-caps;
+				font-size: 13px;
+				clear: both;
+				color: #000;
+			}
+			dd {
+				float: right;
+
+			}
+		}
+		.commentary {
+			text-align: left;
+			margin: 25px 0 40px 0;
+
+			line-height: 1.2em;
+			p {
+				margin-bottom: 15px;
+			}
+			ul li {
+				padding-left: 4px;
+				margin: 0 0 5px 15px;
+				list-style-type: disc;
+				
+			}
+			a {
+				color: inherit;
+				text-decoration: underline;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+
+
 /*		Tablet Layout: 768px.
 		Gutters: 24px.
 		Outer margins: 28px.
@@ -293,6 +373,25 @@ px      68    160    252    344    436    528    620    712    */
 			}
 		}
 	}
+	.detail {
+		.images {
+			width: 450px;
+			margin: 0 auto;
+			float: none;
+			li {
+				margin: 0 auto;
+				width: 100%;
+				img {
+					width: 450px;
+					
+				}
+			}
+		}
+		.project_details {
+			width: 100%;
+			float: none;
+		}
+	}
 }
 
 
@@ -318,7 +417,14 @@ px      68    160    252    */
 			width: 252px;
 		}
 		header {
-			margin-bottom: 25px;
+			margin-bottom: 45px;
+			h1 {
+				margin-bottom: 0;
+			}
+			h2 {
+				float: left;
+				margin-top: 0;
+			}
 		}
 
 	}

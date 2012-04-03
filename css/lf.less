@@ -1,4 +1,5 @@
 @import "elements.less";
+@import url("http://fonts.googleapis.com/css?family=Buenard:400,700|Marmelad");
 
 /*	Less Framework 4
 	http://lessframework.com
@@ -26,7 +27,11 @@ footer, header, nav, section, audio, video {
 	display: block;
 }
 
-a { text-decoration: none; }
+a { 
+	text-decoration: none;
+	font-weight: 700;
+	color: inherit;
+}
 a img {border: 0;}
 .clr {
 	clear: both;
@@ -72,28 +77,21 @@ body {
 	line-height: 18px;
 }
 
+em {
+	font-style: italic;
+}
+strong {
+	font-weight: 700;
+}
+
+
 /* Selection colours (easy to forget) */
 
 ::selection 	 	{background: rgb(255,255,158);}
 ::-moz-selection 	{background: rgb(255,255,158);}
 img::selection 		{background: transparent;}
 img::-moz-selection	{background: transparent;}
-body {-webkit-tap-highlight-color: rgb(255,255,158);}
-
-
-/* homepage thumbnails */
-/*#nasdaq a { background-image: url(../the_work/nasdaq/01.jpg); }
-#ge_show a { background-image: url(../the_work/ge_show/01.jpg); }
-#rockhall a { background-image: url(../the_work/rockhall/01.jpg); }
-#wgbh a { background-image: url(../the_work/wgbh_amex/01.jpg); }
-#sevententen a { background-image: url(../the_work/sevententen/01.jpg); }
-#kashi a { background-image: url(../the_work/kashi/01.jpg); }
-#tbg a { background-image: url(../the_work/tbg/01.jpg); }
-#pbat a { background-image: url(../the_work/pbat/01.jpg); }
-#gametap a { background-image: url(../the_work/gametap/01.jpg); }
-#helping_hands a { background-image: url(../the_work/helping_hands/01.jpg); }
-#chicken a { background-image: url(../the_work/chicken/01.jpg); }
-*/
+body {-webkit-tap-highlight-color: #aaa;}
 
 
 /*		Default Layout: 992px. 
@@ -105,7 +103,6 @@ cols    1     2      3      4      5      6      7      8      9      10
 px      68    160    252    344    436    528    620    712    804    896    */
 
 body {
-
 	padding: 72px 0 84px;
 	background: rgb(232,232,232) url(../images/tile4.png) 0 0 repeat;
 	color: rgb(60,60,60);
@@ -128,6 +125,7 @@ header {
 	h1 {
 		font-family: 'Marmelad', Helvetica, Arial, sans-serif;
 		margin-bottom: 20px;
+		margin-left: -6px;
 	}
 	h2 {
 		font-size: 30px;
@@ -135,27 +133,30 @@ header {
 		margin-bottom: 25px;
 		color: #444;
 	}
-	h3 {
+	#personal_roles {
+		.bigger;
 		margin-bottom: 25px;
 		color: #666;
-		
+		ul li {
+			list-style-type: disc;
+		}
 	}
-	h4, h4 a {
-		color: #aaa;
-		.transition-duration(0.4s);
-	}
-	h4 a:hover {
-		.transition-duration(0.4s);
-		color: #444;
-		margin-bottom: 20px;
-	}
-	h5 {
-		//it's a silly thing
-		display: none;
+	h3 {
+		color: #a0a0a0;
+		a {
+			.transition-duration(0.4s);
+			font-weight: normal;
+			color: #a0a0a0;
+			&:hover {
+				.transition-duration(0.4s);
+				color: #444;
+				margin-bottom: 20px;
+			}
+		}
 	}
 }
 #work {
-	width: 69.19643%; /*620 / 896*/
+	width: 620px;
 	float: right;
 }
 img {
@@ -169,9 +170,6 @@ img {
 	}
 }
 .project {
-/*	width: 436px;*/
-/*	height: 291px;*/
-/*	width: 40.64516%;*/
 	width: 270px;
 	margin-right: 24px;
 	margin-bottom: 30px;
@@ -194,6 +192,7 @@ img {
 	}
 	
 	a {
+		font-weight: normal;
 		color: #000;
 		.transition-duration(0.4s);
 		&:hover {
@@ -212,6 +211,7 @@ img {
 		display: block;
 		z-index: 6;
 		height: 30px;
+		
 		.project_title {
 			width: 158px;
 			float: left;
@@ -246,7 +246,11 @@ footer {
 		margin-right: 10px;
 	}
 }
-
+.inline_right {
+	float: right;
+	margin: 4px 0 0 10px;	
+	border: 2px solid #fff;
+}
 
 /*detail page*/
 .detail {
@@ -257,6 +261,7 @@ footer {
 			float: left;
 			a {
 				color: inherit;
+				font-weight: normal;
 				.transition-duration(0.4s);
 				&:hover {
 					.transition-duration(0.4s);
@@ -347,14 +352,19 @@ px      68    160    252    344    436    528    620    712    */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	
 	body {
-		padding: 48px 28px 60px;
+		
 	}
 	#container {
+		margin-top: 30px;
+		padding: 28px 28px 60px;
 		width: 712px;
 		.transition-duration(0.4s);
 	}
 	header {
 		width: 160px;
+		h3 ul li {
+			margin-left: 27px;
+		}
 	}
 	#work {
 
@@ -408,9 +418,10 @@ px      68    160    252    */
 	
 	body {
 		
-		padding: 48px 34px 60px;
+		
 	}
 	#container {
+		padding: 48px 34px 60px;
 		width: 252px;
 		header, #work {
 			float: none;

@@ -1,49 +1,580 @@
 @import url("http://fonts.googleapis.com/css?family=Buenard:400,700|Marmelad");
-html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,hr,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figure,figcaption,hgroup,menu,footer,header,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;}
-article,aside,canvas,figure,figure img,figcaption,hgroup,footer,header,nav,section,audio,video{display:block;}
-a{text-decoration:none;font-weight:700;color:inherit;}
-a img{border:0;}
-.clr{clear:both;}
-.gigantic{font-size:110px;line-height:120px;letter-spacing:-2px;}
-.huge,h1{font-size:68px;line-height:72px;letter-spacing:-1px;}
-.large,h2{font-size:42px;line-height:48px;}
-.bigger,h3{font-size:26px;line-height:36px;}
-.big,h4{font-size:22px;line-height:30px;}
-body{font:16px/24px Georgia,serif;}
-.small,small{font-size:13px;line-height:18px;}
-em{font-style:italic;}
-strong{font-weight:700;}
-::selection{background:#ffff9e;}
-::-moz-selection{background:#ffff9e;}
-img::selection{background:transparent;}
-img::-moz-selection{background:transparent;}
-body{-webkit-tap-highlight-color:#aaa;}
-body{padding:72px 0 84px;background:#e8e8e8 url(../images/tile4.png) 0 0 repeat;color:#3c3c3c;-webkit-text-size-adjust:100%;font-family:"Buenard","Times New Roman",Times,serif;}
-#container{padding-left:48px;padding-right:48px;margin:60px auto 20px auto;width:896px;position:relative;}
-header{width:28.125%;float:left;margin-top:-10px;}header h1{font-family:'Marmelad',Helvetica,Arial,sans-serif;margin-bottom:20px;margin-left:-6px;}
-header h2{font-size:30px;line-height:30px;margin-bottom:25px;color:#444;}
-header #personal_roles{font-size:26px;line-height:36px;margin-bottom:25px;color:#666;}header #personal_roles ul li{list-style-type:disc;}
-header h3{color:#a0a0a0;}header h3 a{-moz-transition-duration:0.4s;-webkit-transition-duration:0.4s;transition-duration:0.4s;font-weight:normal;color:#a0a0a0;}header h3 a:hover{-moz-transition-duration:0.4s;-webkit-transition-duration:0.4s;transition-duration:0.4s;color:#444;margin-bottom:20px;}
-#work{width:620px;float:right;}
-img{max-width:100%;}
-#work #portfolio_title{font-size:1.4em;margin-left:92px;color:#666;}
-.project{width:270px;margin-right:24px;margin-bottom:30px;display:block;float:left;background:#cccccc;background:-webkit-gradient(linear, left bottom, left top, color-stop(0, #c8c8c8), color-stop(1, #646464));background:-ms-linear-gradient(bottom, #c8c8c8 0%, #c8c8c8 100%);background:-moz-linear-gradient(center bottom, #c8c8c8 0%, #646464 100%);padding:4px 4px 2px 4px;-webkit-box-shadow:0 2px 2px rgba(0, 0, 0, 0.2);-moz-box-shadow:0 2px 2px rgba(0, 0, 0, 0.2);box-shadow:0 2px 2px rgba(0, 0, 0, 0.2);-webkit-border-top-right-radius:0;-webkit-border-bottom-right-radius:4px;-webkit-border-bottom-left-radius:4px;-webkit-border-top-left-radius:0;-moz-border-radius-topright:0;-moz-border-radius-bottomright:4px;-moz-border-radius-bottomleft:4px;-moz-border-radius-topleft:0;border-top-right-radius:0;border-bottom-right-radius:4px;border-bottom-left-radius:4px;border-top-left-radius:0;-moz-background-clip:padding;-webkit-background-clip:padding-box;background-clip:padding-box;-moz-transition-duration:0.4s;-webkit-transition-duration:0.4s;transition-duration:0.4s;}.project:hover{-moz-transition-duration:0.4s;-webkit-transition-duration:0.4s;transition-duration:0.4s;background:#cccccc;background:-webkit-gradient(linear, left bottom, left top, color-stop(0, #bebebe), color-stop(1, #646464));background:-ms-linear-gradient(bottom, #bebebe 0%, #bebebe 100%);background:-moz-linear-gradient(center bottom, #bebebe 0%, #646464 100%);}
-.project a{font-weight:normal;color:#000;-moz-transition-duration:0.4s;-webkit-transition-duration:0.4s;transition-duration:0.4s;}.project a:hover{-moz-transition-duration:0.4s;-webkit-transition-duration:0.4s;transition-duration:0.4s;color:#333;}
-.project img{z-index:4;}
-.project .info{font-family:Helvetica,Arial,sans-serif;font-size:0.8em;line-height:1em;display:block;z-index:6;height:30px;}.project .info .project_title{width:158px;float:left;margin-left:10px;padding-right:10px;display:block;-moz-transition-duration:0.4s;-webkit-transition-duration:0.4s;transition-duration:0.4s;}
-.project .info .project_date{float:right;width:64px;text-align:right;margin-right:10px;color:#555;-moz-transition-duration:0.4s;-webkit-transition-duration:0.4s;transition-duration:0.4s;}
-footer{width:100%;}footer h1{font-size:2em;}
-footer ul{margin-top:10px;}
-footer ul li{list-style-type:none;float:left;margin-right:10px;}
-.inline_right{float:right;margin:4px 0 0 10px;border:2px solid #fff;}
-.detail header{width:100%;margin-bottom:10px;}.detail header h1{float:left;}.detail header h1 a{color:inherit;font-weight:normal;-moz-transition-duration:0.4s;-webkit-transition-duration:0.4s;transition-duration:0.4s;}.detail header h1 a:hover{-moz-transition-duration:0.4s;-webkit-transition-duration:0.4s;transition-duration:0.4s;color:#aaa;}
-.detail header h2{float:right;margin-top:32px;}
-.detail .images{float:left;margin-right:24px;}.detail .images img{width:436px;margin-bottom:10px;}
-.detail .project_details{float:right;width:436px;}.detail .project_details h1{font-size:30px;text-align:right;line-height:1em;}
-.detail .project_details h2{text-align:right;font-size:25px;line-height:1em;}
-.detail .project_details dl{margin:15px 0;width:100%;float:right;line-height:1.2em;}.detail .project_details dl dt{float:left;font-variant:small-caps;font-size:13px;clear:both;color:#000;}
-.detail .project_details dl dd{float:right;}
-.detail .project_details .commentary{text-align:left;margin:25px 0 40px 0;line-height:1.2em;}.detail .project_details .commentary p{margin-bottom:15px;}
-.detail .project_details .commentary ul li{padding-left:4px;margin:0 0 5px 15px;list-style-type:disc;}
-.detail .project_details .commentary a{color:inherit;text-decoration:underline;}.detail .project_details .commentary a:hover{text-decoration:none;}
-@media only screen and (min-width:768px) and (max-width:991px){#container{margin-top:30px;padding:28px 28px 60px;width:712px;-moz-transition-duration:0.4s;-webkit-transition-duration:0.4s;transition-duration:0.4s;} header{width:160px;}header h3 ul li{margin-left:27px;} .project{width:220px;margin-right:15px;}.project .info .project_title{width:128px;-moz-transition-duration:0.4s;-webkit-transition-duration:0.4s;transition-duration:0.4s;} .project .info .project_date{width:54px;-moz-transition-duration:0.4s;-webkit-transition-duration:0.4s;transition-duration:0.4s;} .detail .images{width:450px;margin:0 auto;float:none;}.detail .images li{margin:0 auto;width:100%;}.detail .images li img{width:450px;} .detail .project_details{width:100%;float:none;}}@media only screen and (max-width:767px){#container{padding:48px 34px 60px;width:252px;}#container header,#container #work{float:none;width:252px;} #container header{margin-bottom:45px;}#container header h1{margin-bottom:0;} #container header h2{float:left;margin-top:0;} h1{}}@media only screen and (min-width:480px) and (max-width:767px){body{padding:36px 22px 48px;} #container{width:436px;}#container header,#container #work{width:100%;} .project{width:200px;margin-right:10px;}.project .info .project_title{width:118px;-moz-transition-duration:0.4s;-webkit-transition-duration:0.4s;transition-duration:0.4s;} .project .info .project_date{width:50px;-moz-transition-duration:0.4s;-webkit-transition-duration:0.4s;transition-duration:0.4s;}}@media only screen and (-webkit-min-device-pixel-ratio:2),only screen and (min-device-pixel-ratio:2){}
+/*---------------------------------------------------
+    LESS Elements 0.6
+  ---------------------------------------------------
+    A set of useful LESS mixins by Dmitry Fadeyev
+    Special thanks for mixin suggestions to:
+      Kris Van Herzeele,
+      Benoit Adam,
+      Portenart Emile-Victor,
+      Ryan Faerman
+
+    More info at: http://lesselements.com
+-----------------------------------------------------*/
+/*	Less Framework 4
+	http://lessframework.com
+	by Joni Korpi
+	License: http://opensource.org/licenses/mit-license.php	*/
+/*	Resets
+	------	*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+hr,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figure,
+figcaption,
+hgroup,
+menu,
+footer,
+header,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+article,
+aside,
+canvas,
+figure,
+figure img,
+figcaption,
+hgroup,
+footer,
+header,
+nav,
+section,
+audio,
+video {
+  display: block;
+}
+a {
+  text-decoration: none;
+  font-weight: 700;
+  color: inherit;
+}
+a img {
+  border: 0;
+}
+.clr {
+  clear: both;
+}
+/*	Typography presets
+	------------------	*/
+.gigantic {
+  font-size: 110px;
+  line-height: 120px;
+  letter-spacing: -2px;
+}
+.huge,
+h1 {
+  font-size: 68px;
+  line-height: 72px;
+  letter-spacing: -1px;
+}
+.large,
+h2 {
+  font-size: 42px;
+  line-height: 48px;
+}
+.bigger,
+h3 {
+  font-size: 26px;
+  line-height: 36px;
+}
+.big,
+h4 {
+  font-size: 22px;
+  line-height: 30px;
+}
+body {
+  font: 16px/24px Georgia, serif;
+}
+.small,
+small {
+  font-size: 13px;
+  line-height: 18px;
+}
+em {
+  font-style: italic;
+}
+strong {
+  font-weight: 700;
+}
+/* Selection colours (easy to forget) */
+::selection {
+  background: #ffff9e;
+}
+::-moz-selection {
+  background: #ffff9e;
+}
+img::selection {
+  background: transparent;
+}
+img::-moz-selection {
+  background: transparent;
+}
+body {
+  -webkit-tap-highlight-color: #aaa;
+}
+/*		Default Layout: 992px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+body {
+  padding: 72px 0 84px;
+  background: #e8e8e8 url(../images/tile4.png) 0 0 repeat;
+  color: #3c3c3c;
+  -webkit-text-size-adjust: 100%;
+  /* Stops Mobile Safari from auto-adjusting font-sizes */
+
+  font-family: "Buenard", "Times New Roman", Times, serif;
+}
+#container {
+  padding-left: 48px;
+  padding-right: 48px;
+  margin: 60px auto 20px auto;
+  width: 896px;
+  position: relative;
+}
+header {
+  width: 28.125%;
+  /*252px / 896*/
+
+  float: left;
+  margin-top: -10px;
+}
+header h1 {
+  font-family: 'Marmelad', Helvetica, Arial, sans-serif;
+  margin-bottom: 20px;
+  margin-left: -6px;
+}
+header h2 {
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 25px;
+  color: #444;
+}
+header #personal_roles {
+  font-size: 26px;
+  line-height: 36px;
+  margin-bottom: 25px;
+  color: #666;
+}
+header #personal_roles ul li {
+  list-style-type: disc;
+}
+header h3 {
+  color: #a0a0a0;
+}
+header h3 a {
+  -moz-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  font-weight: normal;
+  color: #a0a0a0;
+}
+header h3 a:hover {
+  -moz-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  color: #444;
+  margin-bottom: 20px;
+}
+#work {
+  width: 620px;
+  float: right;
+}
+img {
+  max-width: 100%;
+}
+#work #portfolio_title {
+  font-size: 1.4em;
+  margin-left: 92px;
+  color: #666;
+}
+.project {
+  width: 270px;
+  margin-right: 24px;
+  margin-bottom: 30px;
+  display: block;
+  float: left;
+  /*	background: #ccc;*/
+
+  background: #cccccc;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #c8c8c8), color-stop(1, #646464));
+  background: -ms-linear-gradient(bottom, #c8c8c8 0%, #c8c8c8 100%);
+  background: -moz-linear-gradient(center bottom, #c8c8c8 0%, #646464 100%);
+  padding: 4px 4px 2px 4px;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -moz-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.project:hover {
+  -moz-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  background: #cccccc;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #bebebe), color-stop(1, #646464));
+  background: -ms-linear-gradient(bottom, #bebebe 0%, #bebebe 100%);
+  background: -moz-linear-gradient(center bottom, #bebebe 0%, #646464 100%);
+}
+.project a {
+  font-weight: normal;
+  color: #000;
+  -moz-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.project a:hover {
+  -moz-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  color: #333;
+}
+.project img {
+  z-index: 4;
+}
+.project .info {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.8em;
+  line-height: 1em;
+  display: block;
+  z-index: 6;
+  height: 30px;
+}
+.project .info .project_title {
+  width: 158px;
+  float: left;
+  margin-left: 10px;
+  padding-right: 10px;
+  display: block;
+  -moz-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.project .info .project_date {
+  float: right;
+  width: 64px;
+  text-align: right;
+  margin-right: 10px;
+  color: #555;
+  -moz-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+footer {
+  width: 100%;
+}
+footer h1 {
+  font-size: 2em;
+}
+footer ul {
+  margin-top: 10px;
+}
+footer ul li {
+  list-style-type: none;
+  float: left;
+  margin-right: 10px;
+}
+.inline_right {
+  float: right;
+  margin: 4px 0 0 10px;
+  border: 2px solid #fff;
+}
+/*detail page*/
+.detail header {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.detail header h1 {
+  float: left;
+}
+.detail header h1 a {
+  color: inherit;
+  font-weight: normal;
+  -moz-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.detail header h1 a:hover {
+  -moz-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  color: #aaa;
+}
+.detail header h2 {
+  float: right;
+  margin-top: 32px;
+}
+.detail .images {
+  float: left;
+  margin-right: 24px;
+}
+.detail .images img {
+  width: 436px;
+  margin-bottom: 10px;
+}
+.detail .project_details {
+  float: right;
+  width: 436px;
+}
+.detail .project_details h1 {
+  font-size: 30px;
+  text-align: right;
+  line-height: 1em;
+}
+.detail .project_details h2 {
+  text-align: right;
+  font-size: 25px;
+  line-height: 1em;
+}
+.detail .project_details dl {
+  margin: 15px 0;
+  width: 100%;
+  float: right;
+  line-height: 1.2em;
+}
+.detail .project_details dl dt {
+  float: left;
+  font-variant: small-caps;
+  font-size: 13px;
+  clear: both;
+  color: #000;
+}
+.detail .project_details dl dd {
+  float: right;
+}
+.detail .project_details .commentary {
+  text-align: left;
+  margin: 25px 0 40px 0;
+  line-height: 1.2em;
+}
+.detail .project_details .commentary p {
+  margin-bottom: 15px;
+}
+.detail .project_details .commentary ul li {
+  padding-left: 4px;
+  margin: 0 0 5px 15px;
+  list-style-type: disc;
+}
+.detail .project_details .commentary a {
+  color: inherit;
+  text-decoration: underline;
+}
+.detail .project_details .commentary a:hover {
+  text-decoration: none;
+}
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #container {
+    margin-top: 30px;
+    padding: 28px 28px 60px;
+    width: 712px;
+    -moz-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  }
+  header {
+    width: 160px;
+  }
+  header h3 ul li {
+    margin-left: 27px;
+  }
+  #work {
+    background: blue;
+  }
+  .project {
+    width: 220px;
+    margin-right: 15px;
+  }
+  .project .info .project_title {
+    width: 128px;
+    -moz-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  }
+  .project .info .project_date {
+    width: 54px;
+    -moz-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  }
+  .detail .images {
+    width: 450px;
+    margin: 0 auto;
+    float: none;
+  }
+  .detail .images li {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .detail .images li img {
+    width: 450px;
+  }
+  .detail .project_details {
+    width: 100%;
+    float: none;
+  }
+}
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+@media only screen and (max-width: 767px) {
+  #container {
+    padding: 48px 34px 60px;
+    width: 252px;
+  }
+  #container header,
+  #container #work {
+    float: none;
+    width: 252px;
+  }
+  #container header {
+    margin-bottom: 45px;
+  }
+  #container header h1 {
+    margin-bottom: 0;
+  }
+  #container header h2 {
+    float: left;
+    margin-top: 0;
+  }
+  h1 {
+    /*		color: blue;*/
+  
+  }
+}
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  body {
+    padding: 36px 22px 48px;
+  }
+  #container {
+    width: 436px;
+  }
+  #container header,
+  #container #work {
+    width: 100%;
+  }
+  .project {
+    width: 200px;
+    margin-right: 10px;
+  }
+  .project .info .project_title {
+    width: 118px;
+    -moz-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  }
+  .project .info .project_date {
+    width: 50px;
+    -moz-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  }
+  /*	h1 { color: green; }*/
+}
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  
+}

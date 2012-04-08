@@ -104,7 +104,7 @@ px      68    160    252    344    436    528    620    712    804    896    */
 
 body {
 	padding: 72px 0 84px;
-	background: rgb(232,232,232) url(../images/tile4.png) 0 0 repeat;
+	background: rgb(232,232,232) url(../images/tile9.png) 0 0 repeat;
 	color: rgb(60,60,60);
 	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
 	font-family: "Buenard", "Times New Roman", Times, serif;
@@ -126,6 +126,7 @@ header {
 		font-family: 'Marmelad', Helvetica, Arial, sans-serif;
 		margin-bottom: 20px;
 		margin-left: -6px;
+		text-shadow: #fff 2px 2px 5px;
 	}
 	h2 {
 		font-size: 30px;
@@ -136,17 +137,22 @@ header {
 	#personal_roles {
 		.bigger;
 		margin-bottom: 25px;
-		color: #666;
+		color: #585858;
 		ul li {
 			list-style-type: disc;
 		}
 	}
 	h3 {
-		color: #a0a0a0;
+		color: #6e6e6e;
+		margin-bottom: 25px;
+		
+	}
+	h4 {
+		color: #8d8d8d;
 		a {
 			.transition-duration(0.4s);
 			font-weight: normal;
-			color: #a0a0a0;
+			color: #6e6e6e;
 			&:hover {
 				.transition-duration(0.4s);
 				color: #444;
@@ -156,7 +162,7 @@ header {
 	}
 }
 #work {
-	width: 620px;
+	width: 69.19643%; /*620 / 896*/
 	float: right;
 }
 img {
@@ -181,7 +187,7 @@ img {
 	.bw-gradient(#ccc, 200, 100);
 	padding: 4px 4px 2px 4px;
 
-	.drop-shadow(0, 2px, 2px, 0.2);
+	.drop-shadow(2px, 2px, 2px, 0.2);
 	.border-radius(0, 4px, 4px, 0);
 	
 	.transition-duration(0.4s);
@@ -201,15 +207,11 @@ img {
 		}
 	}
 	
-	img {
-		z-index: 4;
-	}
 	.info {
 		font-family: Helvetica, Arial, sans-serif;
 		font-size: 0.8em;
 		line-height: 1em;
 		display: block;
-		z-index: 6;
 		height: 30px;
 		
 		.project_title {
@@ -236,14 +238,21 @@ footer {
 	
 	h1 {
 		font-size: 2em;
+		line-height: 1em;
+		margin-bottom: 15px;
 	}
 	ul {
 		margin-top: 10px;
 	}
 	ul li {
+		background: #ccc;
+		.rounded(3px);
+		.drop-shadow(1px, 2px, 2px, 0.1);
 		list-style-type: none;
 		float: left;
-		margin-right: 10px;
+		margin: 0 10px 6px 0;
+		
+		padding: 0 3px;
 	}
 }
 .inline_right {
@@ -285,6 +294,7 @@ footer {
 	.project_details {
 		float: right;
 		width: 436px;
+/*		background: #ccc;*/
 		
 		h1 {
 			font-size: 30px;
@@ -366,9 +376,6 @@ px      68    160    252    344    436    528    620    712    */
 			margin-left: 27px;
 		}
 	}
-	#work {
-		background: blue;
-	}
 	.project {
 		width: 220px;
 		margin-right: 15px;
@@ -433,14 +440,11 @@ px      68    160    252    */
 				margin-bottom: 0;
 			}
 			h2 {
-				float: left;
+				float: none;
 				margin-top: 0;
 			}
 		}
 
-	}
-	h1 {
-/*		color: blue;*/
 	}
 }
 
@@ -479,10 +483,7 @@ px      68    160    252    344    436    */
 				.transition-duration(0.4s);
 			}
 		}
-	}
-	
-/*	h1 { color: green; }*/
-	
+	}	
 }
 
 
